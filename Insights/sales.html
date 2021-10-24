@@ -50,10 +50,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Sidebar Menu -->
-
-      <!-- /.sidebar-menu -->
     </div>
     <!-- /.sidebar -->
   </aside>
@@ -63,12 +59,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Operations</h1>
+            <h1>Sales</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Operations</li>
+              <li class="breadcrumb-item active">Sales</li>
             </ol>
           </div>
         </div>
@@ -88,63 +84,70 @@
                         </div>
                         <div class="card-body">
                             <div class="row">
-                            <div class="col-lg-3 col-6">
+                     
+                              <div class="col-2">
                                 <!-- small card -->
                                 <div class="small-box bg-info">
                                   <div class="inner">
-                                    <h3>6213</h3>
+                                    <h3>$ 2971</h3>
                     
-                                    <p>Shipped</p>
-                                  </div>
-                                  <div class="icon">
-                                    <i class="fas fa-shopping-cart"></i>
-                                  </div>
-
-                                </div>
-                              </div>
-                              <div class="col-lg-3 col-6">
-                                <!-- small card -->
-                                <div class="small-box bg-info">
-                                  <div class="inner">
-                                    <h3>$ 150</h3>
-                    
-                                    <p>Shipping Revenue</p>
-                                  </div>
-                                  <div class="icon">
-                                    <i class="fas fa-dollar-sign"></i>
+                                    <p>Sales</p>
                                   </div>
                               
                                 </div>
                               </div>
-                              <div class="col-lg-3 col-6">
+                              <div class="col-2">
                                 <!-- small card -->
                                 <div class="small-box bg-info">
                                   <div class="inner">
-                                    <h3>$ 150</h3>
+                                    <h3>19%</h3>
                     
-                                    <p>Shipping Cost</p>
-                                  </div>
-                                  <div class="icon">
-                                    <i class="fas fa-dollar-sign"></i>
+                                    <p>Sales Versus Last Period</p>
                                   </div>
                                 </div>
                               </div>
-                              <div class="col-lg-3 col-6">
+                              <div class="col-2">
                                 <!-- small card -->
                                 <div class="small-box bg-info">
                                   <div class="inner">
-                                    <h3>$ 150</h3>
+                                    <h3>$ 290</h3>
                     
-                                    <p>Shipping Revueue</p>
+                                    <p>Avg Order Value</p>
                                   </div>
-                                  <div class="icon">
-                                    <i class="fas fa-dollar-sign"></i>
+                                </div>
+                              </div>
+                              <div class="col-2">
+                                <!-- small card -->
+                                <div class="small-box bg-info">
+                                  <div class="inner">
+                                    <h3>85</h3>
+                    
+                                    <p>Orders</p>
                                   </div>
-
+                                </div>
+                              </div>
+                              <div class="col-2">
+                                <!-- small card -->
+                                <div class="small-box bg-info">
+                                  <div class="inner">
+                                    <h3>4</h3>
+                    
+                                    <p>New Customers</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-2">
+                                <!-- small card -->
+                                <div class="small-box bg-info">
+                                  <div class="inner">
+                                    <h3>4</h3>
+                    
+                                    <p>Returning Customers</p>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                            <div id="shipments_charts"></div>
+                            <div id="line_graph_product_sold" style="height: 400px;"></div>
                         </div>
                         <!-- /.card-body-->
                       </div>
@@ -152,59 +155,87 @@
        
           <div class="row">
               <div class="col">
-                <div id="shipment_carrier"></div>
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">Top 5 Products by Revenue</h3>
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body p-0">
+                    <table class="table table-sm">
+                      <tbody>
+                        <tr>
+                          <td>Microfiber</td>
+                          <td class="text-success">$ 100</td>
+                        </tr>
+                        <tr>
+                          <td>Hotdogs</td>
+                          <td class="text-success">$ 121</td>
+                        </tr>
+                        <tr>
+                          <td>Paies</td>
+                          <td class="text-success">$ 11</td>
+                        </tr>
+                        <tr>
+                          <td>Denim Jeans</td>
+                          <td class="text-success">$ 1201</td>
+                        </tr>
+                        <tr>
+                          <td>Sony Earphones</td>
+                          <td class="text-success">$ 1</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.card-body -->
+              </div>
               </div>
               <div class="col">
-                <div id="shipment_class" ></div>
+                <div class="card">
+                  <div id="sales_category"></div>
+                  </div>
               </div>
               <div class="col">
-                <div id="shipment_user" ></div>
-              </div>
-          </div>
-          <div class="row mt-4">
-            <div class="col">
-             
-
                 <div class="card">
                     <div class="card-header">
-                      <h3 class="card-title">Current Account Balances</h3>
+                      <h3 class="card-title">Sales By Store</h3>
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body p-0">
                       <table class="table table-sm">
                         <tbody>
                           <tr>
-                            <td>1.</td>
-                            <td>Stamps.com</td>
-                           
-                            <td class="text-danger">$ -1.0</td>
+                            <td>New ChannelAdvisor Store</td>
+                            <td class="text-success">$ 100</td>
                           </tr>
                           <tr>
-                            <td>2.</td>
-                            <td>Amazon.com</td>
-                         
-                            <td>$ 121</td>
+                            <td>WoCommerce Store</td>
+                            <td class="text-success">$ 90</td>
+                          </tr>
+                          <tr>
+                            <td>Albert Store</td>
+                            <td class="text-success">$ 60</td>
+                          </tr>
+                          <tr>
+                            <td>Manual Store</td>
+                            <td class="text-success">$ 50</td>
+                          </tr>
+                          <tr>
+                            <td>Chirag Store</td>
+                            <td class="text-success">$ 10</td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
                     <!-- /.card-body -->
                   </div>
-
-
-
-            </div>
-            <div class="col">
-                <div id="order_aging" ></div>
-            </div>
-
-        </div>
+              </div>
+          </div>
         </div>
         
     </section>
   </div>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script src="/js/operations.js"></script>
+  <script src="/js/sales.js"></script>
  
 
   <script src="../../plugins/jquery/jquery.min.js"></script>
