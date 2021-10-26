@@ -54,6 +54,4 @@ google.charts.load("current", {packages:['corechart']});
 
     chart.draw(data, options);
   }
-  $(function(){
-    $("#navbar").load("/header.html"); 
-  });
+ 

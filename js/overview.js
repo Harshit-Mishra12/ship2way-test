@@ -256,6 +256,3 @@ function drawTotalOrderLineChart() {
   var chart = new google.visualization.LineChart(document.getElementById('total_orders'));
   chart.draw(data, options);
 }
-$(function () {
-  $("#navbar").load("/header.html");
-});

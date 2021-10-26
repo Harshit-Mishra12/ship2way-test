@@ -61,6 +61,3 @@ function drawDeliveryNoticationColumnChart() {
   var chart = new google.visualization.ColumnChart(document.getElementById("delivery_notification"));
   chart.draw(view, options);
 }
-$(function(){
-  $("#navbar").load("/header.html"); 
-});
