@@ -141,3 +141,6 @@ function drawColumnOrderAgingChart() {
   var chart = new google.visualization.ColumnChart(document.getElementById("order_aging"));
   chart.draw(view, options);
 }
+$(function(){
+  $("#navbar").load("/header.html"); 
+});
