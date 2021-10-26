@@ -15,4 +15,7 @@ img {
     width:  auto;
     height: 100px;
 }
-
+.fit-image
+{
+    height: 25px;
+}
