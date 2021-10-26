@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ship2way</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+<!----------------------------Adding css for testing------------------>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+
+  <!-- daterange picker -->
+  <link rel="stylesheet" href="../plugins/daterangepicker/daterangepicker.css">
+  <!-- iCheck for checkboxes and radio inputs -->
+  <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Bootstrap Color Picker -->
+  <link rel="stylesheet" href="../plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="../plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+  <!-- Bootstrap4 Duallistbox -->
+  <link rel="stylesheet" href="../plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+  <!-- BS Stepper -->
+  <link rel="stylesheet" href="../plugins/bs-stepper/css/bs-stepper.min.css">
+  <!-- dropzonejs -->
+  <link rel="stylesheet" href="../plugins/dropzone/min/dropzone.min.css">
+<!----------------------------Adding css for testing------------------>
+</head>
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+  <div class="wrapper">
+    <div id="navbar"></div>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-4">
+        <div class="col-sm-6">
+          <h1>Batch Shipment</h1>
+        </div>
+          <!-- <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">DataTables</li>
+            </ol>
+          </div> -->
+        </div>
+        <div class="row">
+          <!-------------dropdown---------------------->
+          <div class="btn-group mr-1 border border-dark">
+         
+            <button type="button" class="btn">Print</button>
+            <button type="button" class="dropdown-toggle dropdown-icon btn" data-toggle="dropdown">
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu" role="menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+         
+        </div>
+          <!-------------------dropdown--------------------->
+          <button class="btn border border-dark mr-1">Cancel Batch</button>
+          <div class="btn-group mr-1 border border-dark">
+         
+            <button type="button" class="btn">Other Actions</button>
+            <button type="button" class="dropdown-toggle dropdown-icon btn" data-toggle="dropdown" >
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu" role="menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+         
+        </div>
+
+        <!-------------dropdown---------------------->
+        <div class="btn-group mr-1 border border-dark">
+         
+            <button type="button" class="btn">Process Label</button>
+            <button type="button" class="dropdown-toggle dropdown-icon btn" data-toggle="dropdown">
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu" role="menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+         
+        </div>
+        <!-------------------dropdown--------------------->
+        <div class="btn-group mr-1 border border-dark">
+         
+            <button type="button" class="btn" disabled>Bulk Update</button>
+            <button type="button" class="dropdown-toggle dropdown-icon btn" data-toggle="dropdown" disabled>
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu" role="menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+         
+        </div>
+      </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content ---------------------------------------------------------------------->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              <div class="row mb-2">
+                <h3 class="card-title">Filters :</h3>
+              </div>
+              <div class="row">
+                <!-------------dropdown---------------------->
+                <div class="btn-group mr-1 border border-muted">
+         
+                    <button type="button" class="btn">Store</button>
+                    <button type="button" class="dropdown-toggle dropdown-icon btn" data-toggle="dropdown">
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu" role="menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                 
+                </div>
+                <!-------------------dropdown--------------------->
+                <!-------------dropdown---------------------->
+                <div class="btn-group mr-1 border border-muted">
+         
+                    <button type="button" class="btn">Marketplace</button>
+                    <button type="button" class="dropdown-toggle dropdown-icon btn" data-toggle="dropdown">
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu" role="menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                 
+                </div>
+                <!-------------------dropdown--------------------->
+                <!-------------dropdown---------------------->
+                <div class="btn-group mr-1 border border-muted">
+         
+                    <button type="button" class="btn">Carrier</button>
+                    <button type="button" class="dropdown-toggle dropdown-icon btn" data-toggle="dropdown">
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu" role="menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                 
+                </div>
+                <!-------------------dropdown--------------------->
+                <!-------------dropdown---------------------->
+                <div class="btn-group mr-1 border border-muted">
+         
+                    <button type="button" class="btn">Ship From</button>
+                    <button type="button" class="dropdown-toggle dropdown-icon btn" data-toggle="dropdown">
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu" role="menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                 
+                </div>
+                <!-------------------dropdown--------------------->
+                <!-------------dropdown---------------------->
+                <div class="btn-group mr-1 border border-muted">
+         
+                    <button type="button" class="btn">Country</button>
+                    <button type="button" class="dropdown-toggle dropdown-icon btn" data-toggle="dropdown">
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu" role="menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                 
+                </div>
+              <!-------------------dropdown--------------------->
+              <!-------------dropdown---------------------->
+              <div class="btn-group mr-1 border border-muted">
+         
+                <button type="button" class="btn">Ship Date</button>
+                <button type="button" class="dropdown-toggle dropdown-icon btn" data-toggle="dropdown">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu" role="menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+             
+            </div>
+              <!-------------------dropdown--------------------->
+              <!-------------dropdown---------------------->
+              <div class="btn-group mr-1 border border-muted">
+         
+                <button type="button" class="btn">Warnings</button>
+                <button type="button" class="dropdown-toggle dropdown-icon btn" data-toggle="dropdown">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu" role="menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+             
+            </div>
+
+            <div class="btn-group mr-1 border border-muted">
+         
+                <button type="button" class="btn">Shipping Account</button>
+                <button type="button" class="dropdown-toggle dropdown-icon btn" data-toggle="dropdown">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu" role="menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+             
+            </div>
+
+            <div class="btn-group">
+                <i class="fa fa-times text-danger ml-2 mt-1" aria-hidden="true"></i>
+                <span class="text-danger ml-1">Clear</span>
+            </div>
+              <!-------------------dropdown--------------------->
+            </div>
+          </div>
+          <!-- /.card-header -->
+          <div class="card-body">
+        <div class="table-responsive">
+            <table id="recent_shipments" class="table table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="form-check mb-3">
+                          <input class="form-check-input" type="checkbox">
+                    </div>
+                  </th>
+                  <th>Order #</th>
+                  <th>Tracking #</th>
+                  <th>Packing Slip</th>
+                  <th>Label Created</th>
+                  <th>Label Printed #</th>
+                  <th>Marketplace Notified</th>
+                  <th>Shipment Notification</th>
+                  <th>Delivery Notification</th>
+                  <th>Custom Forms</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                          <input class="form-check-input" type="checkbox">
+                    </div>
+                  </td>
+                  <td>SHO53</td>
+                  <td>897979</td>
+                  <td><i class="fas fa-print"></i> Printed</td>
+                  <td><i class="fas fa-dollar-sign"></i> Created</td>
+                  <td><i class="fas fa-print"></i> Printed</td>
+                  <td><i class="fab fa-telegram-plane"></i> <span> Notified</span></td>
+                  <td><i class="fab fa-telegram-plane text-secondary"></i></td>
+                  <td><i class="fab fa-telegram-plane"></i> Notified</td>
+                  <td><a href="">Created PDF</a></td>
+                </tr>
+                <tr>
+                    <td>
+                      <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                      </div>
+                    </td>
+                    <td>SHO53</td>
+                    <td>897979</td>
+                    <td><i class="fas fa-print"></i> Printed</td>
+                    <td><i class="fas fa-dollar-sign"></i> Created</td>
+                    <td><i class="fas fa-print"></i> Printed</td>
+                    <td><i class="fab fa-telegram-plane text-secondary"></i> <span class="text-danger"> Failed</span></td>
+                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
+                    <td><i class="fab fa-telegram-plane"></i> Notified</td>
+                    <td><a href="">Created PDF</a></td>
+                  </tr>                <tr>
+                    <td>
+                      <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                      </div>
+                    </td>
+                    <td>JSHO53</td>
+                    <td>8979</td>
+                    <td><i class="fas fa-print text-secondary"></i></td>
+                    <td><i class="fas fa-dollar-sign"></i> Created</td>
+                    <td><i class="fas fa-print text-secondary"></i></td>
+                    <td><i class="fab fa-telegram-plane text-secondary"></i><span class="text-danger"> Failed</span></td>
+                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
+                    <td><i class="fab fa-telegram-plane"></i> Notified</td>
+                    <td><a href="">Created PDF</a></td>
+                  </tr>             
+                     <tr>
+                    <td>
+                      <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                      </div>
+                    </td>
+                    <td>JKO53</td>
+                    <td>09979</td>
+                    <td><i class="fas fa-print"></i> Printed</td>
+                    <td><i class="fas fa-dollar-sign text-secondary"></i></td>
+                    <td><i class="fas fa-print"></i> Printed</td>
+                    <td><i class="fab fa-telegram-plane"></i><span> Notified</span></td>
+                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
+                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
+                    <td><a href="">Created PDF</a></td>
+                  </tr>                <tr>
+                    <td>
+                      <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                      </div>
+                    </td>
+                    <td>SHO53</td>
+                    <td>897979</td>
+                    <td><i class="fas fa-print"></i> Printed</td>
+                    <td><i class="fas fa-dollar-sign"></i> Created</td>
+                    <td><i class="fas fa-print"></i> Printed</td>
+                    <td><i class="fab fa-telegram-plane text-secondary"></i><span class="text-danger"> Failed</span></td>
+                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
+                    <td><i class="fab fa-telegram-plane"></i> Notified</td>
+                    <td><a href="">Created PDF</a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                      </div>
+                    </td>
+                    <td>JKO53</td>
+                    <td>09979</td>
+                    <td><i class="fas fa-print"></i> Printed</td>
+                    <td><i class="fas fa-dollar-sign text-secondary"></i></td>
+                    <td><i class="fas fa-print"></i> Printed</td>
+                    <td><i class="fab fa-telegram-plane"></i><span> Notified</span></td>
+                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
+                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
+                    <td><a href="">Created PDF</a></td>
+                  </tr>  
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                      </div>
+                    </td>
+                    <td>JKO53</td>
+                    <td>09979</td>
+                    <td><i class="fas fa-print"></i> Printed</td>
+                    <td><i class="fas fa-dollar-sign text-secondary"></i></td>
+                    <td><i class="fas fa-print"></i> Printed</td>
+                    <td><i class="fab fa-telegram-plane"></i><span> Notified</span></td>
+                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
+                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
+                    <td><a href="">Created PDF</a></td>
+                  </tr>  
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                      </div>
+                    </td>
+                    <td>JKO53</td>
+                    <td>09979</td>
+                    <td><i class="fas fa-print"></i> Printed</td>
+                    <td><i class="fas fa-dollar-sign text-secondary"></i></td>
+                    <td><i class="fas fa-print"></i> Printed</td>
+                    <td><i class="fab fa-telegram-plane"></i><span> Notified</span></td>
+                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
+                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
+                    <td><a href="">Created PDF</a></td>
+                  </tr>  
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                      </div>
+                    </td>
+                    <td>JKO53</td>
+                    <td>09979</td>
+                    <td><i class="fas fa-print"></i> Printed</td>
+                    <td><i class="fas fa-dollar-sign text-secondary"></i></td>
+                    <td><i class="fas fa-print"></i> Printed</td>
+                    <td><i class="fab fa-telegram-plane"></i><span> Notified</span></td>
+                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
+                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
+                    <td><a href="">Created PDF</a></td>
+                  </tr>  
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                      </div>
+                    </td>
+                    <td>JKO53</td>
+                    <td>09979</td>
+                    <td><i class="fas fa-print"></i> Printed</td>
+                    <td><i class="fas fa-dollar-sign text-secondary"></i></td>
+                    <td><i class="fas fa-print"></i> Printed</td>
+                    <td><i class="fab fa-telegram-plane"></i><span> Notified</span></td>
+                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
+                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
+                    <td><a href="">Created PDF</a></td>
+                  </tr>  
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                      </div>
+                    </td>
+                    <td>JKO53</td>
+                    <td>09979</td>
+                    <td><i class="fas fa-print"></i> Printed</td>
+                    <td><i class="fas fa-dollar-sign text-secondary"></i></td>
+                    <td><i class="fas fa-print"></i> Printed</td>
+                    <td><i class="fab fa-telegram-plane"></i><span> Notified</span></td>
+                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
+                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
+                    <td><a href="">Created PDF</a></td>
+                  </tr>  
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                      </div>
+                    </td>
+                    <td>JKO53</td>
+                    <td>09979</td>
+                    <td><i class="fas fa-print"></i> Printed</td>
+                    <td><i class="fas fa-dollar-sign text-secondary"></i></td>
+                    <td><i class="fas fa-print"></i> Printed</td>
+                    <td><i class="fab fa-telegram-plane"></i><span> Notified</span></td>
+                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
+                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
+                    <td><a href="">Created PDF</a></td>
+                  </tr>  
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                      </div>
+                    </td>
+                    <td>JKO53</td>
+                    <td>09979</td>
+                    <td><i class="fas fa-print"></i> Printed</td>
+                    <td><i class="fas fa-dollar-sign text-secondary"></i></td>
+                    <td><i class="fas fa-print"></i> Printed</td>
+                    <td><i class="fab fa-telegram-plane"></i><span> Notified</span></td>
+                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
+                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
+                    <td><a href="">Created PDF</a></td>
+                  </tr>  
+              </tbody>
+            </table>
+            </div>
+          </div>
+          <!-- /.card-body -->
+        </div>
+      </div>
+
+    </div><!-- /.container-fluid -->
+  </section>
+</div>
+</div>
+
+<script src="../plugins/jquery/jquery.min.js"></script>
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../dist/js/adminlte.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+<script src="/js/recents.js"></script>
+<script src="/js/main.js"></script>
+
+</body>
+</html>

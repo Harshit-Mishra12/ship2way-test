@@ -47,5 +47,6 @@ function drawSalesCategoryPieChart() {
 
   chart.draw(data, options);
 }
-
-
+$(function(){
+  $("#navbar").load("/header.html"); 
+});
