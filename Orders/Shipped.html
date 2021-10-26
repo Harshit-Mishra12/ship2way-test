@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="vie
+  <th>Quantity</th>
+  <th>Price</th>wport" content="width=device-width, initial-scale=1">
   <title>Ship2way</title>
 
   <!-- Google Font: Source Sans Pro -->
@@ -482,11 +484,7 @@
               <span class="sr-only">Toggle Dropdown</span>
             </button>
             <div class="dropdown-menu" role="menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
+              <a class="dropdown-item" href="#">ManageTags</a>
             </div>
           </div>
           <!-------------------dropdown--------------------->
@@ -497,7 +495,7 @@
           <!-------------------dropdown--------------------->
           <!-------------dropdown---------------------->
           <div class="btn-group mr-1">
-           <button type="button" class="btn btn-info">Mark As Paid</button>                  
+           <button type="button" class="btn btn-info" data-toggle="modal" data-target="#Product_details">Mark As Paid</button>                  
          </div>
          <!-------------------dropdown--------------------->
          <!-------------dropdown---------------------->
@@ -512,13 +510,13 @@
             <button type="button" class="btn btn-info dropdown-toggle dropdown-icon" data-toggle="dropdown">
               <span class="sr-only">Toggle Dropdown</span>
             </button>
-            <div class="dropdown-menu" role="menu">
+            <!-- <div class="dropdown-menu" role="menu">
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
               <a class="dropdown-item" href="#">Something else here</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Separated link</a>
-            </div>
+            </div> -->
           </div>
         </div>
         <!-------------------dropdown--------------------->
@@ -530,11 +528,13 @@
               <span class="sr-only">Toggle Dropdown</span>
             </button>
             <div class="dropdown-menu" role="menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
+              <a class="dropdown-item" href="#">Cancel</a>
+              <a class="dropdown-item" href="#">Mark as shipped</a>
+              <a class="dropdown-item" href="#">Mark as shipped bulk</a>
+              <a class="dropdown-item" href="#">Export orders</a>
+              <a class="dropdown-item" href="#">Add to batch</a>
+              <a class="dropdown-item" href="#">Validate address</a>
+              <a class="dropdown-item" href="#">manage preset</a>
             </div>
           </div>
         </div>
@@ -641,6 +641,7 @@
           </div>
           <!-- /.card-header -->
           <div class="card-body">
+            <div class="table-responsive">
             <table id="example2" class="table table-bordered table-hover">
               <thead>
                 <tr>
@@ -701,6 +702,7 @@
                 </tr>
               </tfoot>
             </table>
+            </div>
           </div>
           <!-- /.card-body -->
         </div>
@@ -884,18 +886,469 @@
                     
                   </div>
                 </div>
+                  <button type="button" onclick='add()' class="btn btn-outline-primary btn-block"><i class="fa fa-plus"></i>Add Line Item</button>
+                  <div class="row">
+                    <table id="Addline" class="table table-bordered">
+                      <tr>
+                        <th>SKU</th>
+                        <th>Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>remove</th>
+                      </tr>
+                      <tbody>
+                        <tr>
+                          
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="modal-footer justify-content-between">
+            <!-- <div class="modal-footer justify-content-between">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
               <button type="button" class="btn btn-primary">Save</button>
-            </div>
+            </div> -->
           </div>
           <!-- /.modal-content -->
         </div>
         <!-- /.modal-dialog -->
-      </div>
-      <!-- /.modal -->
+
+   <!-----------------------------Product details modal -------------------------->
+        <!----------modal----------------->
+                <div class="modal fade" id="Product_details">
+                  <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Extra Large Modal</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <!-----------modal body--------->
+                      <div class="modal-body">
+                        <!---------------tab bar/ nav bar----------------------->
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="card card-secondary card-tabs">
+                              <div class="card-header p-0 pt-1">
+                                <ul class="nav nav-tabs" id="custom-tabs-one-tab" role="tablist">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" id="custom-tabs-one-home-tab" data-toggle="pill" href="#custom-tabs-one-home" role="tab" aria-controls="custom-tabs-one-home" aria-selected="true">Order Details</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" id="custom-tabs-one-profile-tab" data-toggle="pill" href="#custom-tabs-one-profile" role="tab" aria-controls="custom-tabs-one-profile" aria-selected="false">Return</a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="card-body">
+                                <div class="tab-content" id="custom-tabs-one-tabContent">
+                                  <div class="tab-pane fade show active" id="custom-tabs-one-home" role="tabpanel" aria-labelledby="custom-tabs-one-home-tab">
+                                    <!---------------Single row----------------->
+                                    <div class="row"></div>
+                                    <!----------------Single row---------------->
+                                    <!---------------- Another row-------------->
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                        <!------------right side parts------------>
+                                       <div class="row">
+                                         <div class="col-md-6">
+                                           <!-- /.Order summary card -->
+                                           <div class="card">
+                                            <div class="card-header">
+                                              <h3 class="card-title">Order Summary</h3>
+                                            </div>
+                                            <!-- /.card-header -->
+                                            <div class="card-body">
+                                              <div class="row">
+                                                <div class="col-md-6">
+                                                  <p>Store</p>
+                                                  <p>Order date</p>
+                                                  <p>Paid date</p>
+                                                  <p>Product total</p>
+                                                  <p>Shipping paid</p>
+                                                  <p>Tax paid</p>
+                                                  <p>Total order</p>
+                                                  <p>Total paid</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                  <p>My store</p>
+                                                  <p>2/10/2021</p>
+                                                  <p>2/0/2021</p>
+                                                  <p>$20.00</p>
+                                                  <p>$0.00</p>
+                                                  <p>$0.00</p>
+                                                  <p>$20.00</p>
+                                                  <p>$20.00</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <!-- /.card-body -->
+                                          </div>
+                                          <!-- /.Order summary card -->
+                                         </div>
+                                         <div class="col-md-6">
+                                           <!-- /.Buyer/ Recipeint Info card -->
+                                           <div class="card">
+                                            <div class="card-header">
+                                              <h3 class="card-title">Buyer/Recipient Info</h3>
+                                            </div>
+                                            <!-- /.card-header -->
+                                            <div class="card-body">
+                                              <div class="row">
+                                                <div class="col-md-6">
+                                                  <p>Sold To</p>
+                                                  <p>Ship To</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                  <p>My store</p>
+                                                  <p>39 b-block greater noida</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <!-- /.card-body -->
+                                          </div>
+                                          <!-- /.Buyer/ Recipeint Info card -->
+                                         </div>
+                                         
+                                       </div>
+                                       <div class="row">
+                                        <div class="col-md-6">
+                                          <!-- /.Order summary card -->
+                                       <div class="card">
+                                        <div class="card-header">
+                                          <h3 class="card-title">Order Item</h3>
+                                        </div>
+                                        <!-- /.card-header -->
+                                        <div class="card-body p-0">
+                                          <table class="table table-sm">
+                                            <thead>
+                                              <tr>
+                                                <th style="width: 10px">Item</th>
+                                                <th>Unit</th>
+                                                <th>Quantity</th>
+                                                <th style="width: 40px">total</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td><img class="img-circle img-bordered-sm" alt="user image" src="../dist/img/user1-128x128.jpg" style="width: 40px;"></td>
+                                                <td><p>$30.00</p></td>
+                                                <td>
+                                                  <p>1</p>
+                                                </td>
+                                                <td><p>$30.00</p></td>
+                                              </tr>
+                                              <tr>
+                                                <td><img class="img-circle img-bordered-sm" alt="user image" src="../dist/img/user1-128x128.jpg" style="width: 40px;"></td>
+                                                <td><p>$30.00</p></td>
+                                                <td>
+                                                  <p>1</p>
+                                                </td>
+                                                <td><p>$30.00</p></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+                                        <!-- /.card-body -->
+                                      </div>
+                                      <!-- /.Order summary card -->
+                                        </div>
+                                       </div>
+                                       <!---------------right side parts----------->
+
+                                       <div class="row">
+                                          <div class="col-md-6">
+                                            <!-- /.Order notes card -->
+                                           <div class="card">
+                                            <div class="card-header">
+                                              <h3 class="card-title">Order Notes</h3>
+                                            </div>
+                                            <!-- /.card-header -->
+                                            <div class="card-body">
+                                              <div class="row">
+                                                <div class="col-md-6">
+                                                  <p>Customer</p>
+                                                  <p>To Buyer</p>
+                                                  <p>Internal</p>
+                                                  <p>This is a gift</p>
+                                                  <p>Custom field 1</p>
+                                                  <p>Custom field 2</p>
+                                                  <p>Custom field 3</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                  <p>none</p>
+                                                  <p>none</p>
+                                                  <p>none</p>
+                                                  <p>No gift</p>
+                                                  <p>none</p>
+                                                  <p>none</p>
+                                                  <p>none</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <!-- /.card-body -->
+                                          </div>
+                                          <!-- /.Order notes card -->
+                                          </div>
+                                         </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <!-- /.Order summary card -->
+                                       <div class="card">
+                                        <div class="card-header">
+                                          <h3 class="card-title">Shipping</h3>
+                                        </div>
+                                        <!-- /.card-header -->
+                                        <div class="card-body">
+                                          <div class="row">
+                                            <div class="col-md-6">
+                                              <p>Request</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                              <P>"Free Shipping"</P>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-md-6">
+                                              <p>Ship from</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                              <div class="form-group">
+                                                <select class="form-control">
+                                                  <option>Shipstation</option>
+                                                  <option>option 2</option>
+                                                  <option>option 3</option>
+                                                  <option>option 4</option>
+                                                  <option>option 5</option>
+                                                </select>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-md-6">
+                                              <p>Weight</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                              <div class="row">
+                                                <div class="col-md-6">
+                                                  <input type="number" class="form-control" id="lb" placeholder="lb">
+                                                </div>
+                                                <div class="col-md-6">
+                                                  <input type="number" class="form-control" id="lb" placeholder="oz">
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-md-6">
+                                              <p>Service</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                              <div class="form-group">
+                                                <select class="form-control">
+                                                  <option>USPS priority mall</option>
+                                                  <option>option 2</option>
+                                                  <option>option 3</option>
+                                                  <option>option 4</option>
+                                                  <option>option 5</option>
+                                                </select>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-md-6">
+                                              <p>Package</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                              <div class="form-group">
+                                                <select class="form-control">
+                                                  <option>Package</option>
+                                                  <option>option 2</option>
+                                                  <option>option 3</option>
+                                                  <option>option 4</option>
+                                                  <option>option 5</option>
+                                                </select>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-md-6">
+                                              <p>Size</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                              <div class="row">
+                                                <div class="col-md-4">
+                                                  <input type="number" class="form-control" id="lb" placeholder="L">
+                                                </div>
+                                                <div class="col-md-4">
+                                                  <input type="number" class="form-control" id="lb" placeholder="W">
+                                                </div>
+                                                <div class="col-md-4">
+                                                  <input type="number" class="form-control" id="lb" placeholder="H">
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-md-6">
+                                              <p>Confirm</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                              <div class="form-group">
+                                                <select class="form-control">
+                                                  <option>No Confirmation</option>
+                                                  <option>option 2</option>
+                                                  <option>option 3</option>
+                                                  <option>option 4</option>
+                                                  <option>option 5</option>
+                                                </select>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-md-6">
+                                              Insaurance
+                                            </div>
+                                            <div class="col-md-6">
+                                              <div class="form-group">
+                                                <select class="form-control">
+                                                  <option>None</option>
+                                                  <option>option 2</option>
+                                                  <option>option 3</option>
+                                                  <option>option 4</option>
+                                                  <option>option 5</option>
+                                                </select>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-md-6">
+                                              Rate
+                                            </div>
+                                            <div class="col-md-6">
+                                              <p class="text-success">$5.76</p>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-md-6">
+                                              Delivery time
+                                            </div>
+                                            <div class="col-md-6">
+                                              <p class="text-success">1 day</p>
+                                            </div>
+                                          </div>
+                                          <button class="btn btn-success">Create label</button>
+                                        </div>
+                                        <!-- /.card-body -->
+                                      </div>
+                                      <!-- /.Order summary card -->
+
+                                      <!-- /.Other shipping options card -->
+                                           <div class="card">
+                                            <div class="card-header">
+                                              <h3 class="card-title">Other Shipping Options</h3>
+                                            </div>
+                                            <!-- /.card-header -->
+                                            <div class="card-body">
+                                              <div class="row">
+                                                <div class="col-md-6">
+                                                  <p>Shipping Account</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                  <div class="form-group">
+                                                    <select class="form-control">
+                                                      <option>UPS(primary)</option>
+                                                      <option>option 2</option>
+                                                      <option>option 3</option>
+                                                      <option>option 4</option>
+                                                      <option>option 5</option>
+                                                    </select>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <p>Shipment options</p>
+                                              <div class="row">
+                                                <div class="form-group">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label">The shipment requires aditional handling</label>
+                                                  </div>
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label">The shipment requires freight classification code</label>
+                                                  </div>
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label">This order is non-machinable</label>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <p>Delivery options</p>
+                                              <div class="row">
+                                                <div class="form-group">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label">Collect payment on delivery</label>
+                                                  </div>
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label">Saturday delivery</label>
+                                                  </div>
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label">Driver may release package without signature</label>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <p>Label options</p>
+                                              <div class="row">
+                                                <div class="form-group">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label">Bill duties and taxesto payor of shipping charges</label>
+                                                  </div>
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label">This order includes dry ice</label>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <!-- /.card-body -->
+                                          </div>
+                                          <!-- /.Other shipping option card -->
+
+                                      </div>
+                                    </div>
+                                    <!----------------Another row--------------->
+                                 </div>
+                                 <div class="tab-pane fade" id="custom-tabs-one-profile" role="tabpanel" aria-labelledby="custom-tabs-one-profile-tab">
+                                   Mauris tincidunt mi at erat gravida, eget tristique urna bibendum. Mauris pharetra purus ut ligula tempor, et vulputate metus facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas sollicitudin, nisi a luctus interdum, nisl ligula placerat mi, quis posuere purus ligula eu lectus. Donec nunc tellus, elementum sit amet ultricies at, posuere nec nunc. Nunc euismod pellentesque diam.
+                                 </div>
+                               </div>
+                             </div>
+                             <!-- /.card -->
+                           </div>
+                          </div>
+                        </div>
+                        <!---------------tab bar/ nav bar----------------------->
+                      </div>
+                      <!-------modal body-------------->
+                      <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                      </div>
+                    </div>
+                    <!-- /.modal-content -->
+                  </div>
+                  <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal----------------------->
+   <!-----------------------------Product details modal--------------------------->
+
+  </div>
 
 </div>
 
@@ -947,139 +1400,6 @@
 <script src="../plugins/dropzone/min/dropzone.min.js"></script>
 <!-- Page specific script -->
 <!----------------------------Adding js for testing------------------>
-<script>
-  $(function () {
-    //Initialize Select2 Elements
-    $('.select2').select2()
-
-    //Initialize Select2 Elements
-    $('.select2bs4').select2({
-      theme: 'bootstrap4'
-    })
-
-    //Datemask dd/mm/yyyy
-    $('#datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
-    //Datemask2 mm/dd/yyyy
-    $('#datemask2').inputmask('mm/dd/yyyy', { 'placeholder': 'mm/dd/yyyy' })
-    //Money Euro
-    $('[data-mask]').inputmask()
-
-    //Date picker
-    $('#reservationdate').datetimepicker({
-        format: 'L'
-    });
-
-    //Date and time picker
-    $('#reservationdatetime').datetimepicker({ icons: { time: 'far fa-clock' } });
-
-    //Date range picker
-    $('#reservation').daterangepicker()
-    //Date range picker with time picker
-    $('#reservationtime').daterangepicker({
-      timePicker: true,
-      timePickerIncrement: 30,
-      locale: {
-        format: 'MM/DD/YYYY hh:mm A'
-      }
-    })
-    //Date range as a button
-    $('#daterange-btn').daterangepicker(
-      {
-        ranges   : {
-          'Today'       : [moment(), moment()],
-          'Yesterday'   : [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-          'Last 7 Days' : [moment().subtract(6, 'days'), moment()],
-          'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-          'This Month'  : [moment().startOf('month'), moment().endOf('month')],
-          'Last Month'  : [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-        },
-        startDate: moment().subtract(29, 'days'),
-        endDate  : moment()
-      },
-      function (start, end) {
-        $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
-      }
-    )
-
-    //Timepicker
-    $('#timepicker').datetimepicker({
-      format: 'LT'
-    })
-
-    //Bootstrap Duallistbox
-    $('.duallistbox').bootstrapDualListbox()
-
-    //Colorpicker
-    $('.my-colorpicker1').colorpicker()
-    //color picker with addon
-    $('.my-colorpicker2').colorpicker()
-
-    $('.my-colorpicker2').on('colorpickerChange', function(event) {
-      $('.my-colorpicker2 .fa-square').css('color', event.color.toString());
-    })
-
-    $("input[data-bootstrap-switch]").each(function(){
-      $(this).bootstrapSwitch('state', $(this).prop('checked'));
-    })
-
-  })
-  // BS-Stepper Init
-  document.addEventListener('DOMContentLoaded', function () {
-    window.stepper = new Stepper(document.querySelector('.bs-stepper'))
-  })
-
-  // DropzoneJS Demo Code Start
-  Dropzone.autoDiscover = false
-
-  // Get the template HTML and remove it from the doumenthe template HTML and remove it from the doument
-  var previewNode = document.querySelector("#template")
-  previewNode.id = ""
-  var previewTemplate = previewNode.parentNode.innerHTML
-  previewNode.parentNode.removeChild(previewNode)
-
-  var myDropzone = new Dropzone(document.body, { // Make the whole body a dropzone
-    url: "/target-url", // Set the url
-    thumbnailWidth: 80,
-    thumbnailHeight: 80,
-    parallelUploads: 20,
-    previewTemplate: previewTemplate,
-    autoQueue: false, // Make sure the files aren't queued until manually added
-    previewsContainer: "#previews", // Define the container to display the previews
-    clickable: ".fileinput-button" // Define the element that should be used as click trigger to select files.
-  })
-
-  myDropzone.on("addedfile", function(file) {
-    // Hookup the start button
-    file.previewElement.querySelector(".start").onclick = function() { myDropzone.enqueueFile(file) }
-  })
-
-  // Update the total progress bar
-  myDropzone.on("totaluploadprogress", function(progress) {
-    document.querySelector("#total-progress .progress-bar").style.width = progress + "%"
-  })
-
-  myDropzone.on("sending", function(file) {
-    // Show the total progress bar when upload starts
-    document.querySelector("#total-progress").style.opacity = "1"
-    // And disable the start button
-    file.previewElement.querySelector(".start").setAttribute("disabled", "disabled")
-  })
-
-  // Hide the total progress bar when nothing's uploading anymore
-  myDropzone.on("queuecomplete", function(progress) {
-    document.querySelector("#total-progress").style.opacity = "0"
-  })
-
-  // Setup the buttons for all transfers
-  // The "add files" button doesn't need to be setup because the config
-  // `clickable` has already been specified.
-  document.querySelector("#actions .start").onclick = function() {
-    myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED))
-  }
-  document.querySelector("#actions .cancel").onclick = function() {
-    myDropzone.removeAllFiles(true)
-  }
-  // DropzoneJS Demo Code End
-</script>
+<script type="text/javascript" src="../js/OrdersPages.js"></script>
 </body>
 </html>

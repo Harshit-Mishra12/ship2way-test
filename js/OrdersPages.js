@@ -4,7 +4,7 @@
 }
 
 function add() {
-  $("table").append("<tr><td><input style='width:100px;'></td><td><input style='width:100px;'></td><td><input style='width:100px;'></td><td><input style='width:100px;'></td><td><button class='btn btn-danger' onclick='rm()'><i class='fa fa-minus'></i></button></td></tr>");
+  $("#Addline").append("<tr><td><input style='width:100px;'></td><td><input style='width:100px;'></td><td><input style='width:100px;'></td><td><input style='width:100px;'></td><td><button class='btn btn-danger' onclick='rm()'><i class='fa fa-minus'></i></button></td></tr>");
 }
 
   $(function () {
