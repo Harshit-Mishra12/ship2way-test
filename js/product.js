@@ -38,7 +38,52 @@ function handleselectionForm() {
       if (available.checked == true){
         for (let el of document.querySelectorAll('.avaliable_column')) el.style.display = 'none';
       }
-
-      
-
 }
+
+// Preset Groups Form Submit and Append Row Forms
+    $(document).ready(function(){
+
+        $(".add-preset").click(function(){
+            var preset_group = $("#preset_group").val();
+            var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + preset_group + "</td><td>" + preset_group + "</td><td>" + preset_group + "</td><td>" + preset_group + "</td><td>" + preset_group + "</td><td>" + preset_group + "</td><td>" + preset_group + "</td><td>" + preset_group + "</td><td><input type='button' class='btn btn-success' value='Edit'>&nbsp;<input type='button' class='btn btn-danger btn-Delete' value='Delete'></td></tr>";
+            $("table tbody").append(markup);
+        });
+        
+        // Find and remove selected table rows
+        $("#tbUser").on('click', '.btn-Delete', function () {
+
+            var retVal = confirm("Are you sure you want to delete ?");
+            if( retVal == true ){
+                 $(this).closest('tr').remove();
+            }
+            else{
+                alert ("User does not want to delete!");
+               
+            }
+        });
+
+    });  
+
+
+// Reporting Category Form Submit and Append Row Forms
+    $(document).ready(function(){
+
+        $(".add-category").click(function(){
+            var category = $("#category").val();
+            var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + category + "</td><td><input type='button' class='btn btn-success' value='Edit'>&nbsp;<input type='button' class='btn btn-danger btnDelete' value='Delete'></td></tr>";
+            $("table tbody").append(markup);
+        });
+        
+        // Find and remove selected table rows
+        $("#tbUser").on('click', '.btnDelete', function () {
+            var retVal = confirm("Are you sure you want to delete ?");
+            if( retVal == true ){
+                 $(this).closest('tr').remove();
+            }
+            else{
+                alert ("User does not want to delete!");
+               
+            }
+        });
+
+    });    
