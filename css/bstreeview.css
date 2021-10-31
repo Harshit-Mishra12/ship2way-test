@@ -43,3 +43,6 @@
 .bstreeview .item-icon {
     margin-right: 5px;
 }
+.selected {
+    background-color: blueviolet !important;
+}

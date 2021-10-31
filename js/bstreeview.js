@@ -126,6 +126,9 @@
                 if (node.href) {
                     treeItem.attr('href', node.href);
                 }
+                if (node.id) {
+                    treeItem.attr('id', node.id);
+                }
 
                 // Add class to node if present
                 if (node.class) {
