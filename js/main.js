@@ -4,6 +4,101 @@ $('body').on('click','.list-group-item',function(){
   });
 var NavigationMenu = [
   {
+    id:"nav2",
+    text: "Onboard",
+    icon: "fas fa-truck-loading",
+    href: "/Onboard/onboard.html",
+    
+  },
+  
+ 
+  {
+    text: "Insights",
+    icon: "far fa-chart-bar",
+    id:"nav3",
+    nodes:[
+      {
+        text: "Overview",
+        icon: "fa fa-folder",
+        href: "/Insights/overview.html",
+        id:"nav3_1",
+      },
+      {
+        text: "Operations",
+        icon: "fa fa-folder",
+        href: "/Insights/operations.html",
+        id:"nav3_2",
+      },
+      {
+        text: "Customer Engagement",
+        icon: "fa fa-folder",
+        href: "/Insights/customerengagements.html",
+        id:"nav3_3",
+      },
+      {
+        text: "Sales Trend",
+        icon: "fa fa-folder",
+        href: "/Insights/sales.html",
+        id:"nav3_4",
+      },
+      {
+        text: "Customer Overview",
+        icon: "fa fa-folder",
+        href: "/Insights/customers.html",
+        id:"nav3_5",
+      },
+      {
+        text: "Products Highlight",
+        icon: "fa fa-folder",
+        href: "/Insights/productsold.html",
+        id:"nav3_6",
+      }
+    ]
+  },
+  {
+    text: "Orders",
+    icon: "fas fa-shopping-cart",
+    id:'nav4',
+    nodes:[
+      {
+        text: "Awaiting Payment",
+        icon: "fa fa-folder",
+        href: "/Orders/AwaitingPayment.html",
+        id:'nav4_1'
+      },
+      {
+        text: "On Hold",
+        icon: "fa fa-folder",
+        href: "/Orders/OnHold.html",
+        id:'nav4_2'
+      },
+      {
+        text: "Awaiting Shipment",
+        icon: "fa fa-folder",
+        href: "/Orders/AwaitingShipment.html",
+        id:'nav4_3'
+      },
+      {
+        text: "Shipped",
+        icon: "fa fa-folder",
+        href: "/Orders/Shipped.html",
+        id:'nav4_4'
+      },
+      {
+        text: "Cancelled",
+        icon: "fa fa-folder",
+        href: "/Orders/Cancelled.html",
+        id:'nav4_5'
+      },
+      {
+        text: "Alert",
+        icon: "fa fa-folder",
+        href: "/Orders/OrderAlerts.html",
+        id:'nav4_6'
+      }
+    ]
+  },
+  {
     text: "Shipments",
     icon: "fas fa-shipping-fast",
     id: "nav1",
@@ -115,99 +210,6 @@ var NavigationMenu = [
         icon: "fa fa-folder",
         href: "/Shipments/batch.html",
         id:"nav1_5",
-      }
-    ]
-  },
-  {
-    id:"nav2",
-    text: "Onboard",
-    icon: "fas fa-truck-loading",
-    href: "/Onboard/onboard.html",
-    
-  },
-  {
-    text: "Insights",
-    icon: "far fa-chart-bar",
-    id:"nav3",
-    nodes:[
-      {
-        text: "Overview",
-        icon: "fa fa-folder",
-        href: "/Insights/overview.html",
-        id:"nav3_1",
-      },
-      {
-        text: "Operations",
-        icon: "fa fa-folder",
-        href: "/Insights/operations.html",
-        id:"nav3_2",
-      },
-      {
-        text: "Customer Engagement",
-        icon: "fa fa-folder",
-        href: "/Insights/customerengagements.html",
-        id:"nav3_3",
-      },
-      {
-        text: "Sales Trend",
-        icon: "fa fa-folder",
-        href: "/Insights/sales.html",
-        id:"nav3_4",
-      },
-      {
-        text: "Customer Overview",
-        icon: "fa fa-folder",
-        href: "/Insights/customers.html",
-        id:"nav3_5",
-      },
-      {
-        text: "Products Highlight",
-        icon: "fa fa-folder",
-        href: "/Insights/productsold.html",
-        id:"nav3_6",
-      }
-    ]
-  },
-  {
-    text: "Orders",
-    icon: "fas fa-shopping-cart",
-    id:'nav4',
-    nodes:[
-      {
-        text: "Awaiting Payment",
-        icon: "fa fa-folder",
-        href: "/Orders/AwaitingPayment.html",
-        id:'nav4_1'
-      },
-      {
-        text: "On Hold",
-        icon: "fa fa-folder",
-        href: "/Orders/OnHold.html",
-        id:'nav4_2'
-      },
-      {
-        text: "Awaiting Shipment",
-        icon: "fa fa-folder",
-        href: "/Orders/AwaitingShipment.html",
-        id:'nav4_3'
-      },
-      {
-        text: "Shipped",
-        icon: "fa fa-folder",
-        href: "/Orders/Shipped.html",
-        id:'nav4_4'
-      },
-      {
-        text: "Cancelled",
-        icon: "fa fa-folder",
-        href: "/Orders/Cancelled.html",
-        id:'nav4_5'
-      },
-      {
-        text: "Alert",
-        icon: "fa fa-folder",
-        href: "/Orders/OrderAlerts.html",
-        id:'nav4_6'
       }
     ]
   },
