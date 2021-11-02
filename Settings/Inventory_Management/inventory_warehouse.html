@@ -48,19 +48,20 @@
     </div>
 
  <!-- Navbar -->
- 
+  
   <!-- /.navbar -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <a href="index3.html" class="brand-link">
-      <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Ship2way</span>
-    </a>
-    <div class="sidebar">
-      <div id="navbar"></div>
-    </div>
-  </aside>
+
     <!-- Main Sidebar Container -->
-   
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <a href="index3.html" class="brand-link">
+        <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <span class="brand-text font-weight-light">Ship2way</span>
+      </a>
+      <div class="sidebar">
+        <div id="navbar"></div>
+      </div>
+    </aside>
+
   <!-- Content Wrapper. Contains page content -->
  <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -68,9 +69,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Integration Partners</h1>
+          <h1>Store Setup</h1>
         </div>
-       </div>
+        <div class="col-sm-6">
+           <button type="button" class="btn btn-info" data-toggle="modal" data-target="#connect" style="float:right">Connect A Store Market Place</button>
+        </div>
+        </div>
        
       </div>
     </section>
@@ -80,74 +84,80 @@
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <p>We integrate natively with the products below. We're always looking for more ways to streamline your business, so please feel free to suggest more integrations!</p>
+              <div class="row">
+                <h3 >Stores :</h3>
+              </div>
               <br>
               <div class="row">
-              <div>
-              <div class="row">
-                <div class="col-lg-3 col-md-3 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                          <img class="card-img-top" src="../../img/modal_images/1.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                          <img class="card-img-top" src="../../img/modal_images/2.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                          <img class="card-img-top" src="../../img/modal_images/3.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                          <img class="card-img-top" src="../../img/modal_images/4.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-lg-3 col-md-3 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                          <img class="card-img-top" src="../../img/modal_images/5.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                          <img class="card-img-top" src="../../img/modal_images/6.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                          <img class="card-img-top" src="../../img/modal_images/7.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                          <img class="card-img-top" src="../../img/modal_images/8.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-              </div>
-
-            </div>
-              
+               
+              <table id="example2" class="table table-bordered table-hover">
+                <thead>
+                  <tr>
+                    <th>
+                      <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox">
+                      </div>
+                    </th>
+                    <th class="alias_column">Alias</th>
+                    <th class="sku_column">SKU</th>
+                    <th class="preset_column">Preset Group</th>
+                    <th class="UPC_column">UPC</th>
+                    <th class="varient_column">Variants</th>
+                    <th class="category_column">Category</th>
+                    <th class="modified_column">Modified</th>
+                    <th class="avaliable_column">Total Available</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                      </div>
+                    </td>
+                    <td class="alias_column">101</td>
+                    <td class="sku_column">My store</td>
+                    <td>Shipstation support</td>
+                    <td> 4</td>
+                    <td>$3.78</td>
+                    <td>Free Shipping</td>
+                    <td>$3.78</td>
+                    <td class="avaliable_column">Free Shipping</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                      </div>
+                    </td>
+                    <td class="alias_column">102</td>
+                    <td class="sku_column">My store</td>
+                    <td>Shipstation support</td>
+                    <td> 4</td>
+                    <td>$3.78</td>
+                    <td>Free Shipping</td>
+                    <td>$3.78</td>
+                    <td class="avaliable_column">Free Shipping</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>
+                      <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                      </div>
+                    </th>
+                    <th class="alias_column">Alias</th>
+                    <th class="sku_column">SKU</th>
+                    <th class="preset_column">Preset Group</th>
+                    <th class="UPC_column">UPC</th>
+                    <th class="varient_column">Variants</th>
+                    <th class="category_column">Category</th>
+                    <th class="modified_column">Modified</th>
+                    <th class="avaliable_column">Total Available</th>
+                  </tr>
+                </tfoot>
+              </table>
             
               </div>
              
@@ -306,7 +316,6 @@
 <!-- Page specific script -->
 <!----------------------------Adding js for testing------------------>
 <script type="text/javascript" src="../../js/settings.js"></script>
-
 
 <link rel="stylesheet" href="/css/bstreeview.css">
 <script src="/js/bstreeview.js"></script>
