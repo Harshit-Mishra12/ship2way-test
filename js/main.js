@@ -256,17 +256,11 @@ var NavigationMenu = [
     ]
   },
   {
+    id:"nav7",
     text: "Invoice",
-    icon: "fas fa-user-friends",
-    id:'nav7',
-    nodes:[
-      {
-        text: "Invoice",
-        icon: "fa fa-folder",
-        href: "/Invoice/invoice.html",
-        id:'nav7_1'
-      },
-    ]
+    icon: "fas fa-truck-loading",
+    href: "/Invoice/invoice.html",
+    
   },
   {
     text: "Settings",
@@ -359,8 +353,22 @@ var NavigationMenu = [
       {
         text: "Printing",
         icon: "fa fa-folder",
-        href: "/Invoice/invoice.html",
-        id:'nav8_7'
+        id:'nav8_7',
+        nodes:[
+          {
+            text: "Printing Setup",
+            icon: "fa fa-folder",
+            href: "/Settings/Printing/printing_setup.html",
+            id:'nav8_7_1'
+          },
+          {
+            text: "Shipstation Connect",
+            icon: "fa fa-folder",
+            href: "/Settings/Printing/shipstation_connect.html",
+            id:'nav8_7_2'
+          }
+          
+        ]
       },
       {
         text: "Inventory Management",
@@ -368,10 +376,22 @@ var NavigationMenu = [
         id:'nav8_8',
         nodes:[
           {
-            text: "Inventory Werehouse",
+            text: "Inventory Settings",
             icon: "fa fa-folder",
-            href: "/Settings/Inventory_Management/inventory_werehouse.html",
+            href: "/Settings/Inventory_Management/inventory_settings.html",
             id:'nav8_8_1'
+          },
+          {
+            text: "Allocation Strategy",
+            icon: "fa fa-folder",
+            href: "/Settings/Inventory_Management/allocation_strategy.html",
+            id:'nav8_8_2'
+          },
+          {
+            text: "Inventory Werehouses",
+            icon: "fa fa-folder",
+            href: "/Settings/Inventory_Management/inventory_warehouse.html",
+            id:'nav8_8_3'
           },
         ]
       },

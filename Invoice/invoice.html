@@ -2,9 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="vie
-  <th>Quantity</th>
-  <th>Price</th>wport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ship2way</title>
 
   <!-- Google Font: Source Sans Pro -->
@@ -38,18 +36,8 @@
 </head>
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
   <div class="wrapper">
-
-    <!-- Preloader -->
-    <div class="preloader flex-column justify-content-center align-items-center">
-      <img class="animation__wobble" src="../dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
-    </div>
-
- <!-- Navbar -->
- 
-  <!-- /.navbar -->
-
-    <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
+
       <a href="index3.html" class="brand-link">
         <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
         <span class="brand-text font-weight-light">Ship2way</span>
@@ -58,6 +46,9 @@
         <div id="navbar"></div>
       </div>
     </aside>
+  
+
+
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -118,6 +109,12 @@
           </div>
           <!-- /.col -->
         </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content ---------------------------------------------------------------------->
+    <section class="content">
+      <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
             <h1>Invoice History</h1>
@@ -130,598 +127,581 @@
             </ol>
           </div>
         </div>
-      </div><!-- /.container-fluid -->
-    </section>
 
-    <!-- Main content ---------------------------------------------------------------------->
-    <section class="content">
-      <div class="container-fluid">
-        <div class="col-12">
-          <div class="card">
-            <div class="card-header">
-              <div class="row">
-
-             
-                  <div class="card-header p-0 border-bottom-0">
-                    <ul class="nav nav-pills ml-auto p-2">
-                      <li class="nav-item"><a class="nav-link active" href="#tab_1" data-toggle="tab">Sent</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#tab_2" data-toggle="tab">Received</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#tab_3" data-toggle="tab">Saved</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#tab_3" data-toggle="tab">Paid</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#tab_3" data-toggle="tab">Cancelled</a></li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
-                          Sort By <span class="caret"></span>
-                        </a>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" tabindex="-1" href="#">Action</a>
-                          <a class="dropdown-item" tabindex="-1" href="#">Another action</a>
-                          <a class="dropdown-item" tabindex="-1" href="#">Something else here</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" tabindex="-1" href="#">Separated link</a>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-body">
-                  <div class="tab-content">
-                  <div class="tab-pane active" id="tab_1">
-                     <table id="example2" class="table table-bordered table-hover">
-                              <thead>
-                                <tr>
-                                  <th>
-                                    <div class="form-check mb-3">
-                                          <input class="form-check-input" type="checkbox">
-                                    </div>
-                                  </th>
-                                  <th class="alias_column">Alias</th>
-                                  <th class="sku_column">SKU</th>
-                                  <th class="preset_column">Preset Group</th>
-                                  <th class="UPC_column">UPC</th>
-                                  <th class="varient_column">Variants</th>
-                                  <th class="category_column">Category</th>
-                                  <th class="modified_column">Modified</th>
-                                  <th class="avaliable_column">Total Available</th>
-                                  <th>Check Status</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>
-                                    <div class="form-check">
-                                          <input class="form-check-input" type="checkbox">
-                                    </div>
-                                  </td>
-                                  <td class="alias_column">101</td>
-                                  <td class="sku_column">My store</td>
-                                  <td>Shipstation support</td>
-                                  <td> 4</td>
-                                  <td>$3.78</td>
-                                  <td>Free Shipping</td>
-                                  <td>$3.78</td>
-                                  <td class="avaliable_column">Free Shipping</td>
-                                  <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#coloumn" style="float:middle">Status</button></td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    <div class="form-check">
-                                          <input class="form-check-input" type="checkbox">
-                                    </div>
-                                  </td>
-                                  <td class="alias_column">102</td>
-                                  <td class="sku_column">My store</td>
-                                  <td>Shipstation support</td>
-                                  <td> 4</td>
-                                  <td>$3.78</td>
-                                  <td>Free Shipping</td>
-                                  <td>$3.78</td>
-                                  <td class="avaliable_column">Free Shipping</td>
-                                  <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#coloumn" style="float:middle">Status</button></td>
-                                </tr>
-                              </tbody>
-                              
-                          </table>
-                  </div>
-                  <!-- /.tab-pane -->
-                  <div class="tab-pane" id="tab_2">
-                     <table id="example2" class="table table-bordered table-hover">
-                              <thead>
-                                <tr>
-                                  <th>
-                                    <div class="form-check mb-3">
-                                          <input class="form-check-input" type="checkbox">
-                                    </div>
-                                  </th>
-                                  <th class="alias_column">Alias</th>
-                                  <th class="sku_column">SKU</th>
-                                  <th class="preset_column">Preset Group</th>
-                                  <th class="UPC_column">UPC</th>
-                                  <th class="varient_column">Variants</th>
-                                  <th class="category_column">Category</th>
-                                  <th class="modified_column">Modified</th>
-                                  <th class="avaliable_column">Total Available</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>
-                                    <div class="form-check">
-                                          <input class="form-check-input" type="checkbox">
-                                    </div>
-                                  </td>
-                                  <td class="alias_column">101</td>
-                                  <td class="sku_column">My store</td>
-                                  <td>Shipstation support</td>
-                                  <td> 4</td>
-                                  <td>$3.78</td>
-                                  <td>Free Shipping</td>
-                                  <td>$3.78</td>
-                                  <td class="avaliable_column">Free Shipping</td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    <div class="form-check">
-                                          <input class="form-check-input" type="checkbox">
-                                    </div>
-                                  </td>
-                                  <td class="alias_column">102</td>
-                                  <td class="sku_column">My store</td>
-                                  <td>Shipstation support</td>
-                                  <td> 4</td>
-                                  <td>$3.78</td>
-                                  <td>Free Shipping</td>
-                                  <td>$3.78</td>
-                                  <td class="avaliable_column">Free Shipping</td>
-                                </tr>
-                              </tbody>
-                              <tfoot>
-                                <tr>
-                                  <th>
-                                    <div class="form-check">
-                                          <input class="form-check-input" type="checkbox">
-                                    </div>
-                                  </th>
-                                  <th class="alias_column">Alias</th>
-                                  <th class="sku_column">SKU</th>
-                                  <th class="preset_column">Preset Group</th>
-                                  <th class="UPC_column">UPC</th>
-                                  <th class="varient_column">Variants</th>
-                                  <th class="category_column">Category</th>
-                                  <th class="modified_column">Modified</th>
-                                  <th class="avaliable_column">Total Available</th>
-                                </tr>
-                              </tfoot>
-                          </table>
-                  </div>
-                  <!-- /.tab-pane -->
-                  <div class="tab-pane" id="tab_3">
-                    <table id="example2" class="table table-bordered table-hover">
-                              <thead>
-                                <tr>
-                                  <th>
-                                    <div class="form-check mb-3">
-                                          <input class="form-check-input" type="checkbox">
-                                    </div>
-                                  </th>
-                                  <th class="alias_column">Alias</th>
-                                  <th class="sku_column">SKU</th>
-                                  <th class="preset_column">Preset Group</th>
-                                  <th class="UPC_column">UPC</th>
-                                  <th class="varient_column">Variants</th>
-                                  <th class="category_column">Category</th>
-                                  <th class="modified_column">Modified</th>
-                                  <th class="avaliable_column">Total Available</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>
-                                    <div class="form-check">
-                                          <input class="form-check-input" type="checkbox">
-                                    </div>
-                                  </td>
-                                  <td class="alias_column">101</td>
-                                  <td class="sku_column">My store</td>
-                                  <td>Shipstation support</td>
-                                  <td> 4</td>
-                                  <td>$3.78</td>
-                                  <td>Free Shipping</td>
-                                  <td>$3.78</td>
-                                  <td class="avaliable_column">Free Shipping</td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    <div class="form-check">
-                                          <input class="form-check-input" type="checkbox">
-                                    </div>
-                                  </td>
-                                  <td class="alias_column">102</td>
-                                  <td class="sku_column">My store</td>
-                                  <td>Shipstation support</td>
-                                  <td> 4</td>
-                                  <td>$3.78</td>
-                                  <td>Free Shipping</td>
-                                  <td>$3.78</td>
-                                  <td class="avaliable_column">Free Shipping</td>
-                                </tr>
-                              </tbody>
-                              <tfoot>
-                                <tr>
-                                  <th>
-                                    <div class="form-check">
-                                          <input class="form-check-input" type="checkbox">
-                                    </div>
-                                  </th>
-                                  <th class="alias_column">Alias</th>
-                                  <th class="sku_column">SKU</th>
-                                  <th class="preset_column">Preset Group</th>
-                                  <th class="UPC_column">UPC</th>
-                                  <th class="varient_column">Variants</th>
-                                  <th class="category_column">Category</th>
-                                  <th class="modified_column">Modified</th>
-                                  <th class="avaliable_column">Total Available</th>
-                                </tr>
-                              </tfoot>
-                          </table>
-                  </div>
-                  <!-- /.tab-pane -->
-                  </div>
-                  </div>
-                  <!-- /.card -->
-                
-              
-          
-              </div>
-          </div>
-          <!-- /.card-header -->
-          
-         
-        </div>
       </div>
-
-    </div><!-- /.container-fluid -->
   </section>
-  <!-- /.content ------------------------------------------------------------------------->
+   <!-- Main content ---------------------------------------------------------------------->
+   <section class="content">
+    <div class="container-fluid">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header">
+            <div class="row">
 
-        <div class="modal fade" id="coloumn">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content" id="coloumn_scroll">
+           
+                <div class="card-header p-0 border-bottom-0">
+                  <ul class="nav nav-pills ml-auto p-2">
+                    <li class="nav-item"><a class="nav-link active" href="#tab_1" data-toggle="tab">Sent</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tab_2" data-toggle="tab">Received</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tab_3" data-toggle="tab">Saved</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tab_3" data-toggle="tab">Paid</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tab_3" data-toggle="tab">Cancelled</a></li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
+                        Sort By <span class="caret"></span>
+                      </a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" tabindex="-1" href="#">Action</a>
+                        <a class="dropdown-item" tabindex="-1" href="#">Another action</a>
+                        <a class="dropdown-item" tabindex="-1" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" tabindex="-1" href="#">Separated link</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-body">
+                <div class="tab-content">
+                <div class="tab-pane active" id="tab_1">
+                   <table id="example2" class="table table-bordered table-hover">
+                            <thead>
+                              <tr>
+                                <th>
+                                  <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox">
+                                  </div>
+                                </th>
+                                <th class="alias_column">Alias</th>
+                                <th class="sku_column">SKU</th>
+                                <th class="preset_column">Preset Group</th>
+                                <th class="UPC_column">UPC</th>
+                                <th class="varient_column">Variants</th>
+                                <th class="category_column">Category</th>
+                                <th class="modified_column">Modified</th>
+                                <th class="avaliable_column">Total Available</th>
+                                <th>Check Status</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                  </div>
+                                </td>
+                                <td class="alias_column">101</td>
+                                <td class="sku_column">My store</td>
+                                <td>Ship2Way support</td>
+                                <td> 4</td>
+                                <td>$3.78</td>
+                                <td>Free Shipping</td>
+                                <td>$3.78</td>
+                                <td class="avaliable_column">Free Shipping</td>
+                                <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#coloumn" style="float:middle">Status</button></td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                  </div>
+                                </td>
+                                <td class="alias_column">102</td>
+                                <td class="sku_column">My store</td>
+                                <td>Ship2Way support</td>
+                                <td> 4</td>
+                                <td>$3.78</td>
+                                <td>Free Shipping</td>
+                                <td>$3.78</td>
+                                <td class="avaliable_column">Free Shipping</td>
+                                <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#coloumn" style="float:middle">Status</button></td>
+                              </tr>
+                            </tbody>
+                            
+                        </table>
+                </div>
+                <!-- /.tab-pane -->
+                <div class="tab-pane" id="tab_2">
+                   <table id="example2" class="table table-bordered table-hover">
+                            <thead>
+                              <tr>
+                                <th>
+                                  <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox">
+                                  </div>
+                                </th>
+                                <th class="alias_column">Alias</th>
+                                <th class="sku_column">SKU</th>
+                                <th class="preset_column">Preset Group</th>
+                                <th class="UPC_column">UPC</th>
+                                <th class="varient_column">Variants</th>
+                                <th class="category_column">Category</th>
+                                <th class="modified_column">Modified</th>
+                                <th class="avaliable_column">Total Available</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                  </div>
+                                </td>
+                                <td class="alias_column">101</td>
+                                <td class="sku_column">My store</td>
+                                <td>Ship2Way support</td>
+                                <td> 4</td>
+                                <td>$3.78</td>
+                                <td>Free Shipping</td>
+                                <td>$3.78</td>
+                                <td class="avaliable_column">Free Shipping</td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                  </div>
+                                </td>
+                                <td class="alias_column">102</td>
+                                <td class="sku_column">My store</td>
+                                <td>Ship2Way support</td>
+                                <td> 4</td>
+                                <td>$3.78</td>
+                                <td>Free Shipping</td>
+                                <td>$3.78</td>
+                                <td class="avaliable_column">Free Shipping</td>
+                              </tr>
+                            </tbody>
+                            <tfoot>
+                              <tr>
+                                <th>
+                                  <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                  </div>
+                                </th>
+                                <th class="alias_column">Alias</th>
+                                <th class="sku_column">SKU</th>
+                                <th class="preset_column">Preset Group</th>
+                                <th class="UPC_column">UPC</th>
+                                <th class="varient_column">Variants</th>
+                                <th class="category_column">Category</th>
+                                <th class="modified_column">Modified</th>
+                                <th class="avaliable_column">Total Available</th>
+                              </tr>
+                            </tfoot>
+                        </table>
+                </div>
+                <!-- /.tab-pane -->
+                <div class="tab-pane" id="tab_3">
+                  <table id="example2" class="table table-bordered table-hover">
+                            <thead>
+                              <tr>
+                                <th>
+                                  <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox">
+                                  </div>
+                                </th>
+                                <th class="alias_column">Alias</th>
+                                <th class="sku_column">SKU</th>
+                                <th class="preset_column">Preset Group</th>
+                                <th class="UPC_column">UPC</th>
+                                <th class="varient_column">Variants</th>
+                                <th class="category_column">Category</th>
+                                <th class="modified_column">Modified</th>
+                                <th class="avaliable_column">Total Available</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                  </div>
+                                </td>
+                                <td class="alias_column">101</td>
+                                <td class="sku_column">My store</td>
+                                <td>Ship2Way support</td>
+                                <td> 4</td>
+                                <td>$3.78</td>
+                                <td>Free Shipping</td>
+                                <td>$3.78</td>
+                                <td class="avaliable_column">Free Shipping</td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                  </div>
+                                </td>
+                                <td class="alias_column">102</td>
+                                <td class="sku_column">My store</td>
+                                <td>Ship2Way support</td>
+                                <td> 4</td>
+                                <td>$3.78</td>
+                                <td>Free Shipping</td>
+                                <td>$3.78</td>
+                                <td class="avaliable_column">Free Shipping</td>
+                              </tr>
+                            </tbody>
+                            <tfoot>
+                              <tr>
+                                <th>
+                                  <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                  </div>
+                                </th>
+                                <th class="alias_column">Alias</th>
+                                <th class="sku_column">SKU</th>
+                                <th class="preset_column">Preset Group</th>
+                                <th class="UPC_column">UPC</th>
+                                <th class="varient_column">Variants</th>
+                                <th class="category_column">Category</th>
+                                <th class="modified_column">Modified</th>
+                                <th class="avaliable_column">Total Available</th>
+                              </tr>
+                            </tfoot>
+                        </table>
+                </div>
+                <!-- /.tab-pane -->
+                </div>
+                </div>
+                <!-- /.card -->
+              
+            
+        
+            </div>
+        </div>
+        <!-- /.card-header -->
+        
+       
+      </div>
+    </div>
+
+  </div><!-- /.container-fluid -->
+</section>
+<!-- /.content ------------------------------------------------------------------------->
+
+      <div class="modal fade" id="coloumn">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content" id="coloumn_scroll">
+          <div class="modal-header">
+            <h4 class="modal-title">Manage Coloums</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="padding:0px;">
+            <div class="container-fluid">
+             <div class="invoice p-3 mb-3">
+            <!-- title row -->
+            <div class="row">
+              <div class="col-12">
+                <h4>
+                  <i class="fas fa-globe"></i> Ship2Way
+                  <small class="float-right">Date: 2/10/2014</small>
+                </h4>
+              </div>
+              <!-- /.col -->
+            </div>
+            <!-- info row -->
+            <div class="row invoice-info">
+              <div class="col-sm-4 invoice-col">
+                
+                <address>
+                  <strong>Ship2Way</strong><br>
+                  795 Folsom Ave, Suite 600<br>
+                  San Francisco, CA 94107<br>
+                  Phone: (804) 123-5432<br>
+                  Email: info@almasaeedstudio.com
+                </address>
+              </div>
+              
+            </div>
+            <!-- /.row -->
+
+            <!-- Table row -->
+             <div class="row">
+              <div class="col-12 table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                  <tr>
+                    <th>Sr No</th>
+                    <th>Item</th>
+                    <th>Description</th>
+                    <th>Qty</th>
+                    <th>Rate</th>
+                    <th>Amount</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Casual Shoes</td>
+                    <td>El snort testosterone trophy driving gloves handsome</td>
+                    <td>2</td>
+                    <td>$64.50</td>
+                    <td>$200.50</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Earphones</td>
+                    <td>El snort testosterone trophy driving gloves handsome</td>
+                    <td>2</td>
+                    <td>$64.50</td>
+                    <td>$200.50</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Mobile</td>
+                    <td>El snort testosterone trophy driving gloves handsome</td>
+                    <td>2</td>
+                    <td>$64.50</td>
+                    <td>$200.50</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Shoes</td>
+                    <td>El snort testosterone trophy driving gloves handsome</td>
+                    <td>2</td>
+                    <td>$64.50</td>
+                    <td>$200.50</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.col -->
+            </div>
+            <!-- /.row -->
+
+            <div class="row">
+              <!-- accepted payments column -->
+              <div class="col-6">
+                <p class="lead">Payment Methods:</p>
+                <img src="../dist/img/credit/visa.png" alt="Visa">
+                <img src="../dist/img/credit/mastercard.png" alt="Mastercard">
+                <img src="../dist/img/credit/american-express.png" alt="American Express">
+                <img src="../dist/img/credit/paypal2.png" alt="Paypal">
+
+                <p class="text-muted well well-sm shadow-none" style="margin-top: 10px;">
+                  Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles, weebly ning heekya handango imeem
+                  plugg
+                  dopplr jibjab, movity jajah plickers sifteo edmodo ifttt zimbra.
+                </p>
+              </div>
+              <!-- /.col -->
+              <div class="col-6">
+                <p class="lead">Amount Due 2/22/2014</p>
+
+                <div class="table-responsive">
+                  <table class="table">
+                    <tr>
+                      <th style="width:50%">Subtotal:</th>
+                      <td>$250.30</td>
+                    </tr>
+                    <tr>
+                      <th>Tax (9.3%)</th>
+                      <td>$10.34</td>
+                    </tr>
+                    <tr>
+                      <th>Shipping:</th>
+                      <td>$5.80</td>
+                    </tr>
+                    <tr>
+                      <th>Total:</th>
+                      <td>$265.24</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <!-- /.col -->
+            </div>
+            <!-- /.row -->
+
+            <!-- this row will not appear when printing -->
+            <div class="row no-print">
+              <div class="col-12">
+                <a href="invoice-print.html" rel="noopener" target="_blank" class="btn btn-default"><i class="fas fa-print"></i> Print</a>
+                <button type="button" class="btn btn-success float-right"><i class="far fa-credit-card"></i> Submit
+                  Payment
+                </button>
+                <button type="button" class="btn btn-primary float-right" style="margin-right: 5px;">
+                  <i class="fas fa-download"></i> Generate PDF
+                </button>
+              </div>
+            </div>
+          </div>
+            </div>
+          </div>
+          </div>
+          <!-- <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save</button>
+          </div> -->
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+      
+      <div class="modal fade" id="new_invoice">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">Manage Coloums</h4>
+              <h4 class="modal-title">Create New Invoice</h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body" style="padding:0px;">
+            <div class="modal-body">
               <div class="container-fluid">
-               <div class="invoice p-3 mb-3">
-              <!-- title row -->
-              <div class="row">
-                <div class="col-12">
-                  <h4>
-                    <i class="fas fa-globe"></i> Ship2Way
-                    <small class="float-right">Date: 2/10/2014</small>
-                  </h4>
-                </div>
-                <!-- /.col -->
-              </div>
-              <!-- info row -->
-              <div class="row invoice-info">
-                <div class="col-sm-4 invoice-col">
-                  
-                  <address>
-                    <strong>Ship2Way</strong><br>
-                    795 Folsom Ave, Suite 600<br>
-                    San Francisco, CA 94107<br>
-                    Phone: (804) 123-5432<br>
-                    Email: info@almasaeedstudio.com
-                  </address>
-                </div>
-                
-              </div>
-              <!-- /.row -->
-
-              <!-- Table row -->
-               <div class="row">
-                <div class="col-12 table-responsive">
-                  <table class="table table-striped">
-                    <thead>
-                    <tr>
-                      <th>Sr No</th>
-                      <th>Item</th>
-                      <th>Description</th>
-                      <th>Qty</th>
-                      <th>Rate</th>
-                      <th>Amount</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>Casual Shoes</td>
-                      <td>El snort testosterone trophy driving gloves handsome</td>
-                      <td>2</td>
-                      <td>$64.50</td>
-                      <td>$200.50</td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>Earphones</td>
-                      <td>El snort testosterone trophy driving gloves handsome</td>
-                      <td>2</td>
-                      <td>$64.50</td>
-                      <td>$200.50</td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>Mobile</td>
-                      <td>El snort testosterone trophy driving gloves handsome</td>
-                      <td>2</td>
-                      <td>$64.50</td>
-                      <td>$200.50</td>
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>Shoes</td>
-                      <td>El snort testosterone trophy driving gloves handsome</td>
-                      <td>2</td>
-                      <td>$64.50</td>
-                      <td>$200.50</td>
-                    </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <!-- /.col -->
-              </div>
-              <!-- /.row -->
-
-              <div class="row">
-                <!-- accepted payments column -->
-                <div class="col-6">
-                  <p class="lead">Payment Methods:</p>
-                  <img src="../dist/img/credit/visa.png" alt="Visa">
-                  <img src="../dist/img/credit/mastercard.png" alt="Mastercard">
-                  <img src="../dist/img/credit/american-express.png" alt="American Express">
-                  <img src="../dist/img/credit/paypal2.png" alt="Paypal">
-
-                  <p class="text-muted well well-sm shadow-none" style="margin-top: 10px;">
-                    Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles, weebly ning heekya handango imeem
-                    plugg
-                    dopplr jibjab, movity jajah plickers sifteo edmodo ifttt zimbra.
-                  </p>
-                </div>
-                <!-- /.col -->
-                <div class="col-6">
-                  <p class="lead">Amount Due 2/22/2014</p>
-
-                  <div class="table-responsive">
-                    <table class="table">
-                      <tr>
-                        <th style="width:50%">Subtotal:</th>
-                        <td>$250.30</td>
-                      </tr>
-                      <tr>
-                        <th>Tax (9.3%)</th>
-                        <td>$10.34</td>
-                      </tr>
-                      <tr>
-                        <th>Shipping:</th>
-                        <td>$5.80</td>
-                      </tr>
-                      <tr>
-                        <th>Total:</th>
-                        <td>$265.24</td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-                <!-- /.col -->
-              </div>
-              <!-- /.row -->
-
-              <!-- this row will not appear when printing -->
-              <div class="row no-print">
-                <div class="col-12">
-                  <a href="invoice-print.html" rel="noopener" target="_blank" class="btn btn-default"><i class="fas fa-print"></i> Print</a>
-                  <button type="button" class="btn btn-success float-right"><i class="far fa-credit-card"></i> Submit
-                    Payment
-                  </button>
-                  <button type="button" class="btn btn-primary float-right" style="margin-right: 5px;">
-                    <i class="fas fa-download"></i> Generate PDF
-                  </button>
-                </div>
-              </div>
-            </div>
-              </div>
-            </div>
-            </div>
-            <!-- <div class="modal-footer justify-content-between">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save</button>
-            </div> -->
-          </div>
-          <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dialog -->
-        
-        <div class="modal fade" id="new_invoice">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h4 class="modal-title">Create New Invoice</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="container-fluid">
-                  <div class="col-md-12">
-                    <div class="container">
-                      <form>
-                        <div class="form-row">
-                          <div class="form-group col-md-6">
-                            <label for="inputCity">Invoice No</label>
-                            <input type="text" class="form-control" id="inputCity">
-                          </div>
-                          <div class="form-group col-md-6">
-                            <label for="inputState">Order ID</label>
-                            <input type="text" class="form-control" id="inputCity">
-                          </div>
-                        </div>
-                        <div class="form-row">
-                          <div class="form-group col-md-6">
-                            <label for="inputCity">Full Name</label>
-                            <input type="text" class="form-control" id="inputCity">
-                          </div>
-                          <div class="form-group col-md-6">
-                            <label for="inputState">Email</label>
-                            <input type="email" class="form-control" id="inputCity">
-                          </div>
-                        </div>
-                        <div class="form-row">
-                          <div class="form-group col-md-6">
-                            <label for="inputCity">Invoice Date</label>
-                            <input type="date" class="form-control" id="inputCity">
-                          </div>
-                          <div class="form-group col-md-6">
-                            <label for="inputState">Due Date</label>
-                            <input type="date" class="form-control" id="inputCity">
-                          </div>
-
-                          <!-- <div class="col-8">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox">
-                                <label class="form-check-label">Override the imported name</label>
-                            </div>
-                          </div> -->
-                        </div>
-                       
-                        <div class="form-row">
-                          <div class="form-group col-md-12">
-                            <label for="inputCity">Address</label>
-                            <input type="text" class="form-control" id="inputCity">
-                          </div>
-                        </div>
-                       
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              
                 <div class="col-md-12">
-                   <div class="row clearfix">
-                      <div class="col-md-12">
-                        <table class="table table-bordered table-hover" id="tab_logic">
-                          <thead>
-                            <tr>
-                              <th class="text-center"> # </th>
-                              <th class="text-center"> Product </th>
-                              <th class="text-center"> Qty </th>
-                              <th class="text-center"> Price </th>
-                              <th class="text-center"> Total </th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr id='addr0'>
-                              <td>1</td>
-                              <td><input type="text" name='product[]'  placeholder='Enter Product Name' class="form-control"/></td>
-                              <td><input type="number" name='qty[]' placeholder='Enter Qty' class="form-control qty" step="0" min="0"/></td>
-                              <td><input type="number" name='price[]' placeholder='Enter Unit Price' class="form-control price" step="0.00" min="0"/></td>
-                              <td><input type="number" name='total[]' placeholder='0.00' class="form-control total" readonly/></td>
-                            </tr>
-                            <tr id='addr1'></tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                    <div class="row clearfix">
-                      <div class="col-md-12">
-                        <button id="add_row" class="btn btn-default pull-left">Add Row</button>
-                        <button id='delete_row' class="pull-right btn btn-default">Delete Row</button>
-                      </div>
-                    </div>
-                    <div class="row clearfix" style="margin-top:20px">
-                       <div class="pull-right col-md-6">
-                        
-                        <p class="lead">Payment Methods:</p>
-                        <img src="../dist/img/credit/visa.png" alt="Visa">
-                        <img src="../dist/img/credit/mastercard.png" alt="Mastercard">
-                        <img src="../dist/img/credit/american-express.png" alt="American Express">
-                        <img src="../dist/img/credit/paypal2.png" alt="Paypal">
-
-                        <p class="text-muted well well-sm shadow-none" style="margin-top: 10px;">
-                          Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles, weebly ning heekya handango imeem
-                          plugg
-                          dopplr jibjab, movity jajah plickers sifteo edmodo ifttt zimbra.
-                        </p>
-                    
-                      </div>
-                      <div class="pull-right col-md-6">
-                        <table class="table table-bordered table-hover" id="tab_logic_total">
-                          <tbody>
-                            <tr>
-                              <th class="text-center">Sub Total</th>
-                              <td class="text-center"><input type="number" name='sub_total' placeholder='0.00' class="form-control" id="sub_total" readonly/></td>
-                            </tr>
-                            <tr>
-                              <th class="text-center">Tax</th>
-                              <td class="text-center"><div class="input-group mb-2 mb-sm-0">
-                                  <input type="number" class="form-control" id="tax" placeholder="0">
-                                  <div class="input-group-addon">%</div>
-                                </div></td>
-                            </tr>
-                            <tr>
-                              <th class="text-center">Tax Amount</th>
-                              <td class="text-center"><input type="number" name='tax_amount' id="tax_amount" placeholder='0.00' class="form-control" readonly/></td>
-                            </tr>
-                            <tr>
-                              <th class="text-center">Grand Total</th>
-                              <td class="text-center"><input type="number" name='total_amount' id="total_amount" placeholder='0.00' class="form-control" readonly/></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                    
-                </div>
-                <div class="modal-footer justify-content-right">
-                      <div class="col-4">
-                          <div class="form-check">
-                          <input class="form-check-input" type="checkbox">
-                          <label class="form-check-label">Apply changes to open orders</label>
+                  <div class="container">
+                    <form>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputCity">Invoice No</label>
+                          <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputState">Order ID</label>
+                          <input type="text" class="form-control" id="inputCity">
                         </div>
                       </div>
-                    <button type="button" class="btn btn-primary">Save</button>
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputCity">Full Name</label>
+                          <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputState">Email</label>
+                          <input type="email" class="form-control" id="inputCity">
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputCity">Invoice Date</label>
+                          <input type="date" class="form-control" id="inputCity">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputState">Due Date</label>
+                          <input type="date" class="form-control" id="inputCity">
+                        </div>
+
+                        <!-- <div class="col-8">
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox">
+                              <label class="form-check-label">Override the imported name</label>
+                          </div>
+                        </div> -->
+                      </div>
+                     
+                      <div class="form-row">
+                        <div class="form-group col-md-12">
+                          <label for="inputCity">Address</label>
+                          <input type="text" class="form-control" id="inputCity">
+                        </div>
+                      </div>
+                     
+                    </form>
+                  </div>
                 </div>
               </div>
-            </div>
             
+              <div class="col-md-12">
+                 <div class="row clearfix">
+                    <div class="col-md-12">
+                      <table class="table table-bordered table-hover" id="tab_logic">
+                        <thead>
+                          <tr>
+                            <th class="text-center"> # </th>
+                            <th class="text-center"> Product </th>
+                            <th class="text-center"> Qty </th>
+                            <th class="text-center"> Price </th>
+                            <th class="text-center"> Total </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr id='addr0'>
+                            <td>1</td>
+                            <td><input type="text" name='product[]'  placeholder='Enter Product Name' class="form-control"/></td>
+                            <td><input type="number" name='qty[]' placeholder='Enter Qty' class="form-control qty" step="0" min="0"/></td>
+                            <td><input type="number" name='price[]' placeholder='Enter Unit Price' class="form-control price" step="0.00" min="0"/></td>
+                            <td><input type="number" name='total[]' placeholder='0.00' class="form-control total" readonly/></td>
+                          </tr>
+                          <tr id='addr1'></tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="row clearfix">
+                    <div class="col-md-12">
+                      <button id="add_row" class="btn btn-default pull-left">Add Row</button>
+                      <button id='delete_row' class="pull-right btn btn-default">Delete Row</button>
+                    </div>
+                  </div>
+                  <div class="row clearfix" style="margin-top:20px">
+                     <div class="pull-right col-md-6">
+                      
+                      <p class="lead">Payment Methods:</p>
+                      <img src="../dist/img/credit/visa.png" alt="Visa">
+                      <img src="../dist/img/credit/mastercard.png" alt="Mastercard">
+                      <img src="../dist/img/credit/american-express.png" alt="American Express">
+                      <img src="../dist/img/credit/paypal2.png" alt="Paypal">
+
+                      <p class="text-muted well well-sm shadow-none" style="margin-top: 10px;">
+                        Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles, weebly ning heekya handango imeem
+                        plugg
+                        dopplr jibjab, movity jajah plickers sifteo edmodo ifttt zimbra.
+                      </p>
+                  
+                    </div>
+                    <div class="pull-right col-md-6">
+                      <table class="table table-bordered table-hover" id="tab_logic_total">
+                        <tbody>
+                          <tr>
+                            <th class="text-center">Sub Total</th>
+                            <td class="text-center"><input type="number" name='sub_total' placeholder='0.00' class="form-control" id="sub_total" readonly/></td>
+                          </tr>
+                          <tr>
+                            <th class="text-center">Tax</th>
+                            <td class="text-center"><div class="input-group mb-2 mb-sm-0">
+                                <input type="number" class="form-control" id="tax" placeholder="0">
+                                <div class="input-group-addon">%</div>
+                              </div></td>
+                          </tr>
+                          <tr>
+                            <th class="text-center">Tax Amount</th>
+                            <td class="text-center"><input type="number" name='tax_amount' id="tax_amount" placeholder='0.00' class="form-control" readonly/></td>
+                          </tr>
+                          <tr>
+                            <th class="text-center">Grand Total</th>
+                            <td class="text-center"><input type="number" name='total_amount' id="total_amount" placeholder='0.00' class="form-control" readonly/></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  
+              </div>
+              <div class="modal-footer justify-content-right">
+                    <div class="col-4">
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">Apply changes to open orders</label>
+                      </div>
+                    </div>
+                  <button type="button" class="btn btn-primary">Save</button>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
           </div>
-          <!-- /.modal-content -->
+          
         </div>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script src="/js/overview.js"></script>
-  
+        <!-- /.modal-content -->
+      </div>
 
-<script src="../../plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<link rel="stylesheet" href="/css/bstreeview.css">
-<script src="/js/bstreeview.js"></script>
-<script src="/js/main.js"></script>
-      
-
-        
-       
-
-       
-
-       
-
-       
+  </div>
 
 </div>
+
 
 <!-- REQUIRED SCRIPTS -->
 <!-- jQuery -->
@@ -770,12 +750,9 @@
 <script src="../plugins/dropzone/min/dropzone.min.js"></script>
 <!-- Page specific script -->
 <!----------------------------Adding js for testing------------------>
-<script type="text/javascript" src="../js/praful_customer.js"></script>
 <script type="text/javascript" src="../js/OrdersPages.js"></script>
-
 <link rel="stylesheet" href="/css/bstreeview.css">
 <script src="/js/bstreeview.js"></script>
 <script src="/js/main.js"></script>
-
 </body>
 </html>
