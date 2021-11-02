@@ -254,6 +254,87 @@ var NavigationMenu = [
         id:'nav6_1'
       },
     ]
+  },
+  {
+    text: "Invoice",
+    icon: "fas fa-user-friends",
+    id:'nav7',
+    nodes:[
+      {
+        text: "Invoice",
+        icon: "fa fa-folder",
+        href: "/Invoice/invoice.html",
+        id:'nav7_1'
+      },
+    ]
+  },
+  {
+    text: "Settings",
+    icon: "fas fa-user-friends",
+    id:'nav8',
+    nodes:[
+      {
+        text: "Account",
+        icon: "fa fa-folder",
+        id:'nav8_1',
+        nodes:[
+          {
+            text: "API Settings",
+            icon: "fa fa-folder",
+            href: "/Settings/Accounts/api-settings.html",
+            id:'nav8_1_1'
+          },
+        ]
+      },
+      {
+        text: "Selling Channel",
+        icon: "fa fa-folder",
+        href: "/Invoice/invoice.html",
+        id:'nav8_2'
+      },
+      {
+        text: "Branded Customer Pages",
+        icon: "fa fa-folder",
+        href: "/Invoice/invoice.html",
+        id:'nav8_2'
+      },
+      {
+        text: "Templates",
+        icon: "fa fa-folder",
+        href: "/Invoice/invoice.html",
+        id:'nav8_2'
+      },
+      {
+        text: "Automation",
+        icon: "fa fa-folder",
+        href: "/Invoice/invoice.html",
+        id:'nav8_2'
+      },
+      {
+        text: "Shipping",
+        icon: "fa fa-folder",
+        href: "/Invoice/invoice.html",
+        id:'nav8_2'
+      },
+      {
+        text: "Printing",
+        icon: "fa fa-folder",
+        href: "/Invoice/invoice.html",
+        id:'nav8_2'
+      },
+      {
+        text: "Inventory Management",
+        icon: "fa fa-folder",
+        href: "/Invoice/invoice.html",
+        id:'nav8_2'
+      },
+      {
+        text: "Integrations",
+        icon: "fa fa-folder",
+        href: "/Invoice/invoice.html",
+        id:'nav8_2'
+      },
+    ]
   }
   
 ];
