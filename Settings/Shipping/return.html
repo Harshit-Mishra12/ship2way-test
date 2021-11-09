@@ -34,9 +34,6 @@
   <link rel="stylesheet" href="../../plugins/bs-stepper/css/bs-stepper.min.css">
   <!-- dropzonejs -->
   <link rel="stylesheet" href="../../plugins/dropzone/min/dropzone.min.css">
-
-  <link rel="stylesheet" href="../../css/onboard.css">
-   
 <!----------------------------Adding css for testing------------------>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
@@ -63,124 +60,73 @@
     </aside>
 
   <!-- Content Wrapper. Contains page content -->
- <div class="content-wrapper">
+  <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-        <div class="col-sm-6">
-          <h1>Inventory Warehouses</h1>
-        </div>
-        <div class="col-sm-6">
-           <button type="button" class="btn btn-info" data-toggle="modal" data-target="#connect" style="float:right">Connect A Store Market Place</button>
-        </div>
-        </div>
-       
-      </div>
-    </section>
-
+    <br>
+    <!-- Main content ---------------------------------------------------------------------->
     <section class="content">
       <div class="container-fluid">
+        <div class="row">
+          <h3>Returns :</h3>
+        </div>
         <div class="col-12">
           <div class="card">
             <div class="card-header">
+        
+              <h4>Default Return Service</h4>
               <div class="row">
-                <h3 >Stores :</h3>
+
+                  <div class="col-12 col-sm-6 col-md-12">
+                    <div class="form-group row">
+                      <label for="inputEmail3" class="col-sm-2 col-form-label">Service</label>
+                      <div class="col-sm-10">
+                        <select id="inputState" class="form-control">
+                        <option selected>Enable</option>
+                        <option selected>Disable</option>
+                        
+                      </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-md-12">
+                    <div class="form-group row">
+                      <label for="inputEmail3" class="col-sm-2 col-form-label">Package</label>
+                      <div class="col-sm-10">
+                        <select id="inputState" class="form-control">
+                        <option selected>Enable</option>
+                        <option selected>Disable</option>
+                        
+                      </select>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+          
+             
+              <div class="row">
+                <div class="col-8">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">Automatically mark returns as "Recived" if tracked</label>
+                  </div>
+                </div>
               </div>
               <br>
               <div class="row">
-               
-                <table id="tbUser" class="table table-bordered table-hover">
-                  <thead>
-                    <tr>
-                      <th>
-                        <div class="form-check mb-3">
-                              <input class="form-check-input" type="checkbox">
-                        </div>
-                      </th>
-                      <th class="alias_column">Username</th>
-                      <th class="category_column">Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <div class="form-check">
-                              <input class="form-check-input" type="checkbox">
-                        </div>
-                      </td>
-                      <td class="alias_column">Jack</td>
-                      <td><button class="btn btn-success">Edit</button>
-                          <button class="btn btn-danger btnDelete">Delete</button>
-                      </td>
-                     
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="form-check">
-                              <input class="form-check-input" type="checkbox">
-                        </div>
-                      </td>
-                      <td class="alias_column">Mack</td>
-                      <td><button class="btn btn-success">Edit</button>
-                          <button class="btn btn-danger btnDelete">Delete</button>
-                      </td>
-                    </tr>
-                  </tbody>
-                  
-                </table>
-            
-              </div>
-             
-            
-            </div>
-          </div>
-          <!-- /.card-header -->
-          
-          <!-- /.card-body -->
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="modal fade" id="connect">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Connect A Market Place</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="card-body">
-              <div class="tab-content" id="custom-tabs-four-tabContent">
-
-                <div class="tab-pane fade show active" id="custom-tabs-four-home" role="tabpanel" aria-labelledby="custom-tabs-four-home-tab">
-                    <p>An Inventory Warehouse is a physical location that houses your inventory. You likely have the Warehouse Locations broken down into three dimensions (e.g. aisle, shelf, and bin), but you’re able to define between one and four dimensions, depending on the complexity of your Warehouse Location numbering system.</p>
-                    <br>
-                    <form>
-                      <div class="form-row">
-                        <div class="form-group col-md-12">
-                          <label for="inputCity">Username</label>
-                          <input type="text" class="form-control" id="name">
-                        </div>
-                      </div>
-                     
-                      <br>
-                     <button type="button" class="btn btn-primary add-user">Save</button>
-                    </form>    
+                <div class="col-12 col-sm-6 col-md-12">
+                  <button type="button" class="btn btn-info" data-toggle="modal" data-target="#new_invoice" style="float: right;">Save Changes</button>
                 </div>
-
-                
               </div>
-            </div>
-           
-           
+              <br>
           </div>
         </div>
       </div>
-    </section>
 
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content ------------------------------------------------------------------------->      
 
 </div>
 
@@ -231,7 +177,7 @@
 <script src="../../plugins/dropzone/min/dropzone.min.js"></script>
 <!-- Page specific script -->
 <!----------------------------Adding js for testing------------------>
-<script type="text/javascript" src="../../js/table_rows.js"></script>
+<script type="text/javascript" src="../../js/settings.js"></script>
 
 <link rel="stylesheet" href="/css/bstreeview.css">
 <script src="/js/bstreeview.js"></script>

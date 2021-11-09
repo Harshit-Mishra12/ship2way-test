@@ -88,7 +88,7 @@
                 <div class="col-8">
                         <div class="form-check">
                           <input class="form-check-input" type="radio">
-                          <label class="form-check-label">indicates a user specific setting</label>
+                          <label class="form-check-label">Allow the shipments</label>
                         </div>
                 </div>
                       
@@ -96,7 +96,7 @@
                         <div class="form-check">
                           <input class="form-check-input" type="radio">
                           <label class="form-check-label">
-                            indicates an account wide setting
+                            Warn but allow the shipment
                           </label>
                         </div>
                 </div>
@@ -104,123 +104,61 @@
                     <div class="form-check">
                       <input class="form-check-input" type="radio">
                       <label class="form-check-label">
-                        indicates an account wide setting
+                       Block the shipment
                       </label>
                     </div>
                 </div>
+                </div>
                 <br>
-                <br>
-                <div class="col-12 col-sm-6 col-md-12">
-                  <div class="card card-primary card-outline card-outline-tabs">
-                    <div class="card-header p-0 border-bottom-0">
-                      <ul class="nav nav-tabs" id="custom-tabs-four-tab" role="tablist">
-                        <li class="nav-item">
-                          <a class="nav-link active" id="custom-tabs-four-home-tab" data-toggle="pill" href="#custom-tabs-four-home" role="tab" aria-controls="custom-tabs-four-home" aria-selected="true">General Prefrences</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="custom-tabs-four-profile-tab" data-toggle="pill" href="#custom-tabs-four-profile" role="tab" aria-controls="custom-tabs-four-profile" aria-selected="false">Products</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="custom-tabs-four-messages-tab" data-toggle="pill" href="#custom-tabs-four-messages" role="tab" aria-controls="custom-tabs-four-messages" aria-selected="false">Time & Units</a>
-                        </li>
-                      </ul>
+                <div class="row">
+                  <h4>When shipping products that have UNKNOWN on hand stock level</h4>
+                  <div class="col-8">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio">
+                      <label class="form-check-label">Allow the shipments</label>
                     </div>
-                    <div class="card-body">
-                      <div class="tab-content" id="custom-tabs-four-tabContent">
-                        <div class="tab-pane fade show active" id="custom-tabs-four-home" role="tabpanel" aria-labelledby="custom-tabs-four-home-tab">
-                           <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-2 col-form-label">Quick Ship</label>
-                            <div class="col-sm-10">
-                              <select id="inputState" class="form-control">
-                              <option selected>Enable</option>
-                              <option selected>Disable</option>
-                              
-                            </select>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="custom-tabs-four-profile" role="tabpanel" aria-labelledby="custom-tabs-four-profile-tab">
-  
-                            <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-2 col-form-label">Product Type</label>
-                            <div class="col-sm-10">
-                              <select id="inputState" class="form-control">
-                              <option selected>Stander Product Only</option>
-                              
-                            </select>
-                            </div>
-                            </div>
-  
-                            
-                        </div>
-                        
-                        <div class="tab-pane fade" id="custom-tabs-four-messages" role="tabpanel" aria-labelledby="custom-tabs-four-messages-tab">
-                          <h3>Time & Date</h3>
-  
-                          <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-2 col-form-label">Time Format</label>
-                            <div class="col-sm-10">
-                              <select id="inputState" class="form-control">
-                              <option selected>12 Hour</option>
-                              <option>24 Hour</option>
-                            </select>
-                            </div>
-                          </div>
-  
-                          <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-2 col-form-label">Date Format</label>
-                            <div class="col-sm-10">
-                              <select id="inputState" class="form-control">
-                              <option selected>Choose...</option>
-                              <option>...</option>
-                            </select>
-                            </div>
-                          </div>
-  
-                          <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-2 col-form-label">Time Zone</label>
-                            <div class="col-sm-10">
-                              <select id="inputState" class="form-control">
-                                <option selected>Choose...</option>
-                                <option>...</option>
-                              </select>
-                            </div>
-                          </div>
-  
-                       
+                  </div>
                           
-  
-                          <h4>Units of Measure</h4>
-  
-                          <p>Changing the Units of Measure settings will cause existing weights and dimensions to be converted. Weights and dimensions may be impacted by rounding.</p>
-  
-                          <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-2 col-form-label">Dimension</label>
-                            <div class="col-sm-10">
-                              <select id="inputState" class="form-control">
-                              <option selected>Inches</option>
-                              <option>Centimetre</option>
-                            </select>
+                    <div class="col-8">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio">
+                              <label class="form-check-label">
+                                Warn but allow the shipment
+                              </label>
                             </div>
-                          </div>
-  
-                          <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-2 col-form-label">Weight</label>
-                            <div class="col-sm-10">
-                              <select id="inputState" class="form-control">
-                              <option selected>Pound</option>
-                              <option>Grams</option>
-                            </select>
-                            </div>
-                          </div>
-  
-                        </div>
-                      </div>
                     </div>
-                    <!-- /.card -->
+                    <div class="col-8">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio">
+                          <label class="form-check-label">
+                          Block the shipment
+                          </label>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                  <h4>When shipping from a location that is not tracking inventory:</h4>
+                  <div class="col-8">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">Warn that inventory will not be adjusted</label>
+                          </div>
                   </div>
                 </div>
+                <br>
+                <div class="row">
+                  <h4>Create alerts for SKUs that are below a default threshold:</h4>
+                  <div class="col-8">
+                          <div class="form-check">
+                            <label class="form-check-label">Defaults Threshold</label>
+                            <input class="form-check-input" type="number" width="50px">
+                          </div>
+                  </div>
                 </div>
+                <br>
+                
+              </div>
           </div>
         </div>
       </div>

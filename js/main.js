@@ -315,7 +315,7 @@ var NavigationMenu = [
             text: "Store Setup",
             icon: "fa fa-folder",
             href: "/Settings/Selling_Channels/store_setup.html",
-            id:'nav8_3_1'
+            id:'nav8_2_1'
           },
         ]
       },
@@ -335,20 +335,97 @@ var NavigationMenu = [
       {
         text: "Templates",
         icon: "fa fa-folder",
-        href: "/Invoice/invoice.html",
-        id:'nav8_4'
+        id:'nav8_4',
+        nodes:[
+          {
+            text: "Email Filters",
+            icon: "fa fa-folder",
+            href: "/Settings/Templates/email_templates.html",
+            id:'nav8_4_1'
+          },
+          {
+            text: "Packing Slips",
+            icon: "fa fa-folder",
+            href: "/Settings/Templates/packing_slips.html",
+            id:'nav8_4_2'
+          },
+        ]
       },
       {
         text: "Automation",
         icon: "fa fa-folder",
-        href: "/Invoice/invoice.html",
-        id:'nav8_5'
+        id:'nav8_5',
+        nodes:[
+          {
+            text: "Order Filters",
+            icon: "fa fa-folder",
+            href: "/Settings/Automation/order_filters.html",
+            id:'nav8_5_1'
+          },
+          {
+            text: "Automation Rules",
+            icon: "fa fa-folder",
+            href: "/Settings/Automation/automation_rules.html",
+            id:'nav8_5_2'
+          },
+        ]
       },
       {
         text: "Shipping",
         icon: "fa fa-folder",
-        href: "/Invoice/invoice.html",
-        id:'nav8_6'
+        id:'nav8_6',
+        nodes:[
+          {
+            text: "Workflow Settings",
+            icon: "fa fa-folder",
+            href: "/Settings/Shipping/workflow_settings.html",
+            id:'nav8_7_1'
+          },
+          {
+            text: "Ship From Locations",
+            icon: "fa fa-folder",
+            href: "/Settings/Shipping/ship_location.html",
+            id:'nav8_7_2'
+          },
+          {
+            text: "Carriers",
+            icon: "fa fa-folder",
+            href: "/Settings/Shipping/carriers.html",
+            id:'nav8_7_2'
+          },
+          {
+            text: "Fullfillment Providers",
+            icon: "fa fa-folder",
+            href: "/Settings/Shipping/full_provider.html",
+            id:'nav8_7_2'
+          },
+          {
+            text: "Insurance",
+            icon: "fa fa-folder",
+            href: "/Settings/Shipping/insurance.html",
+            id:'nav8_7_2'
+          },
+          {
+            text: "Packages",
+            icon: "fa fa-folder",
+            href: "/Settings/Shipping/packages.html",
+            id:'nav8_7_2'
+          },
+          {
+            text: "Return",
+            icon: "fa fa-folder",
+            href: "/Settings/Shipping/return.html",
+            id:'nav8_7_2'
+          },
+          {
+            text: "International Settings",
+            icon: "fa fa-folder",
+            href: "/Settings/Shipping/international_setting.html",
+            id:'nav8_7_2'
+          },
+          
+          
+        ]
       },
       {
         text: "Printing",

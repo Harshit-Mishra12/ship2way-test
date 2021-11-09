@@ -71,11 +71,9 @@
             <div class="card-header">
               <div class="row mb-2">
                 <div class="col-sm-6">
-                  <h3>User Management</h3>
+                  <h3>Printing Setup</h3>
                 </div>
-                <div class="col-sm-6">
-                   <button type="button" class="btn btn-info" data-toggle="modal" data-target="#new_user" style="float:right">Add A User Account</button>
-                </div>
+               
                   <!-- <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                       <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -85,7 +83,7 @@
               </div>
               <div class="row">
               <div class="col-md-12">
-                  <p>As users come and go from your organization, it's important to maintain historical references on their activity. Old user accounts are never fully deleted; instead they are deactivated and prevented from accessing the system.</p>
+                  <p>Choose how your documents print from ShipStation. Document Options are account-wide settings, but your Print To settings will be saved for this machine and browser only.</p>
 
                   <div class="card-body">
                     <table id="tbUser" class="table table-bordered table-hover">
@@ -96,13 +94,10 @@
                                   <input class="form-check-input" type="checkbox">
                             </div>
                           </th>
-                          <th class="alias_column">Username</th>
-                          <th class="sku_column">Email</th>
-                          <th class="preset_column">Mobile</th>
-                          <th class="UPC_column">Address</th>
-                          <th class="varient_column">City</th>
-                          <th class="category_column">Country</th>
-                          <th class="category_column">Action</th>
+                          <th class="alias_column">Document Type</th>
+                          <th class="sku_column">Print To</th>
+                          <th class="preset_column">Document Format</th>
+                          <th class="UPC_column">Options</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -112,14 +107,10 @@
                                   <input class="form-check-input" type="checkbox">
                             </div>
                           </td>
-                          <td class="alias_column">101</td>
                           <td class="sku_column">My store</td>
                           <td>Ship2Way support</td>
-                          <td> 4</td>
-                          <td>$3.78</td>
                           <td>Free Shipping</td>
-                          <td><button class="btn btn-success">Edit</button>
-                              <button class="btn btn-danger btnDelete">Delete</button>
+                          <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#new_user">Add A User Account</button>
                           </td>
                          
                         </tr>
@@ -129,14 +120,10 @@
                                   <input class="form-check-input" type="checkbox">
                             </div>
                           </td>
-                          <td class="alias_column">102</td>
                           <td class="sku_column">My store</td>
                           <td>Ship2Way support</td>
-                          <td> 4</td>
-                          <td>$3.78</td>
                           <td>Free Shipping</td>
-                          <td><button class="btn btn-success">Edit</button>
-                              <button class="btn btn-danger btnDelete">Delete</button>
+                          <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#new_user">Add A User Account</button>
                           </td>
                         </tr>
                       </tbody>
@@ -165,7 +152,7 @@
               </div>
               <div class="modal-body">
                
-                <div class="col-md-12">
+                <!-- <div class="col-md-12">
 
                     <div class="card card-primary card-outline card-outline-tabs">
                     <div class="card-header p-0 border-bottom-0">
@@ -372,8 +359,8 @@
                     </div>
                     <!-- /.card -->
                      </div>
-                </div>
-                <div class="modal-footer justify-content-right">
+                </div> -->
+                <!-- <div class="modal-footer justify-content-right">
                       <div class="col-4">
                           <div class="form-check">
                           <input class="form-check-input" type="checkbox">
@@ -382,7 +369,7 @@
                       </div>
                    
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
+                </div> -->
               </div>
             </div>
             
