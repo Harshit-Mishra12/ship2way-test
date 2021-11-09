@@ -139,3 +139,15 @@ function add() {
     myDropzone.removeAllFiles(true)
   }
   // DropzoneJS Demo Code End
+
+  $(function(){
+    $('#customer_data').modal({
+        keyboard: true,
+        backdrop: "static",
+        show:false,
+        
+    }).on('show', function(){
+          var getIdFromRow = $(event.target).closest('tr').data('id');
+        //make your ajax call populate items or what even you need
+    });
+});
