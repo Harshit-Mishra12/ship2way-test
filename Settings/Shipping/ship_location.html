@@ -71,7 +71,7 @@
             <div class="card-header">
               <div class="row mb-2">
                 <div class="col-sm-6">
-                  <h3>ShipStation Connect</h3>
+                  <h3>Ship From Locations</h3>
                 </div>
                 <div class="col-sm-6">
                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#new_user" style="float:right">Add A User Account</button>
@@ -84,20 +84,70 @@
                   </div> -->
               </div>
               <div class="row">
-                <h4>Get Connected to your devices!</h4>
-                <p>Ship2Way Connect allows you to seamlessly utilize a computers printers, scanners and more. Devices can be shared with any other user of your organization, so they can be accessed from any computer, anywhere!
-                <br>
-                <h3>If you have not installed Ship2Way Connect...</h3>
-                <br>
-                <p> Install Ship2Way Connect below and you'll be able to seamlessly access and share your computer's devices from within Ship2Way.</p> 
-                <br>
-                <button  class="btn btn-info">Install Ship2way connect with windows</button>
-                <br><br>
-                <h3>If you already have ShipStation Connect installed on your computer...</h3>
-                <br>
-                <p>Launch ShipStation Connect on your computer to activate it. You'll then be able to manage it here.</p> 
-                <br>
-                <p><b>Please Note:</b> Only the user that installed ShipStation Connect can manage it.</p> 
+              <div class="col-md-12">
+                <p>Your ship from locations provide origin information and shipment return information for packages shipped through ShipStation. Your default Ship From Location will be applied to all incoming orders unless otherwise applied by an automation rule.
+                </p>
+
+                  <div class="card-body">
+                    <table id="tbUser" class="table table-bordered table-hover">
+                      <thead>
+                        <tr>
+                          <th>
+                            <div class="form-check mb-3">
+                                  <input class="form-check-input" type="checkbox">
+                            </div>
+                          </th>
+                          <th class="alias_column">Username</th>
+                          <th class="sku_column">Email</th>
+                          <th class="preset_column">Mobile</th>
+                          <th class="UPC_column">Address</th>
+                          <th class="varient_column">City</th>
+                          <th class="category_column">Country</th>
+                          <th class="category_column">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                                  <input class="form-check-input" type="checkbox">
+                            </div>
+                          </td>
+                          <td class="alias_column">101</td>
+                          <td class="sku_column">My store</td>
+                          <td>Ship2Way support</td>
+                          <td> 4</td>
+                          <td>$3.78</td>
+                          <td>Free Shipping</td>
+                          <td><button class="btn btn-success">Edit</button>
+                              <button class="btn btn-danger btnDelete">Delete</button>
+                          </td>
+                         
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                                  <input class="form-check-input" type="checkbox">
+                            </div>
+                          </td>
+                          <td class="alias_column">102</td>
+                          <td class="sku_column">My store</td>
+                          <td>Ship2Way support</td>
+                          <td> 4</td>
+                          <td>$3.78</td>
+                          <td>Free Shipping</td>
+                          <td><button class="btn btn-success">Edit</button>
+                              <button class="btn btn-danger btnDelete">Delete</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                      
+                    </table>
+                  </div>
+
+                  
+              </div>
+             
               </div>
           </div>
         </div>

@@ -73,9 +73,7 @@
                 <div class="col-sm-6">
                   <h3>Allocation Strategy</h3>
                 </div>
-                <div class="col-sm-6">
-                   <button type="button" class="btn btn-info" data-toggle="modal" data-target="#new_user" style="float:right">Add A User Account</button>
-                </div>
+               
                   <!-- <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                       <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -85,62 +83,24 @@
               </div>
               <div class="row">
               <div class="col-md-12">
+                  <br>
+                  <button type="button" onclick='add()' class="btn btn-outline-primary btn-block"><i class="fa fa-plus"></i>Add Line Item</button>
                   <p>Allocation refers to the process of reserving inventory for orders based on priority. You can customize this process by creating steps (or Tasks) and specifying how priority is given to orders in each set.</p>
 
                   <div class="card-body">
-                    <table id="tbUser" class="table table-bordered table-hover">
-                      <thead>
-                        <tr>
-                          <th>
-                            <div class="form-check mb-3">
-                                  <input class="form-check-input" type="checkbox">
-                            </div>
-                          </th>
-                          <th class="alias_column">Username</th>
-                          <th class="sku_column">Email</th>
-                          <th class="preset_column">Mobile</th>
-                          <th class="UPC_column">Address</th>
-                          <th class="varient_column">City</th>
-                          <th class="category_column">Country</th>
-                          <th class="category_column">Action</th>
-                        </tr>
-                      </thead>
+                    <table id="Addline" class="table table-bordered">
+                      <tr>
+                        <th>SKU</th>
+                        <th>Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>remove</th>
+                      </tr>
                       <tbody>
                         <tr>
-                          <td>
-                            <div class="form-check">
-                                  <input class="form-check-input" type="checkbox">
-                            </div>
-                          </td>
-                          <td class="alias_column">101</td>
-                          <td class="sku_column">My store</td>
-                          <td>Ship2Way support</td>
-                          <td> 4</td>
-                          <td>$3.78</td>
-                          <td>Free Shipping</td>
-                          <td><button class="btn btn-success">Edit</button>
-                              <button class="btn btn-danger btnDelete">Delete</button>
-                          </td>
-                         
-                        </tr>
-                        <tr>
-                          <td>
-                            <div class="form-check">
-                                  <input class="form-check-input" type="checkbox">
-                            </div>
-                          </td>
-                          <td class="alias_column">102</td>
-                          <td class="sku_column">My store</td>
-                          <td>Ship2Way support</td>
-                          <td> 4</td>
-                          <td>$3.78</td>
-                          <td>Free Shipping</td>
-                          <td><button class="btn btn-success">Edit</button>
-                              <button class="btn btn-danger btnDelete">Delete</button>
-                          </td>
+                          
                         </tr>
                       </tbody>
-                      
                     </table>
                   </div>
 
@@ -441,6 +401,7 @@
 <!-- Page specific script -->
 <!----------------------------Adding js for testing------------------>
 <script type="text/javascript" src="../../js/settings.js"></script>
+<script type="text/javascript" src="../../js/table_rows.js"></script>
 
 <link rel="stylesheet" href="/css/bstreeview.css">
 <script src="/js/bstreeview.js"></script>

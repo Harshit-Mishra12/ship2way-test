@@ -71,10 +71,10 @@
             <div class="card-header">
               <div class="row mb-2">
                 <div class="col-sm-6">
-                  <h3>ShipStation Connect</h3>
+                  <h3>Automation Rules</h3>
                 </div>
                 <div class="col-sm-6">
-                   <button type="button" class="btn btn-info" data-toggle="modal" data-target="#new_user" style="float:right">Add A User Account</button>
+                   <button type="button" class="btn btn-info" data-toggle="modal" data-target="#new_user" style="float:right">Create A Filter</button>
                 </div>
                   <!-- <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
@@ -84,20 +84,62 @@
                   </div> -->
               </div>
               <div class="row">
-                <h4>Get Connected to your devices!</h4>
-                <p>Ship2Way Connect allows you to seamlessly utilize a computers printers, scanners and more. Devices can be shared with any other user of your organization, so they can be accessed from any computer, anywhere!
-                <br>
-                <h3>If you have not installed Ship2Way Connect...</h3>
-                <br>
-                <p> Install Ship2Way Connect below and you'll be able to seamlessly access and share your computer's devices from within Ship2Way.</p> 
-                <br>
-                <button  class="btn btn-info">Install Ship2way connect with windows</button>
-                <br><br>
-                <h3>If you already have ShipStation Connect installed on your computer...</h3>
-                <br>
-                <p>Launch ShipStation Connect on your computer to activate it. You'll then be able to manage it here.</p> 
-                <br>
-                <p><b>Please Note:</b> Only the user that installed ShipStation Connect can manage it.</p> 
+              <div class="col-md-12">
+                  <p>Automation rules help you perform tasks for every order you import. You can manage your rules below or create a new one.</p>
+
+                  <div class="card-body">
+                    <table id="tbUser" class="table table-bordered table-hover">
+                      <thead>
+                        <tr>
+                          <th>
+                            <div class="form-check mb-3">
+                                  <input class="form-check-input" type="checkbox">
+                            </div>
+                          </th>
+                          <th class="alias_column">Name</th>
+                          <th class="sku_column">Description</th>
+                          <th class="preset_column">Status</th>
+                          <th class="category_column">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                                  <input class="form-check-input" type="checkbox">
+                            </div>
+                          </td>
+                          <td class="sku_column">My store</td>
+                          <td>Ship2Way support</td>
+                          <td>Active</td>
+                          <td><button class="btn btn-success">Edit</button>
+                              <button class="btn btn-danger btnDelete">Delete</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                                  <input class="form-check-input" type="checkbox">
+                            </div>
+                          </td>
+                          <td class="sku_column">My store</td>
+                          <td>Ship2Way support</td>
+                          <td>Active</td>
+                          <td><button class="btn btn-success">Edit</button>
+                              <button class="btn btn-danger btnDelete">Delete</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                      
+                    </table>
+                  </div>
+                  
+                  <p>To apply recent changes to product details, store mappings or automation rules to your current open orders, click Reprocess Automation Rules below. Warning: This may overwrite any shipping settings that have been made since the orders were imported.</p>
+                  
+              </div>
+              <div class="col-sm-12 col-md-12">
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#new_user" style="float:right">Create A Filter</button>
+              </div>
               </div>
           </div>
         </div>

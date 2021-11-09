@@ -66,38 +66,108 @@
     <!-- Main content ---------------------------------------------------------------------->
     <section class="content">
       <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+              <h3>Inventory Settings</h3>
+            </div>
+        
+          </div>
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <div class="row mb-2">
-                <div class="col-sm-6">
-                  <h3>ShipStation Connect</h3>
-                </div>
-                <div class="col-sm-6">
-                   <button type="button" class="btn btn-info" data-toggle="modal" data-target="#new_user" style="float:right">Add A User Account</button>
-                </div>
-                  <!-- <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                      <li class="breadcrumb-item"><a href="#">Home</a></li>
-                      <li class="breadcrumb-item active">DataTables</li>
-                    </ol>
-                  </div> -->
-              </div>
+              <h4>Adjust Default Button Action</h4>
               <div class="row">
-                <h4>Get Connected to your devices!</h4>
-                <p>Ship2Way Connect allows you to seamlessly utilize a computers printers, scanners and more. Devices can be shared with any other user of your organization, so they can be accessed from any computer, anywhere!
+               
+                <div class="col-8">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio">
+                          <label class="form-check-label">Create Label</label>
+                        </div>
+                </div>
+                      
+                <div class="col-8">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio">
+                          <label class="form-check-label">
+                           Create + Print Label
+                          </label>
+                        </div>
+                </div>
+               
+                </div>
                 <br>
-                <h3>If you have not installed Ship2Way Connect...</h3>
+                <h4>QuickShip Settings</h4>
+                <p>Configure your preferences below to decide which processing steps will run in the background during your label processing requests. To learn more about efficient shipping with QuickShip click here.</p>
+                <div class="row">
+                  
+                    <div class="col-8">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox">
+                          <label class="form-check-label">Show Warnings</label>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox">
+                          <label class="form-check-label">Show Errors</label>
+                        </div>
+                    </div> 
+                    <div class="col-8">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox">
+                          <label class="form-check-label">Show Cost Summery</label>
+                        </div>
+                    </div> 
+                    <div class="col-8">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox">
+                          <label class="form-check-label">Show Label Batch Status</label>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">Show Dilouge Print Preview</label>
+                        </div>
+                    </div>   
+                   
+                </div>
                 <br>
-                <p> Install Ship2Way Connect below and you'll be able to seamlessly access and share your computer's devices from within Ship2Way.</p> 
+                <h4>Scan To Verify Items By</h4>
+                <div class="row">
+                  <div class="col-8">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">Warn that inventory will not be adjusted</label>
+                          </div>
+                  </div>
+                </div>
                 <br>
-                <button  class="btn btn-info">Install Ship2way connect with windows</button>
-                <br><br>
-                <h3>If you already have ShipStation Connect installed on your computer...</h3>
+             
+                <h4>Create alerts for SKUs that are below a default threshold:</h4>
+                <div class="row">
+                    <div class="col-8">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">UPC</label>
+                            </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">Item SKU</label>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">Fulfillment SKU</label>
+                    </div>
+                    </div>
+                </div>
+               
                 <br>
-                <p>Launch ShipStation Connect on your computer to activate it. You'll then be able to manage it here.</p> 
-                <br>
-                <p><b>Please Note:</b> Only the user that installed ShipStation Connect can manage it.</p> 
+                
               </div>
           </div>
         </div>
