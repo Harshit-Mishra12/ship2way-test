@@ -76,7 +76,7 @@
           <div class="card">
             <div class="card-header">
               <div class="row mb-2">
-                <h3 class="card-title">Open Shipments</h3>
+                <h3 class="card-title">End of Day</h3>
               </div>
           </div>
           <!-- /.card-header -->
@@ -86,7 +86,9 @@
               <thead>
                 <tr>
                   <th>Carrier</th>
-                  <th>Open Shipments</th>
+                  <th>Shipped</th>
+                  <th>Recieved Return</th>
+                  <th>Amount($) Sold</th>
                   <th>Actions</th>
                 </tr>
               </thead>
@@ -94,6 +96,8 @@
                 <tr>
                   <td>USPS</td>
                   <td>5</td>
+                  <td>Y</td>
+                  <td>5 $</td>
                   <td><a href="">Close Shipments</a></td>
                 </tr> 
               </tbody>
@@ -111,6 +115,11 @@
             <div class="row mb-2">
               <h3 class="card-title">End of Day Forms</h3>
             </div>
+            <div class="btn-group float-right" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-secondary">Day</button>
+              <button type="button" class="btn btn-secondary">Month</button>
+              <button type="button" class="btn btn-secondary">Year</button>
+            </div>
         </div>
         <!-- /.card-header -->
         <div class="card-body">
@@ -119,9 +128,14 @@
             <thead>
               <tr>
                 <th>Created</th>
+                <th>RMA #</th>
                 <th>Ship Date</th>
+                <th>Recieving Date</th>
                 <th>Warehouse</th>
-                <th>Provider</th>
+                <th>Returning Party</th>
+                <th>Store</th>
+                <th>Product Name</th>
+                <th>Order Number</th>
                 <th>Shipments</th>
                 <th>Action</th>
               </tr>
@@ -129,25 +143,40 @@
             <tbody>
               <tr>
                 <td>07/08/2014</td>
+                <td>6757</td>
                 <td>07/07/2014</td>
+                <td>07/10/2014</td>
+                <td>New Delhi</td>
                 <td>Austin</td>
                 <td>Stamps.com</td>
+                <td>Tshirts</td>
+                <td>47832</td>
                 <td>1</td>
                 <td><a href="">Print</a></td>
               </tr> 
               <tr>
                 <td>07/08/2014</td>
+                <td>6757</td>
                 <td>07/07/2014</td>
+                <td>07/10/2014</td>
+                <td>New Delhi</td>
                 <td>Austin</td>
                 <td>Stamps.com</td>
+                <td>Tshirts</td>
+                <td>47832</td>
                 <td>1</td>
                 <td><a href="">Print</a></td>
               </tr> 
               <tr>
                 <td>07/08/2014</td>
+                <td>6757</td>
                 <td>07/07/2014</td>
+                <td>07/10/2014</td>
+                <td>New Delhi</td>
                 <td>Austin</td>
                 <td>Stamps.com</td>
+                <td>Tshirts</td>
+                <td>47832</td>
                 <td>1</td>
                 <td><a href="">Print</a></td>
               </tr> 
