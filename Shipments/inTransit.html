@@ -56,7 +56,7 @@
       <div class="container-fluid">
         <div class="row mb-4">
         <div class="col-sm-6">
-          <h1>Batch Shipment</h1>
+          <h1>In Transit Status</h1>
         </div>
           <!-- <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -83,27 +83,18 @@
          
         </div>
           <!-------------------dropdown--------------------->
-          <button class="btn border border-dark mr-1">Cancel Batch</button>
-          <div class="btn-group mr-1 border border-dark">
-         
-            <button type="button" class="btn">Other Actions</button>
-            <button type="button" class="dropdown-toggle dropdown-icon btn" data-toggle="dropdown" >
-              <span class="sr-only">Toggle Dropdown</span>
-            </button>
-            <div class="dropdown-menu" role="menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
-            </div>
-         
-        </div>
+          <button class="btn border border-dark mr-1">Void Shipment(s)</button>
+
+          <button class="btn border border-dark mr-1">Track Shipment(s)</button>
+
+          <button class="btn border border-dark mr-1">Create Return</button>
+
+          <button class="btn border border-dark mr-1">Resend Confirmation</button>
 
         <!-------------dropdown---------------------->
         <div class="btn-group mr-1 border border-dark">
          
-            <button type="button" class="btn">Process Label</button>
+            <button type="button" class="btn">Export</button>
             <button type="button" class="dropdown-toggle dropdown-icon btn" data-toggle="dropdown">
               <span class="sr-only">Toggle Dropdown</span>
             </button>
@@ -117,21 +108,7 @@
          
         </div>
         <!-------------------dropdown--------------------->
-        <div class="btn-group mr-1 border border-dark">
-         
-            <button type="button" class="btn" disabled>Bulk Update</button>
-            <button type="button" class="dropdown-toggle dropdown-icon btn" data-toggle="dropdown" disabled>
-              <span class="sr-only">Toggle Dropdown</span>
-            </button>
-            <div class="dropdown-menu" role="menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
-            </div>
-         
-        </div>
+        <button class="btn border border-dark mr-1" disabled>Notify Marketplaces</button>
       </div>
       </div><!-- /.container-fluid -->
     </section>
@@ -166,7 +143,7 @@
                 <!-------------dropdown---------------------->
                 <div class="btn-group mr-1 border border-muted">
          
-                    <button type="button" class="btn">Marketplace</button>
+                    <button type="button" class="btn">Product Name</button>
                     <button type="button" class="dropdown-toggle dropdown-icon btn" data-toggle="dropdown">
                       <span class="sr-only">Toggle Dropdown</span>
                     </button>
@@ -267,7 +244,7 @@
 
             <div class="btn-group mr-1 border border-muted">
          
-                <button type="button" class="btn">Shipping Account</button>
+                <button type="button" class="btn">Seller</button>
                 <button type="button" class="dropdown-toggle dropdown-icon btn" data-toggle="dropdown">
                   <span class="sr-only">Toggle Dropdown</span>
                 </button>
@@ -280,6 +257,21 @@
                 </div>
              
             </div>
+            <div class="btn-group mr-1 border border-muted">
+         
+              <button type="button" class="btn">Customer</button>
+              <button type="button" class="dropdown-toggle dropdown-icon btn" data-toggle="dropdown">
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <div class="dropdown-menu" role="menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+           
+          </div>
 
             <div class="btn-group">
                 <i class="fa fa-times text-danger ml-2 mt-1" aria-hidden="true"></i>
@@ -299,17 +291,17 @@
                           <input class="form-check-input" type="checkbox">
                     </div>
                   </th>
-                  <td>Product SKU</td>
+                  <th>Notifications</th>
+                  <th>Product Name</th>
+                  <th>Picking #</th>
                   <th>Order #</th>
+                  <th>Store</th>
+                  <th>Customer</th>
+                  <th>Carrier</th>
+                  <th>Ship Date</th>
                   <th>Tracking #</th>
-                  <th>Customer Name</th>
-                  <th>Packing Slip</th>
-                  <th>Label Created</th>
-                  <th>Label Printed #</th>
-                  <th>Store Notified</th>
-                  <th>Shipment Notification</th>
-                  <th>Delivery Notification</th>
-                  <th>Custom Forms</th>
+                  <th>Ship From</th>
+                  <th>Shipping Status</th>
                 </tr>
               </thead>
               <tbody>
@@ -319,17 +311,20 @@
                           <input class="form-check-input" type="checkbox">
                     </div>
                   </td>
-                  <td>76866</td>
-                  <td>SHO53</td>
-                  <td>897979</td>
-                  <td>Siddhant</td>
-                  <td><i class="fas fa-print"></i> Printed</td>
-                  <td><i class="fas fa-dollar-sign"></i> Created</td>
-                  <td><i class="fas fa-print"></i> Printed</td>
-                  <td><i class="fab fa-telegram-plane"></i> <span> Notified</span></td>
-                  <td><i class="fab fa-telegram-plane text-secondary"></i></td>
-                  <td><i class="fab fa-telegram-plane"></i> Notified</td>
-                  <td><a href="">Created PDF</a></td>
+                  <td><i class="fas fa-cart-plus mr-1"></i>
+                    <i class="fas fa-envelope mr-1"></i>
+                    <i class="fas fa-map-marker-alt mr-1"></i>
+                </td>
+                  <td></td>
+                  <td>001812</td>
+                  <td>CSV 1232</td>
+                  <td>Stamps.com</td>
+                  <td>Shipstation Support</td>
+                  <td>USPC First</td>
+                  <td>04/04/2021</td>
+                  <td>97896868689</td>
+                  <td>ShipStation</td>
+                  <td>Delivered</td>
                 </tr>
                 <tr>
                     <td>
@@ -337,214 +332,61 @@
                             <input class="form-check-input" type="checkbox">
                       </div>
                     </td>
-                    <td>76866</td>
-                    <td>SHO53</td>
-                    <td>897979</td>
-                    <td>Harshit</td>
-                    <td><i class="fas fa-print"></i> Printed</td>
-                    <td><i class="fas fa-dollar-sign"></i> Created</td>
-                    <td><i class="fas fa-print"></i> Printed</td>
-                    <td><i class="fab fa-telegram-plane text-secondary"></i> <span class="text-danger"> Failed</span></td>
-                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
-                    <td><i class="fab fa-telegram-plane"></i> Notified</td>
-                    <td><a href="">Created PDF</a></td>
+                    <td><i class="fas fa-cart-plus mr-1"></i>
+                      <i class="fas fa-envelope mr-1"></i>
+                      <i class="fas fa-map-marker-alt mr-1"></i>
+                  </td>
+                    <td></td>
+                    <td>001812</td>
+                    <td>CSV 1232</td>
+                    <td>Stamps.com</td>
+                    <td>Shipstation Support</td>
+                    <td>USPC First</td>
+                    <td>04/04/2021</td>
+                    <td>97896868689</td>
+                    <td>ShipStation</td>
+                    <td>Cancelled</td>
                   </tr>                <tr>
                     <td>
                       <div class="form-check">
                             <input class="form-check-input" type="checkbox">
                       </div>
                     </td>
-                    <td>76866</td>
-                    <td>JSHO53</td>
-                    <td>8979</td>
-                    <td>Praful</td>
-                    <td><i class="fas fa-print text-secondary"></i></td>
-                    <td><i class="fas fa-dollar-sign"></i> Created</td>
-                    <td><i class="fas fa-print text-secondary"></i></td>
-                    <td><i class="fab fa-telegram-plane text-secondary"></i><span class="text-danger"> Failed</span></td>
-                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
-                    <td><i class="fab fa-telegram-plane"></i> Notified</td>
-                    <td><a href="">Created PDF</a></td>
-                  </tr>             
-                     <tr>
-                    <td>
-                      <div class="form-check">
-                            <input class="form-check-input" type="checkbox">
-                      </div>
-                    </td>
-                    <td>76866</td>
-                    <td>JKO53</td>
-                    <td>09979</td>
-                    <td>Pallav</td>
-                    <td><i class="fas fa-print"></i> Printed</td>
-                    <td><i class="fas fa-dollar-sign text-secondary"></i></td>
-                    <td><i class="fas fa-print"></i> Printed</td>
-                    <td><i class="fab fa-telegram-plane"></i><span> Notified</span></td>
-                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
-                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
-                    <td><a href="">Created PDF</a></td>
+                    <td><i class="fas fa-cart-plus mr-1"></i>
+                      <i class="fas fa-envelope mr-1"></i>
+                      <i class="fas fa-map-marker-alt mr-1"></i>
+                  </td>
+                    <td></td>
+                    <td>783478</td>
+                    <td>CSV 1232</td>
+                    <td>facebook.com</td>
+                    <td>Shipstation Support</td>
+                    <td>USPC First</td>
+                    <td>04/04/2021</td>
+                    <td>97896868689</td>
+                    <td>ShipStation</td>
+                    <td>Delivered</td>
                   </tr>                <tr>
                     <td>
                       <div class="form-check">
                             <input class="form-check-input" type="checkbox">
                       </div>
                     </td>
-                    <td>76866</td>
-                    <td>SHO53</td>
-                    <td>897979</td>
-                    <td>Sumith</td>
-                    <td><i class="fas fa-print"></i> Printed</td>
-                    <td><i class="fas fa-dollar-sign"></i> Created</td>
-                    <td><i class="fas fa-print"></i> Printed</td>
-                    <td><i class="fab fa-telegram-plane text-secondary"></i><span class="text-danger"> Failed</span></td>
-                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
-                    <td><i class="fab fa-telegram-plane"></i> Notified</td>
-                    <td><a href="">Created PDF</a></td>
+                    <td><i class="fas fa-cart-plus mr-1"></i>
+                      <i class="fas fa-envelope mr-1"></i>
+                      <i class="fas fa-map-marker-alt mr-1"></i>
+                  </td>
+                    <td></td>
+                    <td>032323</td>
+                    <td>CSV 1232</td>
+                    <td>amazon.com</td>
+                    <td>Shipstation Support</td>
+                    <td>USPC First</td>
+                    <td>04/04/2021</td>
+                    <td>97896868689</td>
+                    <td>ShipStation</td>
+                    <td>Delivered</td>
                   </tr>
-                  <tr>
-                    <td>
-                      <div class="form-check">
-                            <input class="form-check-input" type="checkbox">
-                      </div>
-                    </td>
-                    <td>76866</td>
-                    <td>JKO53</td>
-                    <td>09979</td>
-                    <td>Jaswant</td>
-                    <td><i class="fas fa-print"></i> Printed</td>
-                    <td><i class="fas fa-dollar-sign text-secondary"></i></td>
-                    <td><i class="fas fa-print"></i> Printed</td>
-                    <td><i class="fab fa-telegram-plane"></i><span> Notified</span></td>
-                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
-                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
-                    <td><a href="">Created PDF</a></td>
-                  </tr>  
-                  <tr>
-                    <td>
-                      <div class="form-check">
-                            <input class="form-check-input" type="checkbox">
-                      </div>
-                    </td>
-                    <td>76866</td>
-                    <td>JKO53</td>
-                    <td>09979</td>
-                    <td>Raj</td>
-                    <td><i class="fas fa-print"></i> Printed</td>
-                    <td><i class="fas fa-dollar-sign text-secondary"></i></td>
-                    <td><i class="fas fa-print"></i> Printed</td>
-                    <td><i class="fab fa-telegram-plane"></i><span> Notified</span></td>
-                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
-                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
-                    <td><a href="">Created PDF</a></td>
-                  </tr>  
-                  <tr>
-                    <td>
-                      <div class="form-check">
-                            <input class="form-check-input" type="checkbox">
-                      </div>
-                    </td>
-                    <td>76866</td>
-                    <td>JKO53</td>
-                    <td>09979</td>
-                    <td>Chirag</td>
-                    <td><i class="fas fa-print"></i> Printed</td>
-                    <td><i class="fas fa-dollar-sign text-secondary"></i></td>
-                    <td><i class="fas fa-print"></i> Printed</td>
-                    <td><i class="fab fa-telegram-plane"></i><span> Notified</span></td>
-                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
-                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
-                    <td><a href="">Created PDF</a></td>
-                  </tr>  
-                  <tr>
-                    <td>
-                      <div class="form-check">
-                            <input class="form-check-input" type="checkbox">
-                      </div>
-                    </td>
-                    <td>76866</td>
-                    <td>JKO53</td>
-                    <td>09979</td>
-                    <td>Chunky</td>
-                    <td><i class="fas fa-print"></i> Printed</td>
-                    <td><i class="fas fa-dollar-sign text-secondary"></i></td>
-                    <td><i class="fas fa-print"></i> Printed</td>
-                    <td><i class="fab fa-telegram-plane"></i><span> Notified</span></td>
-                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
-                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
-                    <td><a href="">Created PDF</a></td>
-                  </tr>  
-                  <tr>
-                    <td>
-                      <div class="form-check">
-                            <input class="form-check-input" type="checkbox">
-                      </div>
-                    </td>
-                    <td>76866</td>
-                    <td>JKO53</td>
-                    <td>09979</td>
-                    <td>Tushar</td>
-                    <td><i class="fas fa-print"></i> Printed</td>
-                    <td><i class="fas fa-dollar-sign text-secondary"></i></td>
-                    <td><i class="fas fa-print"></i> Printed</td>
-                    <td><i class="fab fa-telegram-plane"></i><span> Notified</span></td>
-                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
-                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
-                    <td><a href="">Created PDF</a></td>
-                  </tr>  
-                  <tr>
-                    <td>
-                      <div class="form-check">
-                            <input class="form-check-input" type="checkbox">
-                      </div>
-                    </td>
-                    <td>76866</td>
-                    <td>JKO53</td>
-                    <td>09979</td>
-                    <td>Ajay</td>
-                    <td><i class="fas fa-print"></i> Printed</td>
-                    <td><i class="fas fa-dollar-sign text-secondary"></i></td>
-                    <td><i class="fas fa-print"></i> Printed</td>
-                    <td><i class="fab fa-telegram-plane"></i><span> Notified</span></td>
-                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
-                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
-                    <td><a href="">Created PDF</a></td>
-                  </tr>  
-                  <tr>
-                    <td>
-                      <div class="form-check">
-                            <input class="form-check-input" type="checkbox">
-                      </div>
-                    </td>
-                    <td>76866</td>
-                    <td>JKO53</td>
-                    <td>09979</td>
-                    <td>Namrata</td>
-                    <td><i class="fas fa-print"></i> Printed</td>
-                    <td><i class="fas fa-dollar-sign text-secondary"></i></td>
-                    <td><i class="fas fa-print"></i> Printed</td>
-                    <td><i class="fab fa-telegram-plane"></i><span> Notified</span></td>
-                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
-                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
-                    <td><a href="">Created PDF</a></td>
-                  </tr>  
-                  <tr>
-                    <td>
-                      <div class="form-check">
-                            <input class="form-check-input" type="checkbox">
-                      </div>
-                    </td>
-                    <td>76866</td>
-                    <td>JKO53</td>
-                    <td>09979</td>
-                    <td>Arun</td>
-                    <td><i class="fas fa-print"></i> Printed</td>
-                    <td><i class="fas fa-dollar-sign text-secondary"></i></td>
-                    <td><i class="fas fa-print"></i> Printed</td>
-                    <td><i class="fab fa-telegram-plane"></i><span> Notified</span></td>
-                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
-                    <td><i class="fab fa-telegram-plane text-secondary"></i></td>
-                    <td><a href="">Created PDF</a></td>
-                  </tr>  
               </tbody>
             </table>
             </div>
@@ -566,7 +408,7 @@
 <link rel="stylesheet" href="/css/bstreeview.css">
 <script src="/js/bstreeview.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
-
+ 
 
 </body>
 </html>
