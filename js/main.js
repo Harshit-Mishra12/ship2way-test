@@ -250,7 +250,7 @@ var NavigationMenu = [
     id:'nav6',
     nodes:[
       {
-        text: "Customers",
+        text: "Vendor",
         icon: "fa fa-folder",
         href: "/Customers/customers.html",
         id:'nav6_1'
