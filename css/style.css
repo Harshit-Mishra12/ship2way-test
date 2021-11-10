@@ -1,0 +1,21 @@
+#modal-first{
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+}
+#modal-sec{
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+}
+#modal-third{
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+}
+
+img {
+    width:  auto;
+    height: 100px;
+}
+.fit-image
+{
+    height: 25px;
+}

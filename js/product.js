@@ -69,10 +69,12 @@ function handleselectionForm() {
     $(document).ready(function(){
 
         $(".add-category").click(function(){
-            var category = $("#category").val();
+            var category = $("#category_name").val();
             var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + category + "</td><td><input type='button' class='btn btn-success' value='Edit'>&nbsp;<input type='button' class='btn btn-danger btnDelete' value='Delete'></td></tr>";
             $("table tbody").append(markup);
         });
+
+        
         
         // Find and remove selected table rows
         $("#tbUser").on('click', '.btnDelete', function () {
