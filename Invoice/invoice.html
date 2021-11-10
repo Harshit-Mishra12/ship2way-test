@@ -116,10 +116,23 @@
     <section class="content">
       <div class="container-fluid">
         <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1>Invoice History</h1>
+          <div class="col-sm-8">
+            <div class="row">
+              <div class="col-sm-6">
+                <h1>Invoice History</h1>
+                </div>
+                <div class="col-sm-6">
+                  <ol class="breadcrumb float-sm-right">
+                    <li><button type="button" class="btn btn-info" data-toggle="modal"  style="float:right">Sales Amount/month</button></li>&nbsp;
+                    <li><button type="button" class="btn btn-info" data-toggle="modal"  style="float:right">Voided</button></li>&nbsp;
+                  </ol>
+                  </div>
+
+            </div>
+            
+           
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-4">
             <ol class="breadcrumb float-sm-right">
               <li><button type="button" class="btn btn-info" data-toggle="modal" data-target="#new_invoice" style="float:right">Create New</button></li>&nbsp;
               <li><button type="button" class="btn btn-info" data-toggle="modal" data-target="#" style="float:right">Edit</button></li>&nbsp;
@@ -178,7 +191,7 @@
                                 <th class="varient_column">Original Price</th>
                                 <th class="category_column">Category</th>
                                 <th class="modified_column">Sales Price</th>
-                                <th class="avaliable_column">Total Available</th>
+                                <th class="avaliable_column">Total Sale</th>
                                 <th>Check Status</th>
                                 <th>Print</th>
                               </tr>
@@ -198,7 +211,9 @@
                                 <td>Free Shipping</td>
                                 <td>$3.78</td>
                                 <td class="avaliable_column">Free Shipping</td>
-                                <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#coloumn" style="float:middle">Status</button></td>
+                                <td>
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#coloumn" style="float:middle">Status</button>
+                                </td>
                                 <th><button type="button" class="btn btn-light" data-toggle="modal" data-target="#coloumn" style="float:middle">Print</button></th>
                               </tr>
                               <tr>
