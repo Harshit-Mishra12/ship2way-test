@@ -44,7 +44,13 @@ $(document).ready(function(){
 
   $(".add-product").click(function(){
       var company_name = $("#company_name").val();
-      var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + company_name + "</td><td>" + company_name + "</td><td>" + company_name + "</td><td>" + company_name + "</td><td>" + company_name + "</td><td>" + company_name + "</td><td>" + company_name + "</td></tr>";
+      var description = "Free Shipping";
+      var original_price = "1000";
+      var product_type = "Free Shipping";
+      var sales_price = "1000";
+      var Shipping_fee = "Free Shipping";
+      var avl_unit = "200";
+      var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + company_name + "</td><td>" + description + "</td><td>" + original_price + "</td><td>" + product_type + "</td><td>" + sales_price + "</td><td>" + Shipping_fee + "</td><td>" + avl_unit + "</td></tr>";
       $("table tbody").append(markup);
       $('#New_Orders').modal('hide');
   });
@@ -58,7 +64,9 @@ $(document).ready(function(){
 
         $(".add-preset").click(function(){
             var preset_group = $("#preset_group").val();
-            var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + preset_group + "</td><td>" + preset_group + "</td><td>" + preset_group + "</td><td>" + preset_group + "</td><td>" + preset_group + "</td><td>" + preset_group + "</td><td>" + preset_group + "</td><td>" + preset_group + "</td><td><input type='button' class='btn btn-success' value='Edit'>&nbsp;<input type='button' class='btn btn-danger btn-Delete' value='Delete'></td></tr>";
+            var dimension = "30 x 40";
+            var weight = "40gms";
+            var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + preset_group + "</td><td>" + dimension + "</td><td>" + weight + "</td><td><input type='button' class='btn btn-success' value='Edit'>&nbsp;<input type='button' class='btn btn-danger btn-Delete' value='Delete'></td></tr>";
             $("table tbody").append(markup);
             $('#preset_model').modal('hide');
            
