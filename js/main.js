@@ -245,14 +245,32 @@ var NavigationMenu = [
     ]
   },
   {
-    text: "Customers",
+    text: "Customer",
     icon: "fas fa-user-friends",
     id:'nav6',
     nodes:[
       {
         text: "Vendor",
         icon: "fa fa-folder",
+        href: "/Customers/vendor.html",
+        id:'nav6_1'
+      },
+      {
+        text: "Customers",
+        icon: "fa fa-folder",
         href: "/Customers/customers.html",
+        id:'nav6_1'
+      },
+      {
+        text: "Online Portal",
+        icon: "fa fa-folder",
+        href: "/Customers/online_portal.html",
+        id:'nav6_1'
+      },
+      {
+        text: "Manufacturer",
+        icon: "fa fa-folder",
+        href: "/Customers/manufacturer.html",
         id:'nav6_1'
       },
     ]
