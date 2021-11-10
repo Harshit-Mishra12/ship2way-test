@@ -39,6 +39,19 @@ function handleselectionForm() {
         for (let el of document.querySelectorAll('.avaliable_column')) el.style.display = 'none';
       }
 }
+// Product Form Submit and Append Row Forms
+$(document).ready(function(){
+
+  $(".add-product").click(function(){
+      var company_name = $("#company_name").val();
+      var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + company_name + "</td><td>" + company_name + "</td><td>" + company_name + "</td><td>" + company_name + "</td><td>" + company_name + "</td><td>" + company_name + "</td><td>" + company_name + "</td></tr>";
+      $("table tbody").append(markup);
+      $('#New_Orders').modal('hide');
+  });
+  
+  
+
+});  
 
 // Preset Groups Form Submit and Append Row Forms
     $(document).ready(function(){
@@ -47,6 +60,8 @@ function handleselectionForm() {
             var preset_group = $("#preset_group").val();
             var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + preset_group + "</td><td>" + preset_group + "</td><td>" + preset_group + "</td><td>" + preset_group + "</td><td>" + preset_group + "</td><td>" + preset_group + "</td><td>" + preset_group + "</td><td>" + preset_group + "</td><td><input type='button' class='btn btn-success' value='Edit'>&nbsp;<input type='button' class='btn btn-danger btn-Delete' value='Delete'></td></tr>";
             $("table tbody").append(markup);
+            $('#preset_model').modal('hide');
+           
         });
         
         // Find and remove selected table rows
@@ -72,6 +87,7 @@ function handleselectionForm() {
             var category = $("#category_name").val();
             var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + category + "</td><td><input type='button' class='btn btn-success' value='Edit'>&nbsp;<input type='button' class='btn btn-danger btnDelete' value='Delete'></td></tr>";
             $("table tbody").append(markup);
+            $('#category').modal('hide');
         });
 
         
