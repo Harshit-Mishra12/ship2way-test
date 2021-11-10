@@ -273,7 +273,8 @@
                           <input class="form-check-input" type="checkbox">
                     </div>
                   </th>
-                  <th>Product Name and Description</th>
+                  <th>Product Name</th>
+                  <th>Description</th>
                   <th>Store</th>
                   <th>Customers</th>
                   <th>Qty</th>
@@ -288,12 +289,13 @@
                           <input class="form-check-input" type="checkbox">
                     </div>
                   </td>
-                  <td>Shoes</td>
+                  <td data-toggle="modal" data-id="1" data-target="#modal-product">Reebok shoes</td>
+                  <td>basketball high performing shoes</td>
                   <td>Amazon</td>
                   <td>not ship</td>
                   <td> 4</td>
                   <td>$3.78</td>
-                  <td>Free Shipping</td>
+                  <td>Product is ruuning out</td>
                 </tr>
                 <tr>
                   <td>
@@ -301,12 +303,13 @@
                           <input class="form-check-input" type="checkbox">
                     </div>
                   </td>
-                  <td>Belt</td>
+                  <td data-toggle="modal" data-id="1" data-target="#modal-product">Reebok shoes</td>
+                  <td>basketball high performing shoes</td>
                   <td>Amazon</td>
                   <td>hold</td>
                   <td> 4</td>
                   <td>$3.78</td>
-                  <td>Free Shipping</td>
+                  <td>Product is in back order</td>
                 </tr>
               </tbody>
               <tfoot>
@@ -316,7 +319,8 @@
                           <input class="form-check-input" type="checkbox">
                     </div>
                   </th>
-                  <th>Product Name and Description</th>
+                  <th>Product Name</th>
+                  <th>Description</th>
                   <th>Store</th>
                   <th>Customers</th>
                   <th>Qty</th>
@@ -970,7 +974,76 @@
                 </div>
                 <!-- /.modal----------------------->
    <!-----------------------------Product details modal--------------------------->
-
+<!-- product modal -->
+<section>
+  <div class="modal fade" id="modal-product">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content" id="modal-fourth">
+        <div class="modal-header">
+          <h4 class="modal-title">Product</h4>
+          
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+       
+        
+        <div class="col-md-12">
+          <div class="text-center">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2hvZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=20"
+             class="rounded" alt="..." style="height: 100px;width: 100px;">
+          </div>
+          <div class="container">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputZip">Color</label>
+                    <p>Red</p>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputZip">Model#</label>
+                  <p>A91100</p>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputZip">Weight</label>
+                    <p>200gm</p>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputZip">Brand</label>
+                  <p>Nike</p>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputZip">Variation</label>
+                    <p>200gm</p>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputZip">Country of origin</label>
+                  <p>Austria</p>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputZip">Payment Terms</label>
+                    <p>400$</p>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputZip">Review</label>
+                  <p>4*</p>
+                </div>
+              </div>
+              </form>
+          </div>
+        <br><br>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</section>
   </div>
 
 </div>

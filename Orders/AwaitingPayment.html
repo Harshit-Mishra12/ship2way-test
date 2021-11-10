@@ -287,7 +287,7 @@
                   </td>
                   <td>101</td>
                   <td>Amazon</td>
-                  <td>Ship2way support</td>
+                  <td data-toggle="modal" data-id="1" data-target="#customer_data">Ship2way support</td>
                   <td> 4</td>
                   <td>$3.78</td>
                   <td>Free Shipping</td>
@@ -300,7 +300,7 @@
                   </td>
                   <td>102</td>
                   <td>Amazon</td>
-                  <td>Ship2way support</td>
+                  <td data-toggle="modal" data-id="1" data-target="#customer_data">Ship2way support</td>
                   <td> 4</td>
                   <td>$3.78</td>
                   <td>Free Shipping</td>
@@ -967,7 +967,102 @@
                 </div>
                 <!-- /.modal----------------------->
    <!-----------------------------Product details modal--------------------------->
+ <!---------------Profile and address-------------------------------------------->
 
+ <section>
+  <div class="modal fade" id="customer_data">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content" id="modal-sec">
+        <div class="modal-header">
+          <h4 class="modal-title">Customer's data</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+      
+        <div class="col-md-12">
+
+          <div class="card card-primary card-outline card-outline-tabs">
+          <div class="card-header p-0 border-bottom-0">
+            <ul class="nav nav-tabs" id="custom-tabs-four-tab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="custom-tabs-four-home-tab" data-toggle="pill" href="#custom-tabs-four-home" role="tab" aria-controls="custom-tabs-four-home" aria-selected="true">Customer Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="custom-tabs-four-profile-tab" data-toggle="pill" href="#custom-tabs-four-profile" role="tab" aria-controls="custom-tabs-four-profile" aria-selected="false">Customer Address</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content" id="custom-tabs-four-tabContent">
+              <div class="tab-pane fade active show" id="custom-tabs-four-home" role="tabpanel" aria-labelledby="custom-tabs-four-home-tab">
+                  <div class="answer">
+                    <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                          <label for="inputZip">Customer Name</label>
+                          <p> John Doe</p>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputZip">Phone no.</label>
+                        <p>+91 9999999999</p>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                          <label for="inputZip">Customer Email</label>
+                          <p> JohnDoe@gmail.com</p>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputZip">Age</label>
+                        <p>26</p>
+                      </div>
+                    </div>
+                    </form>
+                  </div>
+                
+              </div>
+              <div class="tab-pane fade" id="custom-tabs-four-profile" role="tabpanel" aria-labelledby="custom-tabs-four-profile-tab">
+                                            
+                  <div class="answer">
+                    <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                          <label for="inputZip">Address</label>
+                          <p>Gaur city 2</p>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputZip">city</label>
+                        <p>Gaziabad</p>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                          <label for="inputZip">State</label>
+                          <p>Uttar pradesh</p>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputZip">Country</label>
+                        <p>India</p>
+                      </div>
+                    </div>
+                    </form>
+                  </div>  
+                 
+              </div>
+            </div>
+          </div>
+          <!-- /.card -->
+        </div>
+
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</section>
+
+<!----------------Profile and address-------------------------------------------->
   </div>
 
 </div>
