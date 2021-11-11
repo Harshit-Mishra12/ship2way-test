@@ -43,14 +43,14 @@ function handleselectionForm() {
 $(document).ready(function(){
 
   $(".add-product").click(function(){
-      var company_name = $("#company_name").val();
-      var description = "Free Shipping";
-      var original_price = "1000";
-      var product_type = "Free Shipping";
-      var sales_price = "1000";
-      var Shipping_fee = "Free Shipping";
-      var avl_unit = "200";
-      var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + company_name + "</td><td>" + description + "</td><td>" + original_price + "</td><td>" + product_type + "</td><td>" + sales_price + "</td><td>" + Shipping_fee + "</td><td>" + avl_unit + "</td></tr>";
+      var pro_name = $("#pro_name").val();
+      var pro_desc = $("#pro_desc").val();
+      var original_price = $("#original_price").val();
+      var sales_price = $("#sales_price").val();
+      var pro_type = $("#pro_type").val();
+      var Shipping_fee = "120";
+      var avl_unit = "350";
+      var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + pro_name + "</td><td>" + pro_desc + "</td><td>" + original_price + "</td><td>" + pro_type + "</td><td>" + sales_price + "</td><td>" + Shipping_fee + "</td><td>" + avl_unit + "</td></tr>";
       $("table tbody").append(markup);
       $('#New_Orders').modal('hide');
   });
