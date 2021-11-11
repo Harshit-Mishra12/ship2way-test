@@ -87,8 +87,8 @@
               <div class="col-md-12">
                   <p>As users come and go from your organization, it's important to maintain historical references on their activity. Old user accounts are never fully deleted; instead they are deactivated and prevented from accessing the system.</p>
 
-                  <div class="card-body">
-                    <table id="tbUser" class="table table-bordered table-hover">
+                  <div class="card-body" id="content">
+                    <table id="tbUser" class="table table-bordered table-hover tab1">
                       <thead>
                         <tr>
                           <th>
@@ -112,12 +112,12 @@
                                   <input class="form-check-input" type="checkbox">
                             </div>
                           </td>
-                          <td class="alias_column">101</td>
-                          <td class="sku_column">My store</td>
-                          <td>Ship2Way support</td>
-                          <td> 4</td>
-                          <td>$3.78</td>
-                          <td>Free Shipping</td>
+                          <td class="alias_column">Jack</td>
+                          <td class="sku_column">jack@gmail.com</td>
+                          <td>9089786756</td>
+                          <td>Lajpat Nagar</td>
+                          <td>Mumbai</td>
+                          <td>India</td>
                           <td><button class="btn btn-success">Edit</button>
                               <button class="btn btn-danger btnDelete">Delete</button>
                           </td>
@@ -129,12 +129,12 @@
                                   <input class="form-check-input" type="checkbox">
                             </div>
                           </td>
-                          <td class="alias_column">102</td>
-                          <td class="sku_column">My store</td>
-                          <td>Ship2Way support</td>
-                          <td> 4</td>
-                          <td>$3.78</td>
-                          <td>Free Shipping</td>
+                          <td class="alias_column">Mack</td>
+                          <td class="sku_column">Mack@gmail.com</td>
+                          <td>9089786756</td>
+                          <td>Sankar Nagar</td>
+                          <td>Delhi</td>
+                          <td>India</td>
                           <td><button class="btn btn-success">Edit</button>
                               <button class="btn btn-danger btnDelete">Delete</button>
                           </td>
@@ -144,7 +144,7 @@
                     </table>
                   </div>
                   <div class="col-sm-12">
-                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#new_user" style="float:right">Add A User Account</button>
+                    <button type="button" class="btn btn-primary" style="float:right" onclick="myApp.printTable()">Save as PDF</button>
                   </div>
                   
               </div>
@@ -448,7 +448,20 @@
 <link rel="stylesheet" href="/css/bstreeview.css">
 <script src="/js/bstreeview.js"></script>
 <script src="/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+<script>
+  var myApp = new function () {
+      this.printTable = function () {
+          var tab = document.getElementById('tbUser');
+          var win = window.open('', '', 'height=700,width=700');
+          win.document.write(tab.outerHTML);
+          win.document.close();
+          win.print();
+      }
+  }
+</script>
 
 </body>
 </html>

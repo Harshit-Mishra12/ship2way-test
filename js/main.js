@@ -253,25 +253,25 @@ var NavigationMenu = [
         text: "Vendor",
         icon: "fa fa-folder",
         href: "/Customers/vendor.html",
-        id:'nav6_1'
+        id:'nav6_2'
       },
       {
         text: "Customers",
         icon: "fa fa-folder",
         href: "/Customers/customers.html",
-        id:'nav6_1'
+        id:'nav6_3'
       },
       {
         text: "Online Portal",
         icon: "fa fa-folder",
         href: "/Customers/online_portal.html",
-        id:'nav6_1'
+        id:'nav6_4'
       },
       {
         text: "Manufacturer",
         icon: "fa fa-folder",
         href: "/Customers/manufacturer.html",
-        id:'nav6_1'
+        id:'nav6_5'
       },
     ]
   },
