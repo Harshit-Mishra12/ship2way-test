@@ -58,7 +58,8 @@
           </center>
         </div>
         <br><br>
-
+       
+        
         <div class="col-md-12">
             <div class="row">
               <div class="col-lg-6 col-md-4 mb-3">
@@ -635,32 +636,10 @@
 
       
       <div class="modal fade" id="erp_software">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content" id="modal-fourth">
-          <div class="modal-header">
-            <h4 class="modal-title">Add New Ship From location</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          
-          <div class="col-md-12">
-            <div class="container">
-              <p>You Can Add API Here</p>
-            </div>
-            <br>
-            <br>
-          </div>
-         
-        </div>
-      </div>
-      </div>
-
-      <div class="modal fade" id="shop_portal">
         <div class="modal-dialog modal-lg">
           <div class="modal-content" id="modal-fourth">
             <div class="modal-header">
-              <h4 class="modal-title">Add New Ship From location</h4>
+              <h4 class="modal-title">Setup Marketplace Connection</h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -668,9 +647,152 @@
             
             <div class="col-md-12">
               <div class="container">
-                <p>You Can Add A Api Here</p>
+                <br>
+               <h4>Follow these steps to get connected:</h4> 
+             
+               <ul>
+               <li>Visit the Shipstation Extension page for Acumatica here https://help.shipstation.com/hc/en-us/articles/360026140871-Acumatica</li>
+               <li>Install the cartridge to your Acumatica Instance (if you need assistance please contact your consultant / VAR)</li>
+               <li>Configure your connection.</li>
+               <li>Map the ShipStation Order Statuses to your Acumatica Order Statuses below. Separate multiple statuses with a comma.</li>
+
+               </ul>
+               <form>
+                <div class="form-group">
+                  <label for="inputAddress">Base Url</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Usrname</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Password</label>
+                  <input type="password" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Company Name</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Company ID</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Unpaid Status</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Paid Status</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Shipped Status</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Cancel Status</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Onhold Status</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+                <button type="submit" class="btn btn-primary" style="float:right">Connect</button>
+                </form>     
               </div>
-            <br><br>
+              <br><br>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="shop_portal">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content" id="modal-fourth">
+            <div class="modal-header">
+              <h4 class="modal-title">Setup Marketplace Connection</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            
+            <div class="col-md-12">
+              <div class="container">
+               <br>
+               <h4>Follow these steps to get connected:</h4> 
+              
+               <ul>
+               <li>Visit the Shipstation Extension page for Acumatica here https://help.shipstation.com/hc/en-us/articles/360026140871-Acumatica</li>
+               <li>Install the cartridge to your Acumatica Instance (if you need assistance please contact your consultant / VAR)</li>
+               <li>Configure your connection.</li>
+               <li>Map the ShipStation Order Statuses to your Acumatica Order Statuses below. Separate multiple statuses with a comma.</li>
+
+               </ul>
+               <form>
+                <div class="form-group">
+                  <label for="inputAddress">Base Url</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Usrname</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Password</label>
+                  <input type="password" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Company Name</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Company ID</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Unpaid Status</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Paid Status</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Shipped Status</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Cancel Status</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Onhold Status</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+                <button type="submit" class="btn btn-primary" style="float:right">Connect</button>
+                </form>     
+              </div>
+              <br><br>
             </div>
            
           </div>
@@ -710,9 +832,24 @@
                 <div class="tab-content" id="custom-tabs-four-tabContent">
                   <div class="tab-pane fade show active" id="custom-tabs-four-home" role="tabpanel" aria-labelledby="custom-tabs-four-home-tab">
                      
-                    <video width="320" height="240">
-                      <source src="../video/demo_video.mp4">
-                    </video>
+                    <video width="500px" height="300px" controls> 
+                    <source src="../video/demo_video.mp4" type="video/mp4"> 
+                    </video> 
+                    <br> <br>
+                      <h4>Ship2Way Helpd You In Following Ways</h4>
+                      <br>
+
+                      <p>1)Ship2way Helps Ecommerce and Online Seller To Sell Their Products Online</p>
+                      <p>
+
+                      <p>2)You are able to upload many product to many shopping portal at the same time</p>
+                      <p>
+
+                      <p>3)You are able to upload many product to many shopping portal like amazon,ebay etc. at the same time</p>
+                      <p>
+
+                      <p>4)It integrates many shipping features like fedex,kerry express,etc</p>
+                      <p>
              
                   </div>
                   <div class="tab-pane fade" id="custom-tabs-four-profile" role="tabpanel" aria-labelledby="custom-tabs-four-profile-tab">
@@ -876,7 +1013,7 @@
                   </div>
                   <div class="form-group">
                     <label for="inputAddress">Bank Address</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="Enter Your Name">
+                    <input type="text" class="form-control" id="inputAddress">
                   </div>
                   <div class="form-row">
                     <div class="form-group col-md-6">
@@ -884,18 +1021,20 @@
                       <input type="text" class="form-control" id="inputCity">
                     </div>
                     <div class="form-group col-md-6">
-                      <label for="inputState">Zipcode</label>
-                      <input type="text" class="form-control" id="inputCity">
+                      <label for="inputState">Telephone No</label>
+                      <input type="text" class="form-control" id="inputAddress">
                     </div>
+                    
                   </div>
                   <div class="form-row">
                     <div class="form-group col-md-6">
                       <label for="inputCity">Country</label>
-                      <input type="text" class="form-control" id="inputAddress" placeholder="Enter Your Name">
+                      <input type="text" class="form-control" id="inputAddress">
                     </div>
+                   
                     <div class="form-group col-md-6">
-                      <label for="inputState">Telephone No</label>
-                      <input type="text" class="form-control" id="inputAddress" placeholder="Enter Your Name">
+                      <label for="inputState">Zipcode</label>
+                      <input type="text" class="form-control" id="inputCity">
                     </div>
                   </div>
                   
@@ -903,31 +1042,31 @@
                   <div class="form-row">
                     <div class="form-group col-md-6">
                       <label for="inputCity">Contact Name</label>
-                      <input type="text" class="form-control" id="inputAddress" placeholder="Enter Your Name">
+                      <input type="text" class="form-control" id="inputAddress">
                     </div>
                     <div class="form-group col-md-6">
                       <label for="inputState">Last Name</label>
-                      <input type="text" class="form-control" id="inputAddress" placeholder="Enter Your Name">
+                      <input type="text" class="form-control" id="inputAddress">
                     </div>
                   </div>
                   <div class="form-row">
                     <div class="form-group col-md-6">
                       <label for="inputZip">Bank Account</label>
-                      <input type="text" class="form-control" id="inputAddress" placeholder="Enter Your Name">
+                      <input type="text" class="form-control" id="inputAddress">
                     </div>
                     <div class="form-group col-md-6">
                       <label for="inputZip">Email</label>
-                      <input type="email" class="form-control" id="inputAddress" placeholder="Zip Code">
+                      <input type="email" class="form-control" id="inputAddress">
                     </div>
                   </div>
                   <div class="form-row">
                     <div class="form-group col-md-6">
                       <label for="inputZip">Routing Number </label>
-                      <input type="text" class="form-control" id="inputAddress" placeholder="Enter Your Name">
+                      <input type="text" class="form-control" id="inputAddress">
                     </div>
                     <div class="form-group col-md-6">
                       <label for="inputZip">Swift</label>
-                      <input type="email" class="form-control" id="inputAddress" placeholder="Zip Code">
+                      <input type="email" class="form-control" id="inputAddress">
                     </div>
                   </div>
                   <button type="submit" class="btn btn-primary">Save</button>
