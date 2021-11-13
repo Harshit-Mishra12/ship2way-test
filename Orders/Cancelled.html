@@ -39,8 +39,8 @@
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
 
       <a href="index3.html" class="brand-link">
-        <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light">Ship2way</span>
+        <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8;margin-left: 3.8rem;">
+      
       </a>
       <div class="sidebar">
         <div id="navbar"></div>
@@ -146,13 +146,11 @@
               <span class="sr-only">Toggle Dropdown</span>
             </button>
             <div class="dropdown-menu" role="menu">
-              <a class="dropdown-item" href="#">Cancel</a>
-              <a class="dropdown-item" href="#">Mark as shipped</a>
-              <a class="dropdown-item" href="#">Mark as shipped bulk</a>
+              <a class="dropdown-item" href="#">Seller Name</a>
+              <a class="dropdown-item" href="#">Date Products</a>
+              <a class="dropdown-item" href="#">Location</a>
               <a class="dropdown-item" href="#">Export orders</a>
-              <a class="dropdown-item" href="#">Add to batch</a>
-              <a class="dropdown-item" href="#">Validate address</a>
-              <a class="dropdown-item" href="#">manage preset</a>
+             
             </div>
           </div>
         </div>
@@ -241,6 +239,20 @@
               <!-------------dropdown---------------------->
               <div class="btn-group mr-1">
                 <div class="btn-group">
+                  <button type="button" class="btn btn-info">Refund Status</button>
+                  <button type="button" class="btn btn-info dropdown-toggle dropdown-icon" data-toggle="dropdown">
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <div class="dropdown-menu" role="menu">
+                    <a class="dropdown-item" href="#">Refun Isssue</a>
+                    <a class="dropdown-item" href="#">Hold</a>
+                  </div>
+                </div>
+              </div>
+              <!-------------------dropdown--------------------->
+               <!-------------dropdown---------------------->
+               <div class="btn-group mr-1">
+                <div class="btn-group">
                   <button type="button" class="btn btn-info">Other</button>
                   <button type="button" class="btn btn-info dropdown-toggle dropdown-icon" data-toggle="dropdown">
                     <span class="sr-only">Toggle Dropdown</span>
@@ -270,12 +282,14 @@
                           <input class="form-check-input" type="checkbox">
                     </div>
                   </th>
+                  <th>Date</th>
                   <th>Product Name </th>
                   <th>Description</th>
+                  <th>Seller Name</th>
                   <th>Store</th>
                   <th>Recipient</th>
                   <th>Qty</th>
-                  <th>Rate</th>
+                  <th>Price</th>
                   <th>Cancellation Reason</th>
                 </tr>
               </thead>
@@ -286,8 +300,10 @@
                           <input class="form-check-input" type="checkbox">
                     </div>
                   </td>
+                  <td>23-05-1995</td>
                   <td data-toggle="modal" data-id="1" data-target="#modal-product">Reebok shoes</td>
                   <td>basketball high performing shoes</td>
+                  <td>Jack</td>
                   <td>Amazon</td>
                   <td data-toggle="modal" data-id="1" data-target="#customer_data">Shipstation support</td>
                   <td> 4</td>
@@ -300,8 +316,10 @@
                           <input class="form-check-input" type="checkbox">
                     </div>
                   </td>
+                  <td>23-05-1995</td>
                   <td data-toggle="modal" data-id="1" data-target="#modal-product">Reebok shoes</td>
                   <td>basketball high performing shoes</td>
+                  <td>Mack</td>
                   <td>Amazon</td>
                   <td data-toggle="modal" data-id="1" data-target="#customer_data">Shipstation support</td>
                   <td> 4</td>
@@ -316,12 +334,14 @@
                           <input class="form-check-input" type="checkbox">
                     </div>
                   </th>
+                  <th>Date </th>
                   <th>Product Name </th>
                   <th>Description</th>
+                  <th>Seller Name</th>
                   <th>Store</th>
                   <th>Recipient</th>
                   <th>Qty</th>
-                  <th>Rate</th>
+                  <th>Price</th>
                   <th>Cancellation Reason</th>
                 </tr>
               </tfoot>
