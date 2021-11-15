@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
 <!----------------------------Adding css for testing------------------>
 
   <!-- daterange picker -->
@@ -175,66 +177,66 @@
                 <div class="card-body">
                 <div class="tab-content">
                 <div class="tab-pane active" id="tab_1">
-                    <table id="example2" class="table table-bordered table-hover">
-                            <thead>
-                              <tr>
-                                <th>
-                                  <div class="form-check mb-3">
-                                        <input class="form-check-input" type="checkbox">
-                                  </div>
-                                </th>
-                                <th class="sku_column">Product Name</th>
-                                <th class="preset_column">Invoice #</th>
-                                <th class="preset_column">Customer Name</th>
-                                <th class="UPC_column">UPC</th>
-                                <th class="varient_column">Original Price</th>
-                                <th class="category_column">Category</th>
-                                <th class="modified_column">Total Unit</th>
-                                <th class="avaliable_column">Total Sale</th>
-                                <th>Check Status</th>
-                                <th>Action</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>
-                                  <div class="form-check">
-                                        <input class="form-check-input" type="checkbox">
-                                  </div>
-                                </td>
-                                <td class="alias_column">101</td>
-                                <td class="sku_column">My store</td>
-                                <td>Ship2Way support</td>
-                                <td> 4</td>
-                                <td>$3.78</td>
-                                <td>Free Shipping</td>
-                                <td>$3.78</td>
-                                <td class="avaliable_column">Free Shipping</td>
-                                <td>
-                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#coloumn" style="float:middle">Status</button>
-                                </td>
-                                <th><button class="btn btn-success">Edit</button><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#coloumn" style="float:middle">Print</button></th>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <div class="form-check">
-                                        <input class="form-check-input" type="checkbox">
-                                  </div>
-                                </td>
-                                <td class="alias_column">102</td>
-                                <td class="sku_column">My store</td>
-                                <td>Ship2Way support</td>
-                                <td> 4</td>
-                                <td>$3.78</td>
-                                <td>Free Shipping</td>
-                                <td>$3.78</td>
-                                <td class="avaliable_column">Free Shipping</td>
-                                <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#coloumn" style="float:middle">Status</button></td>
-                                <th><button class="btn btn-success">Edit</button><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#coloumn" style="float:middle">Print</button></th>
-                              </tr>
-                            </tbody>
-                            
-                    </table>
+                  <table id="example1" class="table table-bordered table-hover">
+                    <thead>
+                      <tr>
+                        <th>
+                          <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox">
+                          </div>
+                        </th>
+                        <th class="sku_column">Product Name</th>
+                        <th class="preset_column">Invoice #</th>
+                        <th class="preset_column">Customer Name</th>
+                        <th class="UPC_column">UPC</th>
+                        <th class="varient_column">Original Price</th>
+                        <th class="category_column">Category</th>
+                        <th class="modified_column">Total Unit</th>
+                        <th class="avaliable_column">Total Sale</th>
+                        <th>Check Status</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                          </div>
+                        </td>
+                        <td class="alias_column">101</td>
+                        <td class="sku_column">My store</td>
+                        <td>Ship2Way support</td>
+                        <td> 4</td>
+                        <td>$3.78</td>
+                        <td>Free Shipping</td>
+                        <td>$3.78</td>
+                        <td class="avaliable_column">Free Shipping</td>
+                        <td>
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#coloumn" style="float:middle">Status</button>
+                        </td>
+                        <th><button class="btn btn-success">Edit</button><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#coloumn" style="float:middle">Print</button></th>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                          </div>
+                        </td>
+                        <td class="alias_column">102</td>
+                        <td class="sku_column">My store</td>
+                        <td>Ship2Way support</td>
+                        <td> 4</td>
+                        <td>$3.78</td>
+                        <td>Free Shipping</td>
+                        <td>$3.78</td>
+                        <td class="avaliable_column">Free Shipping</td>
+                        <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#coloumn" style="float:middle">Status</button></td>
+                        <th><button class="btn btn-success">Edit</button><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#coloumn" style="float:middle">Print</button></th>
+                      </tr>
+                    </tbody>
+                    
+                  </table>
                 </div>
                 <!-- /.tab-pane -->
                 <div class="tab-pane" id="tab_2">
@@ -301,7 +303,7 @@
                 </div>
                 <!-- /.tab-pane -->
                 <div class="tab-pane" id="tab_3">
-                  <table id="example2" class="table table-bordered table-hover">
+                  <table id="example3" class="table table-bordered table-hover">
                     <thead>
                       <tr>
                         <th>
@@ -355,7 +357,7 @@
                         <td>Free Shipping</td>
                         <td>$3.78</td>
                         <td class="avaliable_column">Free Shipping</td>
-                        <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#coloumn" style="float:middle">Status</button></td>
+                        <td><button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#coloumn" style="float:middle">Status</button></td>
                         <th><button class="btn btn-success">Edit</button><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#coloumn" style="float:middle">Print</button></th>
                       </tr>
                     </tbody>
@@ -729,7 +731,7 @@
 <script src="../dist/js/pages/dashboard2.js"></script>
 
 <!----------------------------Adding js for testing------------------>
-
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
 <!-- Select2 -->
 <script src="../plugins/select2/js/select2.full.min.js"></script>
 <!-- Bootstrap4 Duallistbox -->
@@ -755,5 +757,47 @@
 <link rel="stylesheet" href="/css/bstreeview.css">
 <script src="/js/bstreeview.js"></script>
 <script src="/js/main.js"></script>
+
+<script src="../plugins/jquery/jquery.min.js"></script>
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../dist/js/adminlte.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+<script src="/js/recents.js"></script>
+
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true, "lengthChange": false, "autoWidth": false,
+      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    $('#example1').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+    $('#example3').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script>
 </body>
 </html>
