@@ -23,35 +23,30 @@ var NavigationMenu = [
         href: "/Insights/overview.html",
         id:"nav3_1",
       },
-      {
-        text: "Operations",
-        icon: "fa fa-folder",
-        href: "/Insights/operations.html",
-        id:"nav3_2",
-      },
+      
       {
         text: "Customer Engagement",
         icon: "fa fa-folder",
         href: "/Insights/customerengagements.html",
-        id:"nav3_3",
+        id:"nav3_2",
       },
       {
         text: "Sales Trend",
         icon: "fa fa-folder",
         href: "/Insights/sales.html",
-        id:"nav3_4",
+        id:"nav3_3",
       },
       {
         text: "Customer Overview",
         icon: "fa fa-folder",
         href: "/Insights/customers.html",
-        id:"nav3_5",
+        id:"nav3_4",
       },
       {
         text: "Products Highlight",
         icon: "fa fa-folder",
         href: "/Insights/productsold.html",
-        id:"nav3_6",
+        id:"nav3_5",
       }
     ]
   },
@@ -153,42 +148,42 @@ var NavigationMenu = [
             text: "Recent",
             icon: "fa fa-folder",
             class: "custom-class",
-            href: "/Shipments/fulfilments.html",
+            href: "/Shipments/Fulfillments/recent.html",
             id:"nav1_2_1",
           },
           {
             text: "Pending",
             icon: "fa fa-folder",
             class: "custom-class",
-            href: "/Shipments/fulfilments.html",
+            href: "/Shipments/Fulfillments/pending.html",
             id:"nav1_2_2",
           },
           {
             text: "In Transit",
             icon: "fa fa-folder",
             class: "custom-class",
-            href: "/Shipments/fulfilments.html",
+            href: "/Shipments/Fulfillments/intransit.html",
             id:"nav1_2_3",
           },
           {
             text: "Delivered",
             icon: "fa fa-folder",
             class: "custom-class",
-            href: "/Shipments/fulfilments.html",
+            href: "/Shipments/Fulfillments/delivered.html",
             id:"nav1_2_4",
           },
           {
             text: "Delivery Exception",
             icon: "fa fa-folder",
             class: "custom-class",
-            href: "/Shipments/fulfilments.html",
+            href: "/Shipments/Fulfillments/delivery_exception.html",
             id:"nav1_2_5",
           },
           {
             text: "Cancelled",
             icon: "fa fa-folder",
             class: "custom-class",
-            href: "/Shipments/fulfilments.html",
+            href: "/Shipments/Fulfillments/cancelled.html",
             id:"nav1_2_6",
           },
         ]
@@ -210,7 +205,13 @@ var NavigationMenu = [
         icon: "fa fa-folder",
         href: "/Shipments/batch.html",
         id:"nav1_5",
-      }
+      },
+      {
+        text: "Operations",
+        icon: "fa fa-folder",
+        href: "/Shipments/operations.html",
+        id:"nav1_6",
+      },
     ]
   },
   {
@@ -258,7 +259,7 @@ var NavigationMenu = [
       {
         text: "Customers",
         icon: "fa fa-folder",
-        href: "/Customers/customers.html",
+        href: "/Customers/customer_page.html",
         id:'nav6_3'
       },
       {

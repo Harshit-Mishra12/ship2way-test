@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | ChartJS</title>
+  <title>Ship2way</title>
 
   <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+<!----------------------------Adding css for testing------------------>
+
+  <!-- daterange picker -->
+  <link rel="stylesheet" href="../plugins/daterangepicker/daterangepicker.css">
+  <!-- iCheck for checkboxes and radio inputs -->
+  <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Bootstrap Color Picker -->
+  <link rel="stylesheet" href="../plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="../plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+  <!-- Bootstrap4 Duallistbox -->
+  <link rel="stylesheet" href="../plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+  <!-- BS Stepper -->
+  <link rel="stylesheet" href="../plugins/bs-stepper/css/bs-stepper.min.css">
+  <!-- dropzonejs -->
+  <link rel="stylesheet" href="../plugins/dropzone/min/dropzone.min.css">
+<!----------------------------Adding css for testing------------------>
 </head>
-
-<body class="hold-transition sidebar-mini">
-  <div class="wrapper" id="">
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+  <div class="wrapper">
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
-
       <a href="index3.html" class="brand-link">
-        <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light">Ship2way</span>
+        <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8;margin-left: 3.8rem;">
       </a>
       <div class="sidebar">
         <div id="navbar"></div>
@@ -60,13 +77,13 @@
               </div>
               <div class="card-body">
                 <div class="row">
-                  <div class="col-lg-3 col-6">
+                  <div class="col-lg-2 col-6">
                     <!-- small card -->
                     <div class="small-box bg-info">
                       <div class="inner">
                         <h3>6213</h3>
 
-                        <p>Shipped</p>
+                        <p>User License Issued</p>
                       </div>
                       <div class="icon">
                         <i class="fas fa-shopping-cart"></i>
@@ -74,13 +91,13 @@
 
                     </div>
                   </div>
-                  <div class="col-lg-3 col-6">
+                  <div class="col-lg-2 col-6">
                     <!-- small card -->
                     <div class="small-box bg-info">
                       <div class="inner">
                         <h3>$ 150</h3>
 
-                        <p>Shipping Revenue</p>
+                        <p>Expire License</p>
                       </div>
                       <div class="icon">
                         <i class="fas fa-dollar-sign"></i>
@@ -88,26 +105,39 @@
 
                     </div>
                   </div>
-                  <div class="col-lg-3 col-6">
+                  <div class="col-lg-2 col-6">
                     <!-- small card -->
                     <div class="small-box bg-info">
                       <div class="inner">
                         <h3>$ 150</h3>
 
-                        <p>Shipping Cost</p>
+                        <p>Revenue</p>
                       </div>
                       <div class="icon">
                         <i class="fas fa-dollar-sign"></i>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-6">
+                  <div class="col-lg-2 col-6">
                     <!-- small card -->
                     <div class="small-box bg-info">
                       <div class="inner">
                         <h3>$ 150</h3>
 
-                        <p>Shipping Revueue</p>
+                        <p> Shipping Unit</p>
+                      </div>
+                      <div class="icon">
+                        <i class="fas fa-dollar-sign"></i>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-6">
+                    <!-- small card -->
+                    <div class="small-box bg-info">
+                      <div class="inner">
+                        <h3>$ 150</h3>
+                        <p> Active License</p>
                       </div>
                       <div class="icon">
                         <i class="fas fa-dollar-sign"></i>
