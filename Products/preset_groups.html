@@ -40,8 +40,8 @@
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
 
       <a href="index3.html" class="brand-link">
-        <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light">Ship2way</span>
+        <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8;margin-left: 3.8rem;">
+      
       </a>
       <div class="sidebar">
         <div id="navbar"></div>
@@ -92,6 +92,8 @@
                   </th>
                 
                   <th>Preset Group</th>
+                  <td>Stores</td>
+                  <td>Product Type Group</td>
                   <th>Dimension</th>
                   <th>Weight</th>
                   <th>Action</th>
@@ -106,10 +108,12 @@
                   </td>
                 
                   <td>My store</td>
+                  <td>Ebay</td>
+                  <td>Shop</td>
                   <td>45 x 56</td>
                   <td>3.78gms</td>
                   <td>
-                      <button class="btn btn-success">Edit</button>
+                    <button type="button" class="btn btn3 btn-success"  data-toggle="modal" data-target="#edit_preset">Edit</button>
                       <button class="btn btn-danger btn-Delete">Delete</button>
                   </td>
                 </tr>
@@ -120,10 +124,12 @@
                     </div>
                   </td>
                   <td>My store</td>
+                  <td>Ebay</td>
+                  <td>Shop</td>
                   <td>56 x 78</td>
                   <td>3.78gms</td>
                   <td>
-                      <button class="btn btn-success">Edit</button>
+                      <button type="button" class="btn btn3 btn-success"  data-toggle="modal" data-target="#edit_preset">Edit</button>
                       <button class="btn btn-danger btn-Delete">Delete</button>
                   </td>
                 </tr>
@@ -288,7 +294,147 @@
         <!-- /.modal-dialog -->
         </div>
       
-      <!-- /.modal -->
+        <div class="modal fade" id="edit_preset">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Edit Preset Groups</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <div class="col-md-12">
+                    <p>Preset Groups allow you to define default attributes that can be applied to multiple products. Any product with this "profile" will be assigned these attributes unless specifically overridden.</p>
+                  </div>
+                  <form>
+                  <div class="col-md-12">
+                      <div class="container">
+                          <div class="form-row">
+                            <div class="form-group col-md-12">
+                              <label for="inputCity">Preset Group Name</label>
+                              <input type="text" class="form-control" id="preset_group">
+                            </div>
+                          </div>
+                          <h5>Domestic</h5>
+                          <div class="form-row">
+                            <div class="form-group col-md-4">
+                              
+                              <input type="email" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                             
+                              <input type="email" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                             
+                              <input type="email" class="form-control" id="inputCity">
+                            </div>
+                          </div>
+                          
+                          <h5>International</h5>
+                          <div class="form-row">
+                            <div class="form-group col-md-4">
+                              <input type="email" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                              
+                              <input type="email" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                              
+                              <input type="email" class="form-control" id="inputCity">
+                            </div>
+                          </div>
+                              <h5>Package Weight</h5>
+                              <div class="form-row">
+  
+                                <div class="form-group col-md-6">
+                                  <label for="inputCity">(lb)</label>
+                                  <input type="number" class="form-control" id="inputCity">
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label for="inputState">(oz)</label>
+                                  <input type="number" class="form-control" id="inputCity">
+                                </div>
+                              </div>
+                              <h5>Package Dimensions</h5>
+                              <div class="form-row">
+                                <div class="form-group col-md-4">
+                                  <label for="inputCity">L</label>
+                                  <input type="number" class="form-control" id="inputCity">
+                                </div>
+                                <div class="form-group col-md-4">
+                                  <label for="inputState">W</label>
+                                  <input type="number" class="form-control" id="inputCity">
+                                </div>
+                                <div class="form-group col-md-4">
+                                  <label for="inputState">H(in)</label>
+                                  <input type="number" class="form-control" id="inputCity">
+                                </div>
+                              </div>
+  
+                              <h5>Customs Declarations</h5>
+                              <p>The following options will be used to create customs declarations for international shipments that contain products with this Preset Group.
+                              </p>
+                              <div class="col-12">
+                                  <div class="form-check">
+                                  <input class="form-check-input" type="checkbox">
+                                  <label class="form-check-label">
+                                    Do not create customs declartions for products using this preset group
+                                  </label>
+                                </div>
+                              </div>
+                             <br>  
+  
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputCity">Description</label>
+                                <input type="text" class="form-control" id="inputCity">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputState">Declared Value</label>
+                                <input type="text" class="form-control" id="inputCity">
+                              </div>
+                            </div>
+                           <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="inputCity">Harmonization Code</label>
+                              <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="inputState">Select Country Origin</label>
+                              <select class="form-control">
+                              <option>United States</option>
+                              <option>India</option>
+                              <option>Afganistan</option>
+                              <option>China</option>
+                              <option>South Africa</option>
+                            </select>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary add-preset">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+  
+              <!-- <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save</button>
+              </div> -->
+         
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
 
 </div>
 
@@ -346,5 +492,26 @@
 <script src="/js/bstreeview.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <script type="text/javascript" src="../js/product.js"></script>
+<script>
+  $(document).ready(function(){
+     $('.btn3').on('click',function(){
+       $('#edit_preset').modal('show');
+       $tr=$(this).closest("tr");
+       var data=$tr.children("td").map(function(){
+        return $(this).text();
+      }).get();
+  
+      console.log(data);
+      $('#id').val(data[0]);
+      $('#name').val(data[1]);
+      $('#position').val(data[2]);
+      $('#salery').val(data[3]);
+      $('#balance').val(data[4]);
+      $('#join_date').val(data[5]);
+  
+     });
+  
+  });
+  </script>
 </body>
 </html>

@@ -40,8 +40,8 @@
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
 
       <a href="index3.html" class="brand-link">
-        <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light">Ship2way</span>
+        <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8;margin-left: 3.8rem;">
+      
       </a>
       <div class="sidebar">
         <div id="navbar"></div>
@@ -140,16 +140,17 @@
           <!-------------------dropdown--------------------->
 
           <!-------------dropdown---------------------->
-           <div class="btn-group mr-1">
-            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#New_Orders">New Product</button>
-           </div>
-          <!-------------------dropdown--------------------->
-
-          <!-------------dropdown---------------------->
           <div class="btn-group mr-1">
            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#combine">Combine</button>                  
           </div>
           <!-------------------dropdown--------------------->
+
+          <!-------------dropdown---------------------->
+           <div class="btn-group mr-1">
+            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#add_product">Add Product</button>
+           </div>
+          <!-------------------dropdown--------------------->
+
         
        
       </div>
@@ -348,11 +349,13 @@
                   
                   <th class="preset_column">Product Name</th>
                   <th class="UPC_column">Description</th>
-                  <th class="varient_column">Original Price</th>
                   <th class="category_column">Product Type</th>
+                  <th class="varient_column">Original Price</th>
                   <th class="modified_column">Sales Price</th>
+                  <th class="modified_column">Import Price</th>
                   <th class="avaliable_column">Shipping Fee</th>
                   <th class="avaliable_column"> Available Unit</th>
+                  <th>Action</th>
                 </tr>
               </thead>
               <tbody>
@@ -368,8 +371,12 @@
                   <td>1000</td>
                   <td>Free Shipping</td>
                   <td>1000</td>
-                  <td class="avaliable_column">Free Shipping</td>
-                  <td class="avaliable_column">200</td>
+                  <td class="avaliable_column">3000</td>
+                  <td class="avaliable_column">2000</td>
+                  <td class="avaliable_column">500</td>
+                  <td><button class="btn btn-success" data-toggle="modal" data-target="#edit_product">Edit</button>
+                    <button class="btn btn-danger btn-Delete">Delete</button>
+                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -383,27 +390,16 @@
                   <td>1000</td>
                   <td>Free Shipping</td>
                   <td>1000</td>
-                  <td class="avaliable_column">Free Shipping</td>
-                  <td class="avaliable_column">200</td>
+                  <td class="avaliable_column">4000</td>
+                  <td class="avaliable_column">2000</td>
+                  <td class="avaliable_column">500</td>
+                  <td>
+                      <button class="btn btn-success" data-toggle="modal" data-target="#edit_product">Edit</button>
+                      <button class="btn btn-danger btn-Delete">Delete</button>
+                  </td>
                 </tr>
               </tbody>
-              <tfoot>
-                <tr>
-                  <th>
-                    <div class="form-check">
-                          <input class="form-check-input" type="checkbox">
-                    </div>
-                  </th>
-                  
-                  <th class="preset_column">Product Name</th>
-                  <th class="UPC_column">Description</th>
-                  <th class="varient_column">Original Price</th>
-                  <th class="category_column">Product Type</th>
-                  <th class="modified_column">Sales Price</th>
-                  <th class="avaliable_column">Shipping Fee</th>
-                  <th class="avaliable_column"> Available Unit</th>
-                </tr>
-              </tfoot>
+             
             </table>
           </div>
           <!-- /.card-body -->
@@ -663,7 +659,7 @@
         </div>
         <!-- /.modal-dialog -->
 
-        <div class="modal fade" id="New_Orders">
+        <div class="modal fade" id="add_product">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
               <div class="modal-header">
@@ -948,6 +944,292 @@
             
           </div>
           <!-- /.modal-content -->
+        </div>
+
+        <div class="modal fade" id="edit_product">
+          <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Edit Product</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="col-md-12">
+  
+                      <div class="card card-primary card-outline card-outline-tabs">
+                      <div class="card-header p-0 border-bottom-0">
+                        <ul class="nav nav-tabs" id="custom-tabs-four-tab" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active" id="custom-tabs-four-home-tab" data-toggle="pill" href="#custom-tabs-four-home" role="tab" aria-controls="custom-tabs-four-home" aria-selected="true">Product Description</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="custom-tabs-four-profile-tab" data-toggle="pill" href="#custom-tabs-four-profile" role="tab" aria-controls="custom-tabs-four-profile" aria-selected="false">Product Origin</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="custom-tabs-four-messages-tab" data-toggle="pill" href="#custom-tabs-four-messages" role="tab" aria-controls="custom-tabs-four-messages" aria-selected="false">Customs</a>
+                          </li>                     
+                        </ul>
+                      </div>
+                      <div class="card-body">
+                        <div class="tab-content" id="custom-tabs-four-tabContent">
+  
+                          <div class="tab-pane fade show active" id="custom-tabs-four-home" role="tabpanel" aria-labelledby="custom-tabs-four-home-tab">
+                            <form>
+                              <div class="form-group">
+                                <label for="inputAddress">Product Name</label>
+                                <input type="text" class="form-control" id="pro_name">
+                              </div>
+                              <div class="form-group">
+                                <label for="inputAddress">Product Description</label>
+                                <input type="text" class="form-control" id="pro_desc">
+                              </div>
+                              <div class="form-group">
+                                <label for="inputAddress">Product Type</label>
+                                <select id="pro_type" class="form-control">
+                                  <option selected>Choose...</option>
+                                  <option>Clothing</option>
+                                  <option>Men’s Fashion</option>
+                                  <option>Women’s fashion</option>
+                                  <option>Fashion Accessories</option>
+                                  <option>Furniture</option>
+                                  <option>Babies & Toys</option>
+                                  <option>Sport & Travel</option>
+  
+                                  <option>Home décor</option>
+                                  <option>Computer & consumer electronic</option>
+                                  <option>Electronic Devices</option>
+                                  <option>Supplement & Herb</option>
+                                  <option>Furniture</option>
+                                  <option>Groceries</option>
+                                  <option>Sport & Travel</option>
+                                </select>
+                              </div>
+                              <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label for="inputCity">Original Price</label>
+                                  <input type="text" class="form-control" id="original_price">
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label for="inputState">Sales Price</label>
+                                  <input type="text" class="form-control" id="sales_price">
+                                </div>
+                              </div>
+                              <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label for="inputCity">Color</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label for="inputState">Model</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                              </div>
+                              
+                              <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label for="inputCity">Pro</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label for="inputCity">Weight</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                              </div>
+  
+                              <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label for="inputState">Brand</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label for="inputState">Vision</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                              </div>
+                              <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label for="inputState">Country Of Origin</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label for="inputState">Ship From</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                              </div>
+                              <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label for="inputState">Delivery Time</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label for="inputState">Original Price</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                              </div>
+                              <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label for="inputState">Payment Terms</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label for="inputState">Return Refund </label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                              </div>
+                              <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label for="inputState">SKU</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label for="inputState">Nutrition Fact</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                              </div>
+                              <h4>Dimensions</h4>
+                              <div class="form-row">
+                                <div class="form-group col-md-3">
+                                  <label for="inputState">Width </label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="form-group col-md-3">
+                                  <label for="inputState">Height</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="form-group col-md-3">
+                                  <label for="inputState">Length</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="form-group col-md-3">
+                                  <label for="inputState">Depth</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                              </div>
+                            </form> 
+                          </div>
+  
+                          <div class="tab-pane fade" id="custom-tabs-four-profile" role="tabpanel" aria-labelledby="custom-tabs-four-profile-tab">
+                            <h5>Attributes</h5>
+                            <br>
+                            <form>
+                              <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label for="inputCity">Company Name</label>
+                                  <input type="text" class="form-control" id="company_name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label for="inputState">Country</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label for="inputAddress">Address</label>
+                                <input type="text" class="form-control" id="inputAddress">
+                              </div>
+                              <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label for="inputCity">Telephone</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label for="inputState">Contact No</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                              </div>
+                              <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label for="inputCity">Email</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label for="inputState">Wechat Id</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                              </div>
+                              
+                              <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label for="inputCity">WhatsApp Id</label>
+                                  <input type="text" class="form-control" id="inputAddress" placeholder="Enter Your Name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label for="inputState">Line Id</label>
+                                  <input type="text" class="form-control" id="inputAddress" placeholder="Enter Your Name">
+                                </div>
+                              </div>
+                             
+                            </form>  
+                       
+                          </div>
+  
+                          <div class="tab-pane fade" id="custom-tabs-four-messages" role="tabpanel" aria-labelledby="custom-tabs-four-messages-tab">
+  
+                              <h5>Default Customs Declarations</h5>
+                              <p>The following options will be used to create customs declarations for international shipments that contain this product.</p>
+                              
+                              <form>
+                                <div class="col-8">
+                                    <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label">Do not create for products using this groups</label>
+                                  </div>
+                                </div>
+                                <br>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputCity">Description</label>
+                                    <input type="email" class="form-control" id="inputCity">
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                    <label for="inputState">Declared Value</label>
+                                    <input type="email" class="form-control" id="inputCity">
+                                  </div>
+                                </div>
+  
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputCity">Harmonization Code</label>
+                                    <input type="email" class="form-control" id="inputCity">
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                    <label for="inputState">Origin Country</label>
+                                    <select id="inputState" class="form-control">
+                                      <option selected>Choose...</option>
+                                      <option>Australia</option>
+                                      <option>Bangladesh</option>
+                                      <option>Canada</option>
+                                      <option>India</option>
+                                      <option>Pakistan</option>
+                                      <option>Russia</option>
+                                    </select>
+                                  </div>
+                                </div>
+                               
+                              </form>    
+                          </div>
+  
+  
+                        </div>
+                      </div>
+                      <!-- /.card -->
+                       </div>
+                  </div>
+                  <div class="modal-footer justify-content-right">
+                        <div class="col-4">
+                            <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">Apply changes to open orders</label>
+                          </div>
+                        </div>
+                      <button type="button" class="btn btn-primary add-product">Save</button>
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+              
+          </div>
         </div>
       
 
