@@ -32,6 +32,8 @@
   <link rel="stylesheet" href="../plugins/bs-stepper/css/bs-stepper.min.css">
   <!-- dropzonejs -->
   <link rel="stylesheet" href="../plugins/dropzone/min/dropzone.min.css">
+
+  <link rel="stylesheet" href="../css/style.css">
 <!----------------------------Adding css for testing------------------>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
@@ -40,8 +42,8 @@
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
 
       <a href="index3.html" class="brand-link">
-        <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light">Ship2way</span>
+        <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8;margin-left: 3.8rem;">
+      
       </a>
       <div class="sidebar">
         <div id="navbar"></div>
@@ -275,11 +277,13 @@
                   </th>
                   <th>Product Name</th>
                   <th>Description</th>
+                  <th>Seller</th>
                   <th>Store</th>
                   <th>Customers</th>
                   <th>Qty</th>
                   <th>Price/unit</th>
                   <th>Alert Reason</th>
+                  <th>Payment</th>
                 </tr>
               </thead>
               <tbody>
@@ -292,10 +296,12 @@
                   <td data-toggle="modal" data-id="1" data-target="#modal-product">Reebok shoes</td>
                   <td>basketball high performing shoes</td>
                   <td>Amazon</td>
+                  <td>Amazon</td>
                   <td>not ship</td>
                   <td> 4</td>
                   <td>$3.78</td>
-                  <td>Product is ruuning out</td>
+                  <td><button class="blinking">Product is in back order</button></td>
+                  <td>Online</td>
                 </tr>
                 <tr>
                   <td>
@@ -306,10 +312,12 @@
                   <td data-toggle="modal" data-id="1" data-target="#modal-product">Reebok shoes</td>
                   <td>basketball high performing shoes</td>
                   <td>Amazon</td>
+                  <td>Amazon</td>
                   <td>hold</td>
                   <td> 4</td>
                   <td>$3.78</td>
-                  <td>Product is in back order</td>
+                  <td><button class="blinking">Product is in back order</button></td>
+                  <td>Cash</td>
                 </tr>
               </tbody>
               <tfoot>
@@ -321,11 +329,13 @@
                   </th>
                   <th>Product Name</th>
                   <th>Description</th>
+                  <th>Seller</th>
                   <th>Store</th>
                   <th>Customers</th>
                   <th>Qty</th>
                   <th>Price/unit</th>
                   <th>Alert Reason</th>
+                  <th>Payment</th>
                 </tr>
               </tfoot>
             </table>
