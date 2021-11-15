@@ -32,6 +32,8 @@
   <link rel="stylesheet" href="../plugins/bs-stepper/css/bs-stepper.min.css">
   <!-- dropzonejs -->
   <link rel="stylesheet" href="../plugins/dropzone/min/dropzone.min.css">
+
+  <link rel="stylesheet" href="../css/style.css">
 <!----------------------------Adding css for testing------------------>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
@@ -280,7 +282,7 @@
                   <th>Customers</th>
                   <th>Qty</th>
                   <th>Price/unit</th>
-                  <th>Blinking</th>
+                  <th>Alert Reason</th>
                   <th>Payment</th>
                 </tr>
               </thead>
@@ -298,7 +300,7 @@
                   <td>not ship</td>
                   <td> 4</td>
                   <td>$3.78</td>
-                  <td>Product is ruuning out</td>
+                  <td><button class="blinking">Product is in back order</button></td>
                   <td>Online</td>
                 </tr>
                 <tr>
@@ -314,7 +316,7 @@
                   <td>hold</td>
                   <td> 4</td>
                   <td>$3.78</td>
-                  <td>Product is in back order</td>
+                  <td><button class="blinking">Product is in back order</button></td>
                   <td>Cash</td>
                 </tr>
               </tbody>
@@ -332,7 +334,7 @@
                   <th>Customers</th>
                   <th>Qty</th>
                   <th>Price/unit</th>
-                  <th>Blinking</th>
+                  <th>Alert Reason</th>
                   <th>Payment</th>
                 </tr>
               </tfoot>
