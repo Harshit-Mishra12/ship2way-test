@@ -77,27 +77,29 @@
               </div>
               <div class="card-body">
                 <div class="row">
-                  <div class="col-lg-3 col-6">
+                  <div class="col-lg-2 col-6">
                     <!-- small card -->
-                    <div class="small-box bg-info">
+                   
+                    <div class="small-box bg-info" data-toggle="modal" data-target="#pop_model">
                       <div class="inner">
                         <h3>6213</h3>
 
-                        <p>Shipped</p>
+                        <p>User License Issued</p>
                       </div>
                       <div class="icon">
                         <i class="fas fa-shopping-cart"></i>
                       </div>
 
                     </div>
+                    
                   </div>
-                  <div class="col-lg-3 col-6">
+                  <div class="col-lg-2 col-6">
                     <!-- small card -->
-                    <div class="small-box bg-info">
+                    <div class="small-box bg-info" data-toggle="modal" data-target="#bank_model">
                       <div class="inner">
                         <h3>$ 150</h3>
 
-                        <p>Shipping Revenue</p>
+                        <p>Expire License</p>
                       </div>
                       <div class="icon">
                         <i class="fas fa-dollar-sign"></i>
@@ -105,26 +107,40 @@
 
                     </div>
                   </div>
-                  <div class="col-lg-3 col-6">
+                  <div class="col-lg-2 col-6">
                     <!-- small card -->
-                    <div class="small-box bg-info">
+                    <div class="small-box bg-info" data-toggle="modal" data-target="#bank_model">
                       <div class="inner">
                         <h3>$ 150</h3>
 
-                        <p>Shipping Cost</p>
+                        <p>Revenue</p>
                       </div>
                       <div class="icon">
                         <i class="fas fa-dollar-sign"></i>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-6">
+                  <div class="col-lg-2 col-6">
                     <!-- small card -->
-                    <div class="small-box bg-info">
+                    <div class="small-box bg-info" data-toggle="modal" data-target="#bank_model">
                       <div class="inner">
                         <h3>$ 150</h3>
 
-                        <p>Shipping Revueue</p>
+                        <p>Shipping Unit</p>
+                      </div>
+                      <div class="icon">
+                        <i class="fas fa-dollar-sign"></i>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-6" >
+                    <!-- small card -->
+                    <div class="small-box bg-info" data-toggle="modal" data-target="#bank_model">
+                      <div class="inner">
+                        <h3>$ 150</h3>
+
+                        <p>Active License</p>
                       </div>
                       <div class="icon">
                         <i class="fas fa-dollar-sign"></i>
@@ -192,6 +208,88 @@
 
       </section>
     </div>
+
+    <div class="modal fade" id="bank_model">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content" id="modal-fourth">
+          <div class="modal-header">
+            <h4 class="modal-title">Add Connection Details</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          
+          <div class="col-md-12">
+            <div class="container">
+              <h4>Follow these steps to get connected:</h4> 
+              
+               <ul>
+               <li>Visit the Shipstation Extension page for Acumatica here https://help.shipstation.com/hc/en-us/articles/360026140871-Acumatica</li>
+               <li>Install the cartridge to your Acumatica Instance (if you need assistance please contact your consultant / VAR)</li>
+               <li>Configure your connection.</li>
+               <li>Map the ShipStation Order Statuses to your Acumatica Order Statuses below. Separate multiple statuses with a comma.</li>
+
+               </ul>
+               <form>
+                <div class="form-group">
+                  <label for="inputAddress">Base Url</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Username</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Password</label>
+                  <input type="password" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Company Name</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Company ID</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Unpaid Status</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Paid Status</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Shipped Status</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Cancel Status</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Onhold Status</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+                <button type="submit" class="btn btn-primary" style="float:right">Connect</button>
+                </form>  
+            </div>
+          <br><br>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+
   </div>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script src="../../plugins/jquery/jquery.min.js"></script>

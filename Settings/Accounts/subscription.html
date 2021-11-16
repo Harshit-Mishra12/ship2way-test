@@ -474,7 +474,7 @@
           <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h4 class="modal-title">ShipStation Account Billing</h4>
+                  <h4 class="modal-title">Ship2Way Account Billing</h4>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -484,11 +484,11 @@
                     <div class="col-md-12">
                       <div class="container">
                         <div class="row">
-                          <p>Make changes to the look and feel of ShipStation. Options with an unlocked icon () indicate that Configuration or Administration permissions are required.</p>
+                         
                           <div class="col-8">
                                   <div class="form-check">
                                     <input class="form-check-input" type="radio">
-                                    <label class="form-check-label">indicates a user specific setting</label>
+                                    <label class="form-check-label">Change Billing Information With Paypal</label>
                                   </div>
                           </div>
                                 
@@ -496,7 +496,7 @@
                                   <div class="form-check">
                                     <input class="form-check-input" type="radio">
                                     <label class="form-check-label">
-                                      indicates an account wide setting
+                                      Change Billing Information With Credit Card
                                     </label>
                                   </div>
                           </div>
@@ -523,153 +523,80 @@
                         <div class="tab-content" id="custom-tabs-four-tabContent">
   
                           <div class="tab-pane fade show active" id="custom-tabs-four-home" role="tabpanel" aria-labelledby="custom-tabs-four-home-tab">
-                              <h5>Attributes</h5>
+                              
                               <br>
                               <form>
                                 <div class="form-row">
                                   <div class="form-group col-md-6">
-                                    <label for="inputCity">Reporting Category</label>
-                                    <select id="inputState" class="form-control">
-                                      <option selected>Choose...</option>
-                                      <option>...</option>
-                                    </select>
-                                  </div>
-                                  <div class="form-group col-md-6">
-                                    <label for="inputState">Order Tags</label>
-                                    <select id="inputState" class="form-control">
-                                      <option selected>Choose...</option>
-                                      <option>...</option>
-                                    </select>
-                                  </div>
-                                </div>
-                                <div class="form-row">
-                                  <div class="form-group col-md-6">
-                                    <label for="inputCity">Image URL</label>
+                                    <label for="inputState">Cedit Card Number</label>
                                     <input type="email" class="form-control" id="inputCity">
                                   </div>
                                   <div class="form-group col-md-6">
-                                    <label for="inputState">UPC</label>
+                                    <label for="inputState">Card Expiration</label>
                                     <input type="email" class="form-control" id="inputCity">
                                   </div>
                                 </div>
                                 <div class="form-row">
-                                  <div class="form-group col-md-12">
-                                    <label for="inputCity">Description</label>
-                                    <input type="text-area" class="form-control" id="inputCity">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputCity">CVV</label>
+                                    <input type="email" class="form-control" id="inputCity">
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                    <label for="inputState">Name On Card</label>
+                                    <input type="email" class="form-control" id="inputCity">
                                   </div>
                                 </div>
+                                
   
-                                <div class="col-8">
-                                          <div class="form-check">
-                                          <input class="form-check-input" type="checkbox">
-                                          <label class="form-check-label">Product is returnable</label>
-                                          </div>
-                                </div>
-                               
                               </form>    
                           </div>
   
                           <div class="tab-pane fade" id="custom-tabs-four-profile" role="tabpanel" aria-labelledby="custom-tabs-four-profile-tab">
-                            <div clas="col-md-12">
-                                <div class="row">
-                                <div>
-                                  <h5>Shipping Defaults</h5>
-                                </div>
-                                <div class="text-right" style="text-align: right;">
+                          
+                            <form>
+                              <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label for="inputCity">Country</label>
                                   <select id="inputState" class="form-control">
-                                    <option selected>Choose...</option>
-                                    <option>...</option>
+                                    <option selected>Select Country</option>
+                                    <option>India</option>
+                                    <option>Canada</option>
                                   </select>
                                 </div>
+                                <div class="form-group col-md-6">
+                                  <label for="inputState">Contact No.</label>
+                                  <input type="email" class="form-control" id="inputCity">
                                 </div>
-                            </div>
-                            <br>
-                            <p>The following options will only apply to shipments containing quantity 1 of this product.</p>
-  
-                              <form>
-                                <div class="form-row">
-                                  <div class="form-group col-md-6">
-                                    <select id="inputState" class="form-control">
-                                      <option selected>Choose...</option>
-                                      <option>...</option>
-                                    </select>
-                                  </div>
-                                  <div class="form-group col-md-6">
-                                    <select id="inputState" class="form-control">
-                                      <option selected>Choose...</option>
-                                      <option>...</option>
-                                    </select>
-                                  </div>
+                              </div>
+                              <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label for="inputCity">City</label>
+                                  <input type="email" class="form-control" id="inputCity">
                                 </div>
-                                <div class="form-row">
-                                  <div class="form-group col-md-6">
-                                    <select id="inputState" class="form-control">
-                                      <option selected>Choose...</option>
-                                      <option>...</option>
-                                    </select>
-                                  </div>
-                                  <div class="form-group col-md-6">
-                                    <select id="inputState" class="form-control">
-                                      <option selected>Choose...</option>
-                                      <option>...</option>
-                                    </select>
-                                  </div>
+                                <div class="form-group col-md-6">
+                                  <label for="inputState">State</label>
+                                  <input type="email" class="form-control" id="inputCity">
                                 </div>
-  
-                                <div class="form-row">
-                                  <div class="form-group col-md-6">
-                                    <select id="inputState" class="form-control">
-                                      <option selected>Choose...</option>
-                                      <option>...</option>
-                                    </select>
-                                  </div>
-                                  <div class="form-group col-md-6">
-                                    <select id="inputState" class="form-control">
-                                      <option selected>Choose...</option>
-                                      <option>...</option>
-                                    </select>
-                                  </div>
+                              </div>
+                              <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label for="inputCity">Country</label>
+                                  <input type="email" class="form-control" id="inputCity">
                                 </div>
-  
-                                <div class="form-row">
-                                  <div class="form-group col-md-6">
-                                    <label for="inputCity">Warehouse location</label>
-                                    <input type="text" class="form-control" id="inputCity">
-                                  </div>
-                                  <div class="form-group col-md-6">
-                                    <label for="inputState">Fulfillment SKU</label>
-                                    <input type="text" class="form-control" id="inputCity">
-                                  </div>
+                                <div class="form-group col-md-6">
+                                  <label for="inputState">Pinc Code</label>
+                                  <input type="email" class="form-control" id="inputCity">
                                 </div>
-                                <h5>Package Weight</h5>
-                                <div class="form-row">
-  
-                                  <div class="form-group col-md-6">
-                                    <label for="inputCity">(lb)</label>
-                                    <input type="number" class="form-control" id="inputCity">
-                                  </div>
-                                  <div class="form-group col-md-6">
-                                    <label for="inputState">(oz)</label>
-                                    <input type="number" class="form-control" id="inputCity">
-                                  </div>
+                              </div>
+                              <div class="form-row">
+                                <div class="form-group col-md-12">
+                                  <label for="inputCity">Address</label>
+                                  <input type="text-area" class="form-control" id="inputCity">
                                 </div>
-                                <h5>Package Dimensions</h5>
-                                <div class="form-row">
-                                  <div class="form-group col-md-4">
-                                    <label for="inputCity">L</label>
-                                    <input type="number" class="form-control" id="inputCity">
-                                  </div>
-                                  <div class="form-group col-md-4">
-                                    <label for="inputState">W</label>
-                                    <input type="number" class="form-control" id="inputCity">
-                                  </div>
-                                  <div class="form-group col-md-4">
-                                    <label for="inputState">H(in)</label>
-                                    <input type="number" class="form-control" id="inputCity">
-                                  </div>
-                                </div>
-                               
-                              </form>     
+                              </div>
+
+                            
+                            </form>   
                           </div>
   
                          

@@ -89,7 +89,9 @@
               </div>
               <br>
               <div class="row">
-               
+                <div class="alert alert-primary col-md-12" role="alert">
+                  Connected Market Place Store Are : 0
+                </div>
               <table id="example2" class="table table-bordered table-hover">
                 <thead>
                   <tr>
@@ -116,7 +118,7 @@
                    
                     <td class="sku_column">Automatica</td>
                     <td>2-6-1889</td>
-                    <td>Shipping Store</td>
+                    <td>Distributor</td>
                     <td>Purchased</td>
                     <td class="avaliable_column"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#coloumn" style="float:middle">Status</button></td>
                   </tr>
@@ -126,9 +128,9 @@
                             <input class="form-check-input" type="checkbox">
                       </div>
                     </td>
-                    <td class="sku_column">Automatica</td>
+                    <td class="sku_column">Amazon</td>
                     <td>2-6-1889</td>
-                    <td>Shipping Store</td>
+                    <td>Seller</td>
                     <td>Purchased</td>
                     <td class="avaliable_column"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#coloumn" style="float:middle">Status</button></td>
                   </tr>
@@ -284,30 +286,67 @@
           
           <div class="col-md-12">
             <div class="container">
-              <form>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputCity">Store Name</label>
-                    <input type="text" class="form-control" id="inputCity">
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="inputState">Modified Date</label>
-                    <input type="text" class="form-control" id="inputCity">
-                  </div>
+              <h4>Follow these steps to get connected:</h4> 
+              
+               <ul>
+               <li>Visit the Shipstation Extension page for Acumatica here https://help.shipstation.com/hc/en-us/articles/360026140871-Acumatica</li>
+               <li>Install the cartridge to your Acumatica Instance (if you need assistance please contact your consultant / VAR)</li>
+               <li>Configure your connection.</li>
+               <li>Map the ShipStation Order Statuses to your Acumatica Order Statuses below. Separate multiple statuses with a comma.</li>
+
+               </ul>
+               <form>
+                <div class="form-group">
+                  <label for="inputAddress">Base Url</label>
+                  <input type="text" class="form-control" id="inputAddress">
                 </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputCity">Type Of Store</label>
-                    <input type="text" class="form-control" id="inputCity">
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="inputState">Status</label>
-                    <input type="text" class="form-control" id="inputCity">
-                  </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Username</label>
+                  <input type="text" class="form-control" id="inputAddress">
                 </div>
-               
-                <button type="submit" class="btn btn-primary">Save</button>
-              </form>
+
+                <div class="form-group">
+                  <label for="inputAddress">Password</label>
+                  <input type="password" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Company Name</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Company ID</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Unpaid Status</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Paid Status</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Shipped Status</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Cancel Status</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Onhold Status</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+                <button type="submit" class="btn btn-primary" style="float:right">Connect</button>
+                </form>  
             </div>
           <br><br>
           </div>
