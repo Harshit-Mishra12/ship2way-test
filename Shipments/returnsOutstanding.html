@@ -136,7 +136,7 @@
                   <td>10/15/2021</td>
                   <td>Tom Williams</td>
                   <td>Jacob</td>
-                  <td>Not Yet</td>
+                  <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#new_user">Click to See Werehouse Detail</button></td>
                   <td>Y</td>
                  
                   <td>4789237492749</td>
@@ -157,7 +157,7 @@
                   <td>10/15/2021</td>
                   <td>Tom Williams</td>
                   <td>Jacob</td>
-                  <td>Not Yet</td>
+                  <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#new_user">Click to See Werehouse Detail</button></td>
                   <td>Y</td>
                   
                   <td>4789237492749</td>
@@ -178,7 +178,7 @@
                   <td>10/15/2022</td>
                   <td>Roger Federer</td>
                   <td>Jacob</td>
-                  <td>Not Yet</td>
+                  <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#new_user">Click to See Werehouse Detail</button></td>
                   <td>Y</td>
                 
                   <td>4789237492749</td>
@@ -197,6 +197,100 @@
 
     </div><!-- /.container-fluid -->
   </section>
+
+  <div class="modal fade" id="new_user">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Add Fulfillments</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+           
+            <div class="col-md-12">
+
+               
+                <div class="card-body">
+                  <div class="tab-content" id="custom-tabs-four-tabContent">
+
+                    <div class="tab-pane fade show active" id="custom-tabs-four-home" role="tabpanel" aria-labelledby="custom-tabs-four-home-tab">
+                   
+                        <form>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="inputCity">Returned Seller</label>
+                              <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="inputState">Return Date</label>
+                              <input type="email" class="form-control" id="email">
+                            </div>
+                          </div>
+                          
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="inputCity">Refund issued</label>
+                             <select class="form-control">
+                               <option>Yes</option>
+                               <option>No</option>
+                             </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="inputCity">warehouse/bin</label>
+                              <input type="text" class="form-control" id="city">
+                            </div>
+                          </div>
+                         
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="inputCity">Online store</label>
+                              <input type="text" class="form-control" id="mobile">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="inputCity">Tracking #</label>
+                              <input type="text" class="form-control" id="city">
+                            </div>
+                          </div>
+                         
+                        
+                          
+
+                          <div class="col-8">
+                              <div class="form-check">
+                              <input class="form-check-input" type="checkbox">
+                              <label class="form-check-label">Product is returnable</label>
+                              </div>
+                          </div>
+                          <br>
+                         <button type="button" class="btn btn-primary add-user">Save</button>
+                         <button type="button" class="btn btn-primary add-user" style="background-color:#FF8300  !important;">Download Data</button>
+                        </form>    
+                    </div>
+
+                   
+
+                   
+                  </div>
+                </div>
+                <!-- /.card -->
+                </div>
+            </div>
+            <div class="modal-footer justify-content-right">
+                  <div class="col-4">
+                      <div class="form-check">
+                      <input class="form-check-input" type="checkbox">
+                      <label class="form-check-label">Apply changes to open orders</label>
+                    </div>
+                  </div>
+               
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+        
+  </div>
 </div>
 </div>
 

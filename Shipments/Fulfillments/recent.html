@@ -179,7 +179,7 @@
               </div>
               <div class="btn-group mr-1 border border-muted">
          
-                <button type="button" class="btn" data-toggle="modal" data-target="#new_user">Warehouse</button>
+                
                
               
              
@@ -226,7 +226,7 @@
                   <td>16 January</td>
                   <td>16 January</td>
                   <td>878979</td>
-                  <td>New Delhi</td>
+                  <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#new_user">Click to See Werehouse Detail</button></td>
                   <td>5</td>
                 </tr>
                 <tr>
@@ -241,7 +241,7 @@
                     <td>16 January</td>
                     <td>16 January</td>
                     <td>878979</td>
-                    <td>New Delhi</td>
+                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#new_user">Click to See Werehouse Detail</button></td>
                     <td>5</td>
                   </tr>                <tr>
                     <td>
@@ -255,7 +255,7 @@
                     <td>16 January</td>
                     <td>16 January</td>
                     <td>878979</td>
-                    <td>New Delhi</td>
+                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#new_user">Click to See Werehouse Detail</button></td>
                     <td>5</td>
                   </tr>
               </tbody>
@@ -322,7 +322,7 @@
                         <form>
                           <div class="form-row">
                             <div class="form-group col-md-6">
-                              <label for="inputCity">Prodct Name</label>
+                              <label for="inputCity">Bin number</label>
                               <input type="text" class="form-control" id="name">
                             </div>
                             <div class="form-group col-md-6">
@@ -333,8 +333,8 @@
                           
                           <div class="form-row">
                             <div class="form-group col-md-6">
-                              <label for="inputCity">Bin Number</label>
-                              <input type="text" class="form-control" id="mobile">
+                              <label for="inputCity">Email</label>
+                              <input type="email" class="form-control" id="mobile">
                             </div>
                             <div class="form-group col-md-6">
                               <label for="inputCity">Telephone</label>
@@ -350,11 +350,21 @@
                           </div>
                           <div class="form-row">
                             <div class="form-group col-md-6">
-                              <label for="inputCity">Email</label>
+                              <label for="inputCity">App ID</label>
                               <input type="text" class="form-control" id="mobile">
                             </div>
                             <div class="form-group col-md-6">
-                              <label for="inputCity">App Id</label>
+                              <label for="inputCity">amount Of Unit</label>
+                              <input type="text" class="form-control" id="city">
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="inputCity">SKU #</label>
+                              <input type="text" class="form-control" id="mobile">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="inputCity">Product Type</label>
                               <input type="text" class="form-control" id="city">
                             </div>
                           </div>
@@ -364,9 +374,16 @@
                               <input type="text" class="form-control" id="mobile">
                             </div>
                             <div class="form-group col-md-6">
-                              <label for="inputCity">Unit</label>
-                              <input type="text" class="form-control" id="city">
+                              <label for="inputCity">Picture</label>
+                              <input type="file" class="form-control" id="city">
                             </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-12">
+                              <label for="inputCity">Prodct Description</label>
+                              <input type="text" class="form-control" id="address">
+                            </div>
+                            
                           </div>
                           
 
@@ -382,145 +399,7 @@
                         </form>    
                     </div>
 
-                    <div class="tab-pane fade" id="custom-tabs-four-profile" role="tabpanel" aria-labelledby="custom-tabs-four-profile-tab">
-                        <h5>Default Customs Declarations</h5>
-                        <p>The following options will be used to create customs declarations for international shipments that contain this product.</p>
-                        
-                        <form>
-                          <div class="col-12">
-                              <div class="form-check">
-                              <input class="form-check-input" type="checkbox">
-                              <label class="form-check-label"><b>Account Management</b></label>
-                              <p>Ability to manage and change your account subscription level, account add-ons and billing information
-                              </p>
-                            </div>
-                          </div>
-
-                          <div class="col-12">
-                              <div class="form-check">
-                              <input class="form-check-input" type="checkbox">
-                              <label class="form-check-label"><b>Administration</b></label>
-                              <p>Access to all ShipStation functionality including user management</p>
-                            </div>
-                          </div>
-                          <div class="col-12">
-                              <div class="form-check">
-                              <input class="form-check-input" type="checkbox">
-                              <label class="form-check-label"><b>Configuration</b></label>
-                              <p>Ability to add, remove, and manage marketplace stores, warehouses, provider accounts, email templates and general settings
-
-                              </p>
-                            </div>
-                          </div>
-
-                          <div class="col-12">
-                              <div class="form-check">
-                              <input class="form-check-input" type="checkbox">
-                              <label class="form-check-label"><b>Customer Management</b></label>
-                              <p>Ability to view and modify customer information
-                              </p>
-                            </div>
-                          </div>
-
-                          <div class="col-12">
-                              <div class="form-check">
-                              <input class="form-check-input" type="checkbox">
-                              <label class="form-check-label"><b>Inventory Management</b></label>
-                              <p>Ability to add, move and remove inventory and setup allocation strategies</p>
-                            </div>
-                          </div>
-
-                          <div class="col-12">
-                              <div class="form-check">
-                              <input class="form-check-input" type="checkbox">
-                              <label class="form-check-label"><b>Order Management</b></label>
-                              <p>Ability to modify product information, defaults, and tags
-                              </p>
-                            </div>
-                          </div>
-
-                          <div class="col-12">
-                              <div class="form-check">
-                              <input class="form-check-input" type="checkbox">
-                              <label class="form-check-label"><b>Product Management</b></label>
-                              <p>Ability to modify product information, defaults, and tags
-                              </p>
-                            </div>
-                          </div>
-
-                           <div class="col-12">
-                              <div class="form-check">
-                              <input class="form-check-input" type="checkbox">
-                              <label class="form-check-label"><b>Purchasing</b></label>
-                              <p>Ability to purchase additional postage or insurance</p>
-                            </div>
-                          </div>
-
-                        </form>   
-                    </div>
-
-                    <div class="tab-pane fade" id="custom-tabs-four-messages" role="tabpanel" aria-labelledby="custom-tabs-four-messages-tab">
-                        <h5>Default Customs Declarations</h5>
-                        <p>The following options will be used to create customs declarations for international shipments that contain this product.</p>
-                        
-                        <form>
-                          <div class="col-12">
-                              <div class="form-check">
-                              <input class="form-check-input" type="checkbox">
-                              <label class="form-check-label"><b>Account Management</b></label>
-                              </div>
-                          </div>
-
-                          <div class="col-12">
-                              <div class="form-check">
-                              <input class="form-check-input" type="checkbox">
-                              <label class="form-check-label"><b>Administration</b></label>
-                              </div>
-                          </div>
-                          <div class="col-12">
-                              <div class="form-check">
-                              <input class="form-check-input" type="checkbox">
-                              <label class="form-check-label"><b>Configuration</b></label>
-                              </div>
-                          </div>
-
-                          <div class="col-12">
-                              <div class="form-check">
-                              <input class="form-check-input" type="checkbox">
-                              <label class="form-check-label"><b>Customer Management</b></label>
-                              </div>
-                          </div>
-
-                          <div class="col-12">
-                              <div class="form-check">
-                              <input class="form-check-input" type="checkbox">
-                              <label class="form-check-label"><b>Inventory Management</b></label>
-                              </div>
-                          </div>
-
-                          <div class="col-12">
-                              <div class="form-check">
-                              <input class="form-check-input" type="checkbox">
-                              <label class="form-check-label"><b>Order Management</b></label>
-                              </div>
-                          </div>
-
-                          <div class="col-12">
-                              <div class="form-check">
-                              <input class="form-check-input" type="checkbox">
-                              <label class="form-check-label"><b>Product Management</b></label>
-                              </div>
-                          </div>
-
-                           <div class="col-12">
-                              <div class="form-check">
-                              <input class="form-check-input" type="checkbox">
-                              <label class="form-check-label"><b>Purchasing</b></label>
-                              </div>
-                          </div>
-                        
-                        </form> 
-                    </div>
+                    
                   </div>
                 </div>
                 <!-- /.card -->
@@ -539,7 +418,7 @@
           </div>
         </div>
         
-      </div>
+  </div>
       <!-- /.modal-content -->
   </div>
 
