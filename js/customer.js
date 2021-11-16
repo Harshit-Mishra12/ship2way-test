@@ -50,12 +50,12 @@ function add_tag() {
         var ship_paid = $("#ship_paid").val();
         var import_price = "456";
         var avl_unit = "350";
-        var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + name + "</td><td>" + comapny + "</td><td>" + order + "</td><td>" + ship_paid + "</td><td>" + import_price + "</td><td>" + import_price + "</td><td>" + import_price + "</td><td>" + avl_unit + "</td><td>" + avl_unit + "</td><td><input type='button' class='btn btn-success' data-toggle='modal' data-target='#edit_customer' value='Edit'>&nbsp;<input type='button' class='btn btn-danger btn-Delete' value='Delete'></td></tr>";
+        var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + name + "</td><td>" + comapny + "</td><td>" + order + "</td><td>" + ship_paid + "</td><td>" + import_price + "</td><td>" + import_price + "</td><td>" + import_price + "</td><td>" + avl_unit + "</td><td>" + avl_unit + "</td><td><button class='btn btn-success' data-toggle='modal' data-target='#edit_customer'><i class='fa fa-edit'></i></button><button class='btn btn-danger btn-Delete'><i class='fa fa-trash'></i></button></tr>";
         $("#customer_tbl").append(markup);
         $('#add_customer').modal('hide');
     });
   
-        $("#customer_tbl").on('click', '.btnDelete', function () {
+        $("#customer_tbl").on('click', '.btn-Delete', function () {
     
         var retVal = confirm("Are you sure you want to delete ?");
         if( retVal == true ){
@@ -78,12 +78,12 @@ function add_tag() {
         var shipping_id = $("#shipping_id").val();
         var country = "India";
         var avl_unit = "350";
-        var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + vendor_name + "</td><td>" + vendor_company + "</td><td>" + order_id + "</td><td>" + shipping_id + "</td><td>" + country + "</td><td>" + country + "</td><td>" + avl_unit + "</td><td>" + avl_unit + "</td><td><input type='button' class='btn btn-success' data-toggle='modal' data-target='#edit_vendor' value='Edit'>&nbsp;<input type='button' class='btn btn-danger btn-Delete' value='Delete'></td></tr>";
+        var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + vendor_name + "</td><td>" + vendor_company + "</td><td>" + order_id + "</td><td>" + shipping_id + "</td><td>" + country + "</td><td>" + country + "</td><td>" + avl_unit + "</td><td>" + avl_unit + "</td><td><button class='btn btn-success' data-toggle='modal' data-target='#edit_vendor'><i class='fa fa-edit'></i></button><button class='btn btn-danger btn-Delete'><i class='fa fa-trash'></i></button></td></tr>";
         $("#vendor_tbl").append(markup);
-        $('#add_vendor').modal('hide');
+        $('#vendor').modal('hide');
     });
   
-        $("#vendor_tbl").on('click', '.btnDelete', function () {
+        $("#vendor_tbl").on('click', '.btn-Delete', function () {
     
         var retVal = confirm("Are you sure you want to delete ?");
         if( retVal == true ){

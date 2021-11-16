@@ -1,3 +1,14 @@
+// $(document).ready( function () {
+//   $('#tbl_product').DataTable();
+// } );
+
+// $(document).ready( function () {
+//   $('#tbUser').DataTable();
+// } );
+
+
+
+
 function add_tag() {
   $("#Addline").append("<tr><td><input style='width:50px;'></td><td><input style='width:50px;'></td><td><input style='width:50px;'></td><td><input style='width:50px;'></td><td><button class='btn btn-danger' onclick='rm_tags()'><i class='fa fa-minus'></i></button></td></tr>");
 }
@@ -44,6 +55,7 @@ $(document).ready(function(){
 
   $(".add-product").click(function(){
       var pro_name = $("#pro_name").val();
+      var sku = "1234"
       var pro_desc = $("#pro_desc").val();
       var original_price = $("#original_price").val();
       var sales_price = $("#sales_price").val();
@@ -51,7 +63,7 @@ $(document).ready(function(){
       var Shipping_fee = "120";
       var import_price = "456";
       var avl_unit = "350";
-      var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + pro_name + "</td><td>" + pro_desc + "</td><td>" + original_price + "</td><td>" + import_price + "</td><td>" + pro_type + "</td><td>" + sales_price + "</td><td>" + Shipping_fee + "</td><td>" + avl_unit + "</td><td><input type='button' class='btn btn-success' data-toggle='modal' data-target='#edit_product' value='Edit'>&nbsp;<input type='button' class='btn btn-danger btn-Delete' value='Delete'></td></tr>";
+      var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + sku + "</td><td>" + pro_name + "</td><td>" + pro_desc + "</td><td>" + original_price + "</td><td>" + import_price + "</td><td>" + pro_type + "</td><td>" + sales_price + "</td><td>" + Shipping_fee + "</td><td>" + avl_unit + "</td><td><button class='btn btn-success' data-toggle='modal' data-target='#edit_product'><i class='fa fa-edit'></i></button><button class='btn btn-danger btn-Delete'><i class='fa fa-trash'></i></button></td></tr>";
       $("table tbody").append(markup);
       $('#add_product').modal('hide');
   });

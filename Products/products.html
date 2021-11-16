@@ -32,6 +32,8 @@
   <link rel="stylesheet" href="../plugins/bs-stepper/css/bs-stepper.min.css">
   <!-- dropzonejs -->
   <link rel="stylesheet" href="../plugins/dropzone/min/dropzone.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+
 <!----------------------------Adding css for testing------------------>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
@@ -346,7 +348,7 @@
                           <input class="form-check-input" type="checkbox">
                     </div>
                   </th>
-                  
+                  <th class="preset_column">SKU #</th>
                   <th class="preset_column">Product Name</th>
                   <th class="UPC_column">Description</th>
                   <th class="category_column">Product Type</th>
@@ -365,7 +367,7 @@
                           <input class="form-check-input" type="checkbox">
                     </div>
                   </td>
-                 
+                  <td>3536</td>
                   <td>Shoes</td>
                   <td>Free Shipping</td>
                   <td>1000</td>
@@ -374,8 +376,10 @@
                   <td class="avaliable_column">3000</td>
                   <td class="avaliable_column">2000</td>
                   <td class="avaliable_column">500</td>
-                  <td><button class="btn btn-success" data-toggle="modal" data-target="#edit_product">Edit</button>
-                    <button class="btn btn-danger btn-Delete">Delete</button>
+                  <td>
+                      <button class="btn btn-success "data-toggle="modal" data-target="#edit_product"><i class="fa fa-edit"></i></button>
+                      <button class="btn btn-danger btn-Delete"> <i class="fa fa-trash"></i></button>
+                    
                   </td>
                 </tr>
                 <tr>
@@ -384,7 +388,7 @@
                           <input class="form-check-input" type="checkbox">
                     </div>
                   </td>
-                 
+                  <td>4664</td>
                   <td>Bag</td>
                   <td>Free Shipping</td>
                   <td>1000</td>
@@ -393,9 +397,9 @@
                   <td class="avaliable_column">4000</td>
                   <td class="avaliable_column">2000</td>
                   <td class="avaliable_column">500</td>
-                  <td>
-                      <button class="btn btn-success" data-toggle="modal" data-target="#edit_product">Edit</button>
-                      <button class="btn btn-danger btn-Delete">Delete</button>
+                  <td style="width:12%">
+                    <button class="btn btn-success "data-toggle="modal" data-target="#edit_product"><i class="fa fa-edit"></i></button>
+                    <button class="btn btn-danger btn-Delete"> <i class="fa fa-trash"></i></button>
                   </td>
                 </tr>
               </tbody>
@@ -1615,10 +1619,12 @@
 <script src="../plugins/dropzone/min/dropzone.min.js"></script>
 <!-- Page specific script -->
 <!----------------------------Adding js for testing------------------>
-<script type="text/javascript" src="../js/product.js"></script>
+
 <link rel="stylesheet" href="/css/bstreeview.css">
 <script src="/js/bstreeview.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
+<script src="/js/product.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
 
 </body>
 </html>
