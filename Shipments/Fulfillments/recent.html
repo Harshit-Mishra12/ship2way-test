@@ -40,7 +40,7 @@
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
 
       <a href="index3.html" class="brand-link">
-        <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8;margin-left: 3.8rem;">
+        <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8;margin-left: 3.8rem;">
       
       </a>
       <div class="sidebar">
@@ -56,7 +56,7 @@
       <div class="container-fluid">
         <div class="row mb-4">
         <div class="col-sm-6">
-          <h1>Fulfilments</h1>
+          <h1>Recent</h1>
         </div>
         </div>
         <div class="row">
@@ -304,7 +304,7 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title">Warehouse Detail</h4>
+            <h4 class="modal-title">Add Fulfillments</h4>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -318,37 +318,27 @@
                   <div class="tab-content" id="custom-tabs-four-tabContent">
 
                     <div class="tab-pane fade show active" id="custom-tabs-four-home" role="tabpanel" aria-labelledby="custom-tabs-four-home-tab">
-                        <p>Add a user login to your account below. An email will be sent to the email address specified with instructions and a <b>temporary password</b> to login.</p>
-                        <br>
+                        
                         <form>
                           <div class="form-row">
                             <div class="form-group col-md-6">
-                              <label for="inputCity">SKU #</label>
-                              <input type="text" class="form-control" id="city">
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label for="inputCity">Unit Available</label>
-                              <input type="text" class="form-control" id="mobile">
-                            </div>
-                          </div>
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label for="inputCity">Prouct Type</label>
+                              <label for="inputCity">Prodct Name</label>
                               <input type="text" class="form-control" id="name">
                             </div>
                             <div class="form-group col-md-6">
-                              <label for="inputState">Price</label>
-                              <input type="text" class="form-control" id="email">
+                              <label for="inputState">Product Type</label>
+                              <input type="email" class="form-control" id="email">
                             </div>
                           </div>
+                          
                           <div class="form-row">
                             <div class="form-group col-md-6">
                               <label for="inputCity">Bin Number</label>
-                              <input type="text" class="form-control" id="name">
+                              <input type="text" class="form-control" id="mobile">
                             </div>
                             <div class="form-group col-md-6">
-                              <label for="inputState">Email</label>
-                              <input type="text" class="form-control" id="email">
+                              <label for="inputCity">Telephone</label>
+                              <input type="text" class="form-control" id="city">
                             </div>
                           </div>
                           <div class="form-row">
@@ -360,7 +350,7 @@
                           </div>
                           <div class="form-row">
                             <div class="form-group col-md-6">
-                              <label for="inputCity">Telephone</label>
+                              <label for="inputCity">Email</label>
                               <input type="text" class="form-control" id="mobile">
                             </div>
                             <div class="form-group col-md-6">
@@ -369,11 +359,22 @@
                             </div>
                           </div>
                           <div class="form-row">
-                            <div class="form-group col-md-12">
-                              <label for="inputCity">File</label>
-                              <input type="file" class="form-control" id="address">
+                            <div class="form-group col-md-6">
+                              <label for="inputCity">Price</label>
+                              <input type="text" class="form-control" id="mobile">
                             </div>
-                            
+                            <div class="form-group col-md-6">
+                              <label for="inputCity">Unit</label>
+                              <input type="text" class="form-control" id="city">
+                            </div>
+                          </div>
+                          
+
+                          <div class="col-8">
+                              <div class="form-check">
+                              <input class="form-check-input" type="checkbox">
+                              <label class="form-check-label">Product is returnable</label>
+                              </div>
                           </div>
                           <br>
                          <button type="button" class="btn btn-primary add-user">Save</button>
@@ -549,7 +550,7 @@
 <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="../../dist/js/adminlte.js"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
-<script src="../js/fulfilments.js"></script>
+<script src="/js/fulfilments.js"></script>
 <link rel="stylesheet" href="/css/bstreeview.css">
 <script src="/js/bstreeview.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
