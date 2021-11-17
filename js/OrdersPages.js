@@ -1,4 +1,8 @@
 
+$(document).ready( function () {
+  $('#example').DataTable();
+} );
+
   function rm() {
   $(event.target).closest("tr").remove();
 }
