@@ -13,8 +13,6 @@
   <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../dist/css/adminlte.min.css">
-
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
 <!----------------------------Adding css for testing------------------>
 
   <!-- daterange picker -->
@@ -34,22 +32,22 @@
   <link rel="stylesheet" href="../plugins/bs-stepper/css/bs-stepper.min.css">
   <!-- dropzonejs -->
   <link rel="stylesheet" href="../plugins/dropzone/min/dropzone.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
 <!----------------------------Adding css for testing------------------>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
   <div class="wrapper">
+
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
 
       <a href="index3.html" class="brand-link">
         <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8;margin-left: 3.8rem;">
+      
       </a>
       <div class="sidebar">
         <div id="navbar"></div>
       </div>
     </aside>
-  
-
-
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -112,8 +110,6 @@
         </div>
       </div><!-- /.container-fluid -->
     </section>
-
-    <!-- Main content ---------------------------------------------------------------------->
     <section class="content">
       <div class="container-fluid">
         <div class="row mb-2">
@@ -143,16 +139,14 @@
         </div>
 
       </div>
-  </section>
-   <!-- Main content ---------------------------------------------------------------------->
-   <section class="content">
-    <div class="container-fluid">
-      <div class="col-12">
-        <div class="card">
-          <div class="card-header">
-            <div class="row">
-
-           
+    </section>
+    <!-- Main content ---------------------------------------------------------------------->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              <div class="card-body">
                 <div class="card-header p-0 border-bottom-0">
                   <ul class="nav nav-pills ml-auto p-2">
                     <li class="nav-item"><a class="nav-link active" href="#tab_1" data-toggle="tab">Sent</a></li>
@@ -162,407 +156,264 @@
                   </ul>
                 </div>
                 <div class="card-body">
-                <div class="tab-content">
-                <div class="tab-pane active" id="tab_1">
-                  <table id="example1" class="table table-bordered table-hover">
-                    <thead>
-                      <tr>
-                        <th>
-                          <div class="form-check mb-3">
-                                <input class="form-check-input" type="checkbox">
-                          </div>
-                        </th>
-                        <th class="sku_column">Product Name</th>
-                        <th class="preset_column">Invoice #</th>
-                        <th class="preset_column">Upc code</th>
-                        <th class="preset_column">Unit sold</th>
-                        <th class="preset_column">Sales price </th>
-                        <th class="preset_column">Type Of Customer</th>
+                  <div class="tab-content">
+                  <div class="tab-pane active" id="tab_1">
+                    <div class="col-md-12" style="overflow: auto;">
+                    <table id="example1" class="table table-bordered table-hover">
+                      <thead>
+                        <tr>
+                          <th>
+                            <div class="form-check mb-3">
+                                  <input class="form-check-input" type="checkbox">
+                            </div>
+                          </th>
+                          <th class="sku_column">Product Name</th>
+                          <th class="preset_column">Invoice #</th>
+                          <th class="preset_column">Upc code</th>
+                          <th class="preset_column">Unit sold</th>
+                          <th class="preset_column">Sales price </th>
+                          <th class="preset_column">Type Of Customer</th>
+                          <th class="varient_column">Original Price</th>
+                          <th class="modified_column">Category</th>
+                          <th class="avaliable_column">Total Unit</th>
+                          <th class="avaliable_column">Total Sale</th>
+                          <th>Check Status</th>
+                          <th>Action</th>
+                          <th>Get Copy</th>
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                                  <input class="form-check-input" type="checkbox">
+                            </div>
+                          </td>
+                          <td class="alias_column">101</td>
+                          <td class="sku_column">24242</td>
+                          <td class="sku_column">AW4363</td>
+                          <td class="sku_column">345</td>
+                          <td class="sku_column">$200</td>
+                          <td>Ship2Way support</td>
+                          <td>878</td>
+                          <td>Shoes</td>
+                          <td>678</td>
+                          <td>$3.78</td>
+                         
+                          <td>
+                          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#coloumn" style="float:middle">Status</button>
+                          </td>
+                          <th><button class="btn btn-primary">Edit</button></th>
+                          <th><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#coloumn" style="float:middle">Print</button></th>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                                  <input class="form-check-input" type="checkbox">
+                            </div>
+                          </td>
+                          <td class="alias_column">102</td>
+                          <td class="sku_column">24242</td>
+                          <td class="sku_column">AW4363</td>
+                          <td class="sku_column">345</td>
+                          <td class="sku_column">$200</td>
+                          <td>Ship2Way support</td>
+                          <td>878</td>
+                          <td>Shoes</td>
+                          <td>678</td>
+                          <td>$3.78</td>
+                         
+                         
+                          <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#coloumn" style="float:middle">Status</button></td>
+                          <th><button class="btn btn-primary">Edit</button></th>
+                          <th><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#coloumn" style="float:middle">Print</button></th>
+                        </tr>
+                      </tbody>
                       
-                        <th class="varient_column">Original Price</th>
+                    </table>
+                    </div>
+                  </div>
+                  <!-- /.tab-pane -->
+                  <div class="tab-pane" id="tab_2">
+                    <div class="col-md-12" style="overflow: auto;">
+                      <table id="example2" class="table table-bordered table-hover">
+                        <thead>
+                          <tr>
+                            <th>
+                              <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox">
+                              </div>
+                            </th>
+                            <th class="sku_column">Product Name</th>
+                            <th class="preset_column">Invoice #</th>
+                            <th class="preset_column">Upc code</th>
+                            <th class="preset_column">Unit sold</th>
+                            <th class="preset_column">Sales price </th>
+                            <th class="preset_column">Type Of Customer</th>
+                            <th class="varient_column">Original Price</th>
+                            <th class="modified_column">Category</th>
+                            <th class="avaliable_column">Total Unit</th>
+                            <th class="avaliable_column">Total Sale</th>
+                            <th>Check Status</th>
+                            <th>Action</th>
+                            <th>Get Copy</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                              </div>
+                            </td>
+                            <td class="alias_column">101</td>
+                            <td class="sku_column">24242</td>
+                            <td class="sku_column">AW4363</td>
+                            <td class="sku_column">345</td>
+                            <td class="sku_column">$200</td>
+                            <td>Ship2Way support</td>
+                            <td>878</td>
+                            <td>Shoes</td>
+                            <td>678</td>
+                            <td>$3.78</td>
+                           
+                            <td>
+                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#coloumn" style="float:middle">Status</button>
+                            </td>
+                            <th><button class="btn btn-primary">Edit</button></th>
+                            <th><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#coloumn" style="float:middle">Print</button></th>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                              </div>
+                            </td>
+                            <td class="alias_column">102</td>
+                            <td class="sku_column">24242</td>
+                            <td class="sku_column">AW4363</td>
+                            <td class="sku_column">345</td>
+                            <td class="sku_column">$200</td>
+                            <td>Ship2Way support</td>
+                            <td>878</td>
+                            <td>Shoes</td>
+                            <td>678</td>
+                            <td>$3.78</td>
+                           
+                           
+                            <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#coloumn" style="float:middle">Status</button></td>
+                            <th><button class="btn btn-primary">Edit</button></th>
+                            <th><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#coloumn" style="float:middle">Print</button></th>
+                          </tr>
+                        </tbody>
                         
-                        <th class="avaliable_column">Total Sale</th>
-                        <th>Check Status</th>
-                        <th>Action</th>
-                        <th>Get Copy</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <div class="form-check">
-                                <input class="form-check-input" type="checkbox">
-                          </div>
-                        </td>
-                        <td class="alias_column">101</td>
-                        <td class="sku_column">24242</td>
-                        <td class="sku_column">AW4363</td>
-                        <td class="sku_column">345</td>
-                        <td class="sku_column">$200</td>
-                        <td>Ship2Way support</td>
-                     
-                        <td>$3.78</td>
-                        <td>Shopify</td>
-                       
-                        <td>
-                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#coloumn" style="float:middle">Status</button>
-                        </td>
-                        <th><button class="btn btn-primary">Edit</button></th>
-                        <th><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#coloumn" style="float:middle">Print</button></th>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="form-check">
-                                <input class="form-check-input" type="checkbox">
-                          </div>
-                        </td>
-                        <td class="alias_column">102</td>
-                        <td class="sku_column">24242</td>
-                        <td class="sku_column">AW4363</td>
-                        <td class="sku_column">345</td>
-                        <td class="sku_column">$200</td>
-                        <td>Ship2Way support</td>
-                     
-                        <td>$3.78</td>
-                        <td>Amazon</td>
-                       
-                        <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#coloumn" style="float:middle">Status</button></td>
-                        <th><button class="btn btn-primary">Edit</button></th>
-                        <th><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#coloumn" style="float:middle">Print</button></th>
-                      </tr>
-                    </tbody>
-                    
-                  </table>
-                </div>
-                <!-- /.tab-pane -->
-                <div class="tab-pane" id="tab_2">
-                  <table id="example2" class="table table-bordered table-hover">
-                    <thead>
-                      <tr>
-                        <th>
-                          <div class="form-check mb-3">
-                                <input class="form-check-input" type="checkbox">
-                          </div>
-                        </th>
-                        <th class="sku_column">Product Name</th>
-                        <th class="preset_column">Invoice #</th>
-                        <th class="preset_column">Upc code</th>
-                        <th class="preset_column">Unit sold</th>
-                        <th class="preset_column">Sales price </th>
-                        <th class="preset_column">Type Of Customer</th>
-                      
-                        <th class="varient_column">Original Price</th>
+                      </table>
+                    </div>
+                  </div>
+                  <!-- /.tab-pane -->
+                  <div class="tab-pane" id="tab_3">
+                    <div class="col-md-12" style="overflow: auto;">
+                      <table id="example3" class="table table-bordered table-hover">
+                        <thead>
+                          <tr>
+                            <th>
+                              <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox">
+                              </div>
+                            </th>
+                            <th class="sku_column">Product Name</th>
+                            <th class="preset_column">Invoice #</th>
+                            <th class="preset_column">Upc code</th>
+                            <th class="preset_column">Unit sold</th>
+                            <th class="preset_column">Sales price </th>
+                            <th class="preset_column">Type Of Customer</th>
+                            <th class="varient_column">Original Price</th>
+                            <th class="modified_column">Category</th>
+                            <th class="avaliable_column">Total Unit</th>
+                            <th class="avaliable_column">Total Sale</th>
+                            <th>Check Status</th>
+                            <th>Action</th>
+                            <th>Get Copy</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                              </div>
+                            </td>
+                            <td class="alias_column">101</td>
+                            <td class="sku_column">24242</td>
+                            <td class="sku_column">AW4363</td>
+                            <td class="sku_column">345</td>
+                            <td class="sku_column">$200</td>
+                            <td>Ship2Way support</td>
+                            <td>878</td>
+                            <td>Shoes</td>
+                            <td>678</td>
+                            <td>$3.78</td>
+                           
+                            <td>
+                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#coloumn" style="float:middle">Status</button>
+                            </td>
+                            <th><button class="btn btn-primary">Edit</button></th>
+                            <th><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#coloumn" style="float:middle">Print</button></th>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                              </div>
+                            </td>
+                            <td class="alias_column">102</td>
+                            <td class="sku_column">24242</td>
+                            <td class="sku_column">AW4363</td>
+                            <td class="sku_column">345</td>
+                            <td class="sku_column">$200</td>
+                            <td>Ship2Way support</td>
+                            <td>878</td>
+                            <td>Shoes</td>
+                            <td>678</td>
+                            <td>$3.78</td>
+                           
+                           
+                            <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#coloumn" style="float:middle">Status</button></td>
+                            <th><button class="btn btn-primary">Edit</button></th>
+                            <th><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#coloumn" style="float:middle">Print</button></th>
+                          </tr>
+                        </tbody>
                         
-                        <th class="avaliable_column">Total Sale</th>
-                        <th>Check Status</th>
-                        <th>Action</th>
-                        <th>Get Copy</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <div class="form-check">
-                                <input class="form-check-input" type="checkbox">
-                          </div>
-                        </td>
-                        <td class="alias_column">101</td>
-                        <td class="sku_column">24242</td>
-                        <td class="sku_column">AW4363</td>
-                        <td class="sku_column">345</td>
-                        <td class="sku_column">$200</td>
-                        <td>Ship2Way support</td>
-                     
-                        <td>$3.78</td>
-                        <td>Shopify</td>
-                       
-                        <td>
-                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#coloumn" style="float:middle">Status</button>
-                        </td>
-                        <th><button class="btn btn-primary">Edit</button></th>
-                        <th><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#coloumn" style="float:middle">Print</button></th>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="form-check">
-                                <input class="form-check-input" type="checkbox">
-                          </div>
-                        </td>
-                        <td class="alias_column">102</td>
-                        <td class="sku_column">24242</td>
-                        <td class="sku_column">AW4363</td>
-                        <td class="sku_column">345</td>
-                        <td class="sku_column">$200</td>
-                        <td>Ship2Way support</td>
-                     
-                        <td>$3.78</td>
-                        <td>Amazon</td>
-                       
-                        <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#coloumn" style="float:middle">Status</button></td>
-                        <th><button class="btn btn-primary">Edit</button></th>
-                        <th><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#coloumn" style="float:middle">Print</button></th>
-                      </tr>
-                    </tbody>
-                    
-                  </table>
-                </div>
-                <!-- /.tab-pane -->
-                <div class="tab-pane" id="tab_3">
-                  <table id="example3" class="table table-bordered table-hover">
-                    <thead>
-                      <tr>
-                        <th>
-                          <div class="form-check mb-3">
-                                <input class="form-check-input" type="checkbox">
-                          </div>
-                        </th>
-                        <th class="sku_column">Product Name</th>
-                        <th class="preset_column">Invoice #</th>
-                        <th class="preset_column">Upc code</th>
-                        <th class="preset_column">Unit sold</th>
-                        <th class="preset_column">Sales price </th>
-                        <th class="preset_column">Type Of Customer</th>
-                      
-                        <th class="varient_column">Original Price</th>
-                        
-                        <th class="avaliable_column">Total Sale</th>
-                        <th>Check Status</th>
-                        <th>Action</th>
-                        <th>Get Copy</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <div class="form-check">
-                                <input class="form-check-input" type="checkbox">
-                          </div>
-                        </td>
-                        <td class="alias_column">101</td>
-                        <td class="sku_column">24242</td>
-                        <td class="sku_column">AW4363</td>
-                        <td class="sku_column">345</td>
-                        <td class="sku_column">$200</td>
-                        <td>Ship2Way support</td>
-                     
-                        <td>$3.78</td>
-                        <td>Shopify</td>
-                       
-                        <td>
-                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#coloumn" style="float:middle">Status</button>
-                        </td>
-                        <th><button class="btn btn-primary">Edit</button></th>
-                        <th><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#coloumn" style="float:middle">Print</button></th>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="form-check">
-                                <input class="form-check-input" type="checkbox">
-                          </div>
-                        </td>
-                        <td class="alias_column">102</td>
-                        <td class="sku_column">24242</td>
-                        <td class="sku_column">AW4363</td>
-                        <td class="sku_column">345</td>
-                        <td class="sku_column">$200</td>
-                        <td>Ship2Way support</td>
-                     
-                        <td>$3.78</td>
-                        <td>Amazon</td>
-                       
-                        <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#coloumn" style="float:middle">Status</button></td>
-                        <th><button class="btn btn-primary">Edit</button></th>
-                        <th><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#coloumn" style="float:middle">Print</button></th>
-                      </tr>
-                    </tbody>
-                    
-                  </table>
-                </div>
-                <!-- /.tab-pane -->
-                </div>
-                </div>
-                <!-- /.card -->
+                      </table>
+                    </div>
+                  </div>
+                  <!-- /.tab-pane -->
+                  </div>
+                  </div>
               
-            
-        
             </div>
+            </div>
+          </div>
+          <!-- /.card-header -->
+          
+          <!-- /.card-body -->
         </div>
-        <!-- /.card-header -->
-        
+      </div>
+
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content ------------------------------------------------------------------------->
+
        
-      </div>
-    </div>
+        <!-- /.modal-dialog -->
 
-  </div><!-- /.container-fluid -->
-</section>
-<!-- /.content ------------------------------------------------------------------------->
-
-      <div class="modal fade" id="coloumn">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content" id="coloumn_scroll">
-          <div class="modal-header">
-            <h4 class="modal-title">Manage Coloums</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body" style="padding:0px;">
-            <div class="container-fluid">
-             <div class="invoice p-3 mb-3">
-            <!-- title row -->
-            <div class="row">
-              <div class="col-12">
-                <h4>
-                  <i class="fas fa-globe"></i> Ship2Way
-                  <small class="float-right">Date: 2/10/2014</small>
-                </h4>
-              </div>
-              <!-- /.col -->
-            </div>
-            <!-- info row -->
-            <div class="row invoice-info">
-              <div class="col-sm-4 invoice-col">
-                
-                <address>
-                  <strong>Ship2Way</strong><br>
-                  795 Folsom Ave, Suite 600<br>
-                  San Francisco, CA 94107<br>
-                  Phone: (804) 123-5432<br>
-                  Email: info@almasaeedstudio.com
-                </address>
-              </div>
-              
-            </div>
-            <!-- /.row -->
-
-            <!-- Table row -->
-             <div class="row">
-              <div class="col-12 table-responsive">
-                <table class="table table-striped">
-                  <thead>
-                  <tr>
-                    <th>Sr No</th>
-                    <th>Item</th>
-                    <th>Description</th>
-                    <th>Qty</th>
-                    <th>Rate</th>
-                    <th>Amount</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Casual Shoes</td>
-                    <td>El snort testosterone trophy driving gloves handsome</td>
-                    <td>2</td>
-                    <td>$64.50</td>
-                    <td>$200.50</td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>Earphones</td>
-                    <td>El snort testosterone trophy driving gloves handsome</td>
-                    <td>2</td>
-                    <td>$64.50</td>
-                    <td>$200.50</td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>Mobile</td>
-                    <td>El snort testosterone trophy driving gloves handsome</td>
-                    <td>2</td>
-                    <td>$64.50</td>
-                    <td>$200.50</td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td>Shoes</td>
-                    <td>El snort testosterone trophy driving gloves handsome</td>
-                    <td>2</td>
-                    <td>$64.50</td>
-                    <td>$200.50</td>
-                  </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- /.col -->
-            </div>
-            <!-- /.row -->
-
-            <div class="row">
-              <!-- accepted payments column -->
-              <div class="col-6">
-                <p class="lead">Payment Methods:</p>
-                <img src="../dist/img/credit/visa.png" alt="Visa">
-                <img src="../dist/img/credit/mastercard.png" alt="Mastercard">
-                <img src="../dist/img/credit/american-express.png" alt="American Express">
-                <img src="../dist/img/credit/paypal2.png" alt="Paypal">
-
-                <p class="text-muted well well-sm shadow-none" style="margin-top: 10px;">
-                  Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles, weebly ning heekya handango imeem
-                  plugg
-                  dopplr jibjab, movity jajah plickers sifteo edmodo ifttt zimbra.
-                </p>
-              </div>
-              <!-- /.col -->
-              <div class="col-6">
-                <p class="lead">Amount Due 2/22/2014</p>
-
-                <div class="table-responsive">
-                  <table class="table">
-                    <tr>
-                      <th style="width:50%">Subtotal:</th>
-                      <td>$250.30</td>
-                    </tr>
-                    <tr>
-                      <th>Tax (9.3%)</th>
-                      <td>$10.34</td>
-                    </tr>
-                    <tr>
-                      <th>Shipping:</th>
-                      <td>$5.80</td>
-                    </tr>
-                    <tr>
-                      <th>Total:</th>
-                      <td>$265.24</td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <!-- /.col -->
-            </div>
-            <!-- /.row -->
-
-            <!-- this row will not appear when printing -->
-            <div class="row no-print">
-              <div class="col-12">
-                <a href="invoice-print.html" rel="noopener" target="_blank" class="btn btn-default"><i class="fas fa-print"></i> Print</a>
-                <button type="button" class="btn btn-success float-right"><i class="far fa-credit-card"></i> Submit
-                  Payment
-                </button>
-                <button type="button" class="btn btn-primary float-right" style="margin-right: 5px;">
-                  <i class="fas fa-download"></i> Generate PDF
-                </button>
-              </div>
-            </div>
-          </div>
-            </div>
-          </div>
-          </div>
-          <!-- <div class="modal-footer justify-content-between">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save</button>
-          </div> -->
-        </div>
-        <!-- /.modal-content -->
-      </div>
-      <!-- /.modal-dialog -->
-      
-      <div class="modal fade" id="new_invoice">
-      <div class="modal-dialog modal-lg">
+      <div class="modal fade" id="category">
+        <div class="modal-dialog modal-md">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">Create New Invoice</h4>
+              <h4 class="modal-title">Add Product Category</h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -570,152 +421,77 @@
             <div class="modal-body">
               <div class="container-fluid">
                 <div class="col-md-12">
-                  <div class="container">
-                    <form>
-                      <div class="form-row">
-                        <div class="form-group col-md-6">
-                          <label for="inputCity">Invoice No</label>
-                          <input type="text" class="form-control" id="inputCity">
-                        </div>
-                        <div class="form-group col-md-6">
-                          <label for="inputState">Order ID</label>
-                          <input type="text" class="form-control" id="inputCity">
-                        </div>
-                      </div>
-                      <div class="form-row">
-                        <div class="form-group col-md-6">
-                          <label for="inputCity">Full Name</label>
-                          <input type="text" class="form-control" id="inputCity">
-                        </div>
-                        <div class="form-group col-md-6">
-                          <label for="inputState">Email</label>
-                          <input type="email" class="form-control" id="inputCity">
-                        </div>
-                      </div>
-                      <div class="form-row">
-                        <div class="form-group col-md-6">
-                          <label for="inputCity">Invoice Date</label>
-                          <input type="date" class="form-control" id="inputCity">
-                        </div>
-                        <div class="form-group col-md-6">
-                          <label for="inputState">Due Date</label>
-                          <input type="date" class="form-control" id="inputCity">
-                        </div>
-
-                        <!-- <div class="col-8">
-                          <div class="form-check">
-                              <input class="form-check-input" type="checkbox">
-                              <label class="form-check-label">Override the imported name</label>
+                    <div class="container">
+                      <form>
+                        <div class="form-row">
+                          <div class="form-group col-md-12">
+                            <label for="inputCity">Add Product Category</label>
+                            <input type="text" class="form-control" id="category_name">
                           </div>
-                        </div> -->
-                      </div>
-                     
-                      <div class="form-row">
-                        <div class="form-group col-md-12">
-                          <label for="inputCity">Address</label>
-                          <input type="text" class="form-control" id="inputCity">
                         </div>
-                      </div>
-                     
-                    </form>
-                  </div>
+                      </form>
+                    </div>
                 </div>
-              </div>
-            
-              <div class="col-md-12">
-                 <div class="row clearfix">
-                    <div class="col-md-12">
-                      <table class="table table-bordered table-hover" id="tab_logic">
-                        <thead>
-                          <tr>
-                            <th class="text-center"> # </th>
-                            <th class="text-center"> Product </th>
-                            <th class="text-center"> Qty </th>
-                            <th class="text-center"> Price </th>
-                            <th class="text-center"> Total </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr id='addr0'>
-                            <td>1</td>
-                            <td><input type="text" name='product[]'  placeholder='Enter Product Name' class="form-control"/></td>
-                            <td><input type="number" name='qty[]' placeholder='Enter Qty' class="form-control qty" step="0" min="0"/></td>
-                            <td><input type="number" name='price[]' placeholder='Enter Unit Price' class="form-control price" step="0.00" min="0"/></td>
-                            <td><input type="number" name='total[]' placeholder='0.00' class="form-control total" readonly/></td>
-                          </tr>
-                          <tr id='addr1'></tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                  <div class="row clearfix">
-                    <div class="col-md-12">
-                      <button id="add_row" class="btn btn-default pull-left">Add Row</button>
-                      <button id='delete_row' class="pull-right btn btn-default">Delete Row</button>
-                    </div>
-                  </div>
-                  <div class="row clearfix" style="margin-top:20px">
-                     <div class="pull-right col-md-6">
-                      
-                      <p class="lead">Payment Methods:</p>
-                      <img src="../dist/img/credit/visa.png" alt="Visa">
-                      <img src="../dist/img/credit/mastercard.png" alt="Mastercard">
-                      <img src="../dist/img/credit/american-express.png" alt="American Express">
-                      <img src="../dist/img/credit/paypal2.png" alt="Paypal">
-
-                      <p class="text-muted well well-sm shadow-none" style="margin-top: 10px;">
-                        Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles, weebly ning heekya handango imeem
-                        plugg
-                        dopplr jibjab, movity jajah plickers sifteo edmodo ifttt zimbra.
-                      </p>
-                  
-                    </div>
-                    <div class="pull-right col-md-6">
-                      <table class="table table-bordered table-hover" id="tab_logic_total">
-                        <tbody>
-                          <tr>
-                            <th class="text-center">Sub Total</th>
-                            <td class="text-center"><input type="number" name='sub_total' placeholder='0.00' class="form-control" id="sub_total" readonly/></td>
-                          </tr>
-                          <tr>
-                            <th class="text-center">Tax</th>
-                            <td class="text-center"><div class="input-group mb-2 mb-sm-0">
-                                <input type="number" class="form-control" id="tax" placeholder="0">
-                                <div class="input-group-addon">%</div>
-                              </div></td>
-                          </tr>
-                          <tr>
-                            <th class="text-center">Tax Amount</th>
-                            <td class="text-center"><input type="number" name='tax_amount' id="tax_amount" placeholder='0.00' class="form-control" readonly/></td>
-                          </tr>
-                          <tr>
-                            <th class="text-center">Grand Total</th>
-                            <td class="text-center"><input type="number" name='total_amount' id="total_amount" placeholder='0.00' class="form-control" readonly/></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                  
-              </div>
-              <div class="modal-footer justify-content-right">
-                    <div class="col-4">
-                        <div class="form-check">
-                        <input class="form-check-input" type="checkbox">
-                        <label class="form-check-label">Apply changes to open orders</label>
-                      </div>
-                    </div>
-                  <button type="button" class="btn btn-primary">Save</button>
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary add-category">Save changes</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
               </div>
             </div>
           </div>
-          
+
+            <!-- <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div> -->
+       
+          <!-- /.modal-content -->
         </div>
-        <!-- /.modal-content -->
+        <!-- /.modal-dialog -->
       </div>
 
-  </div>
+      <div class="modal fade" id="edit_rep">
+        <div class="modal-dialog modal-md">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Edit Category</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="col-md-12">
+                    <div class="container">
+                      <form>
+                        <div class="form-row">
+                          <div class="form-group col-md-12">
+                            <label for="inputCity">Add Product Category</label>
+                            <input type="text" class="form-control" id="category_name">
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary add-category">Save changes</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <!-- <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div> -->
+       
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      
+      <!-- /.modal -->
 
 </div>
 
@@ -745,7 +521,7 @@
 <script src="../dist/js/pages/dashboard2.js"></script>
 
 <!----------------------------Adding js for testing------------------>
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+
 <!-- Select2 -->
 <script src="../plugins/select2/js/select2.full.min.js"></script>
 <!-- Bootstrap4 Duallistbox -->
@@ -767,52 +543,14 @@
 <script src="../plugins/dropzone/min/dropzone.min.js"></script>
 <!-- Page specific script -->
 <!----------------------------Adding js for testing------------------>
+
 <script type="text/javascript" src="../js/OrdersPages.js"></script>
 <link rel="stylesheet" href="/css/bstreeview.css">
 <script src="/js/bstreeview.js"></script>
-<script src="/js/main.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+<script type="text/javascript" src="/js/product.js"></script>
 
-<script src="../plugins/jquery/jquery.min.js"></script>
-<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="../dist/js/adminlte.js"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
-<script src="/js/recents.js"></script>
-<script src="/js/invoice.js"></script>
 
-<script>
-  $(function () {
-    $("#example1").DataTable({
-      "responsive": true, "lengthChange": false, "autoWidth": false,
-      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
-    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
-    $('#example1').DataTable({
-      "paging": true,
-      "lengthChange": false,
-      "searching": false,
-      "ordering": true,
-      "info": true,
-      "autoWidth": false,
-      "responsive": true,
-    });
-    $('#example2').DataTable({
-      "paging": true,
-      "lengthChange": false,
-      "searching": false,
-      "ordering": true,
-      "info": true,
-      "autoWidth": false,
-      "responsive": true,
-    });
-    $('#example3').DataTable({
-      "paging": true,
-      "lengthChange": false,
-      "searching": false,
-      "ordering": true,
-      "info": true,
-      "autoWidth": false,
-      "responsive": true,
-    });
-  });
-</script>
 </body>
 </html>
