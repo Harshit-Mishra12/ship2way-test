@@ -32,6 +32,7 @@
   <link rel="stylesheet" href="../plugins/bs-stepper/css/bs-stepper.min.css">
   <!-- dropzonejs -->
   <link rel="stylesheet" href="../plugins/dropzone/min/dropzone.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
 <!----------------------------Adding css for testing------------------>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
@@ -184,7 +185,7 @@
                 <!-------------------dropdown--------------------->
                 <!-------------dropdown---------------------->
                 <div class="btn-group mr-1">
-                  <button type="button" class="btn btn-info">Destination</button>
+                  <button type="button" class="btn btn-info">Style Number</button>
                   <button type="button" class="btn btn-info dropdown-toggle dropdown-icon" data-toggle="dropdown">
                     <span class="sr-only">Toggle Dropdown</span>
                   </button>
@@ -196,7 +197,7 @@
                 <!-------------------dropdown--------------------->
                 <!-------------dropdown---------------------->
                 <div class="btn-group mr-1">
-                  <button type="button" class="btn btn-info">Order Number</button>
+                  <button type="button" class="btn btn-info">Customer Name</button>
                   <button type="button" class="btn btn-info dropdown-toggle dropdown-icon" data-toggle="dropdown">
                     <span class="sr-only">Toggle Dropdown</span>
                   </button>
@@ -208,7 +209,7 @@
                 <!-------------------dropdown--------------------->
                 <!-------------dropdown---------------------->
                 <div class="btn-group mr-1">
-                  <button type="button" class="btn btn-info">Style Number</button>
+                  <button type="button" class="btn btn-info">Hold In Progress</button>
                   <button type="button" class="btn btn-info dropdown-toggle dropdown-icon" data-toggle="dropdown">
                     <span class="sr-only">Toggle Dropdown</span>
                   </button>
@@ -239,6 +240,7 @@
                 </button>
               </div>
               <!-------------------dropdown--------------------->
+              
               <!-------------dropdown---------------------->
               <div class="btn-group mr-1">
                 <div class="btn-group">
@@ -247,9 +249,9 @@
                     <span class="sr-only">Toggle Dropdown</span>
                   </button>
                   <div class="dropdown-menu" role="menu">
+                    <a class="dropdown-item" href="#">Style Number</a>
+                    <a class="dropdown-item" href="#">Order Number</a>
                     <a class="dropdown-item" href="#">Customer Name</a>
-                    <a class="dropdown-item" href="#">Country</a>
-                    <a class="dropdown-item" href="#">Province</a>
                     <a class="dropdown-item" href="#">Telephone</a>
                   </div>
                 </div>
@@ -260,7 +262,7 @@
           <!-- /.card-header -->
           <div class="card-body">
             <div class="table-responsive">
-            <table id="example2" class="table table-bordered table-hover">
+            <table id="example" class="table table-bordered table-hover">
               <thead>
                 <tr>
                   <th>
@@ -1205,5 +1207,7 @@
 <link rel="stylesheet" href="/css/bstreeview.css">
 <script src="/js/bstreeview.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
+<script type="text/javascript" src="/js/OrderPages.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
 </body>
 </html>
