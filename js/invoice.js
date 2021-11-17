@@ -1,3 +1,13 @@
+$(document).ready( function () {
+  $('#example1').DataTable();
+} );
+$(document).ready( function () {
+	$('#example2').DataTable();
+  } );
+  $(document).ready( function () {
+	$('#example3').DataTable();
+  } );
+
 $(document).ready(function(){
     var i=1;
     $("#add_row").click(function(){b=i-1;

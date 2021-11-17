@@ -94,7 +94,7 @@ $(document).ready(function(){
             var pro_type = "shop";
             var dimension = "30 x 40";
             var weight = "40gms";
-            var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + preset_group + "</td><td>" + stores + "</td><td>" + pro_type + "</td><td>" + dimension + "</td><td>" + weight + "</td><td><input type='button' class='btn btn-success' data-toggle='modal' data-target='#edit_preset' value='Edit'>&nbsp;<input type='button' class='btn btn-danger btn-Delete' value='Delete'></td></tr>";
+            var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + preset_group + "</td><td>" + stores + "</td><td>" + pro_type + "</td><td>" + dimension + "</td><td>" + weight + "</td><td><button class='btn btn-success' data-toggle='modal' data-target='#edit_preset'><i class='fa fa-edit'></i></button><button class='btn btn-danger btn-Delete'><i class='fa fa-trash'></i></button></td></tr>";
             $("table tbody").append(markup);
             $('#preset_model').modal('hide');
            
@@ -120,10 +120,11 @@ $(document).ready(function(){
     $(document).ready(function(){
 
         $(".add-category").click(function(){
-            var category = $("#category_name").val();
-            var pro_type = "bag";
-            var stores ="shopify";
-            var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + category + "</td><td>" + pro_type + "</td><td>" + stores + "</td><td><input type='button' class='btn btn-success' data-toggle='modal' data-target='#edit_rep' value='Edit'>&nbsp;<input type='button' class='btn btn-danger btnDelete' value='Delete'></td></tr>";
+            var product = $("#category_name").val();
+            var dropship = "bag";
+            var product_type ="footwear";
+            var store ="shopify";
+            var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + product + "</td><td>" + dropship + "</td><td>" + product_type + "</td><td>" + store + "</td><td><button class='btn btn-success' data-toggle='modal' data-target='#edit_rep'><i class='fa fa-edit'></i></button><button class='btn btn-danger btnDelete'><i class='fa fa-trash'></i></button></td></tr>";
             $("table tbody").append(markup);
             $('#category').modal('hide');
         });
