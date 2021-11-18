@@ -1,3 +1,8 @@
+$(document).ready( function () {
+  $('#tbUser').DataTable();
+} );
+
+
 google.charts.load("current", {packages:['corechart']});
     google.charts.setOnLoadCallback(drawChart);
     function drawChart() {
