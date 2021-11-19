@@ -32,6 +32,7 @@
   <link rel="stylesheet" href="../plugins/bs-stepper/css/bs-stepper.min.css">
   <!-- dropzonejs -->
   <link rel="stylesheet" href="../plugins/dropzone/min/dropzone.min.css">
+  <link rel="stylesheet" href="../css/style.css">
 <!----------------------------Adding css for testing------------------>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
@@ -76,9 +77,16 @@
                   
                   
             </div>
-            <div class="col-6"><button class="btn btn-light border" style="width: 200px;">Apr 26 - May 23</button></div>
         </div>
-      </div><!-- /.container-fluid -->
+        <br>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="alert alert-danger blinking" role="alert">
+              Your Package Unit Is Running Out And You Need To Upgrade To Other Package..
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="content">
         <div class="container-fluid mt-4">
@@ -99,7 +107,7 @@
            </div>
           </div>
           <div class="row">
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-2 col-6">
               <!-- small card -->
              
               <div class="small-box bg-info">
@@ -115,7 +123,7 @@
               </div>
               
             </div>
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-2 col-6">
               <!-- small card -->
               <div class="small-box bg-info">
                 <div class="inner">
@@ -129,7 +137,7 @@
 
               </div>
             </div>
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-2 col-6">
               <!-- small card -->
               <div class="small-box bg-info">
                 <div class="inner">
@@ -142,7 +150,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-2 col-6">
               <!-- small card -->
               <div class="small-box bg-info">
                 <div class="inner">
@@ -156,6 +164,22 @@
 
               </div>
             </div>
+            <div class="col-lg-2 col-6">
+              <!-- small card -->
+              <div class="small-box bg-info" data-toggle="modal" data-target="#sell_model">
+                <div class="inner">
+                  <h3>$ 150</h3>
+
+                  <p>Customerwise Sell</p>
+                </div>
+                <div class="icon">
+                  <i class="fas fa-dollar-sign"></i>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
            
           </div>
           <div class="row">
@@ -264,6 +288,266 @@
         </div>
         
     </section>
+
+    <div class="modal fade" id="sell_model">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content" id="modal-fourth">
+          <div class="modal-header">
+            <h4 class="modal-title">Customerwise Sell Details</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          
+          <div class="col-md-12">
+            <div class="container">
+              <div class="col-md-12">
+
+                <div class="card card-primary card-outline card-outline-tabs">
+                <div class="card-header p-0 border-bottom-0">
+                  <ul class="nav nav-tabs" id="custom-tabs-four-tab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="custom-tabs-four-home-tab" data-toggle="pill" href="#custom-tabs-four-home" role="tab" aria-controls="custom-tabs-four-home" aria-selected="true">Online Portal Sales</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="custom-tabs-four-profile-tab" data-toggle="pill" href="#custom-tabs-four-profile" role="tab" aria-controls="custom-tabs-four-profile" aria-selected="false">Customer Visit</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="custom-tabs-four-messages-tab" data-toggle="pill" href="#custom-tabs-four-messages" role="tab" aria-controls="custom-tabs-four-messages" aria-selected="false">Amount of Sales </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="custom-tabs-four-settings-tab" data-toggle="pill" href="#custom-tabs-four-settings" role="tab" aria-controls="custom-tabs-four-settings" aria-selected="false">Customerwise Unit Ship </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-body">
+                  <div class="tab-content" id="custom-tabs-four-tabContent">
+
+                    <div class="tab-pane fade show active" id="custom-tabs-four-home" role="tabpanel" aria-labelledby="custom-tabs-four-home-tab">
+                      <table id="tbUser" class="table table-bordered table-hover tab1">
+                        <thead>
+                          <tr>
+                            <th>
+                              <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox">
+                              </div>
+                            </th>
+                            <th class="alias_column">Username</th>
+                            <th class="sku_column">Email</th>
+                            <th class="preset_column">Mobile</th>
+                            <th class="UPC_column">Address</th>
+                            <th class="varient_column">City</th>
+                            <th class="category_column">Country</th>
+                          
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                              </div>
+                            </td>
+                            <td class="alias_column">Jack</td>
+                            <td class="sku_column">jack@gmail.com</td>
+                            <td>9089786756</td>
+                            <td>Lajpat Nagar</td>
+                            <td>Mumbai</td>
+                            <td>India</td>
+                           
+                           
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                              </div>
+                            </td>
+                            <td class="alias_column">Mack</td>
+                            <td class="sku_column">Mack@gmail.com</td>
+                            <td>9089786756</td>
+                            <td>Sankar Nagar</td>
+                            <td>Delhi</td>
+                            <td>India</td>
+                            
+                          </tr>
+                        </tbody>
+                        
+                      </table>  
+                    </div>
+
+                    <div class="tab-pane fade" id="custom-tabs-four-profile" role="tabpanel" aria-labelledby="custom-tabs-four-profile-tab">
+                      <table id="tbUser" class="table table-bordered table-hover tab1">
+                        <thead>
+                          <tr>
+                            <th>
+                              <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox">
+                              </div>
+                            </th>
+                            <th class="alias_column">Username</th>
+                            <th class="sku_column">Email</th>
+                            <th class="preset_column">Mobile</th>
+                            <th class="UPC_column">Address</th>
+                            <th class="varient_column">City</th>
+                            <th class="category_column">Country</th>
+                          
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                              </div>
+                            </td>
+                            <td class="alias_column">Jack</td>
+                            <td class="sku_column">jack@gmail.com</td>
+                            <td>9089786756</td>
+                            <td>Lajpat Nagar</td>
+                            <td>Mumbai</td>
+                            <td>India</td>
+                           
+                           
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                              </div>
+                            </td>
+                            <td class="alias_column">Mack</td>
+                            <td class="sku_column">Mack@gmail.com</td>
+                            <td>9089786756</td>
+                            <td>Sankar Nagar</td>
+                            <td>Delhi</td>
+                            <td>India</td>
+                            
+                          </tr>
+                        </tbody>
+                        
+                      </table>  
+                    </div>
+                    <div class="tab-pane fade" id="custom-tabs-four-messages" role="tabpanel" aria-labelledby="custom-tabs-four-messages-tab">
+                      <table id="tbUser" class="table table-bordered table-hover tab1">
+                        <thead>
+                          <tr>
+                            <th>
+                              <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox">
+                              </div>
+                            </th>
+                            <th class="alias_column">Username</th>
+                            <th class="sku_column">Email</th>
+                            <th class="preset_column">Mobile</th>
+                            <th class="UPC_column">Address</th>
+                            <th class="varient_column">City</th>
+                            <th class="category_column">Country</th>
+                          
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                              </div>
+                            </td>
+                            <td class="alias_column">Jack</td>
+                            <td class="sku_column">jack@gmail.com</td>
+                            <td>9089786756</td>
+                            <td>Lajpat Nagar</td>
+                            <td>Mumbai</td>
+                            <td>India</td>
+                           
+                           
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                              </div>
+                            </td>
+                            <td class="alias_column">Mack</td>
+                            <td class="sku_column">Mack@gmail.com</td>
+                            <td>9089786756</td>
+                            <td>Sankar Nagar</td>
+                            <td>Delhi</td>
+                            <td>India</td>
+                            
+                          </tr>
+                        </tbody>
+                        
+                      </table>  
+                    </div>
+                    <div class="tab-pane fade" id="custom-tabs-four-settings" role="tabpanel" aria-labelledby="custom-tabs-four-settings-tab">
+                      <table id="tbUser" class="table table-bordered table-hover tab1">
+                        <thead>
+                          <tr>
+                            <th>
+                              <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox">
+                              </div>
+                            </th>
+                            <th class="alias_column">Username</th>
+                            <th class="sku_column">Email</th>
+                            <th class="preset_column">Mobile</th>
+                            <th class="UPC_column">Address</th>
+                            <th class="varient_column">City</th>
+                            <th class="category_column">Country</th>
+                          
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                              </div>
+                            </td>
+                            <td class="alias_column">Jack</td>
+                            <td class="sku_column">jack@gmail.com</td>
+                            <td>9089786756</td>
+                            <td>Lajpat Nagar</td>
+                            <td>Mumbai</td>
+                            <td>India</td>
+                           
+                           
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                              </div>
+                            </td>
+                            <td class="alias_column">Mack</td>
+                            <td class="sku_column">Mack@gmail.com</td>
+                            <td>9089786756</td>
+                            <td>Sankar Nagar</td>
+                            <td>Delhi</td>
+                            <td>India</td>
+                            
+                          </tr>
+                        </tbody>
+                        
+                      </table>  
+                    </div>
+                 
+                 
+                  </div>
+                </div>
+                <!-- /.card -->
+                 </div>
+            </div>
+               
+
+            </div>
+          <br><br>
+          </div>
+         
+        </div>
+      </div>
+    </div>
   </div>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   
