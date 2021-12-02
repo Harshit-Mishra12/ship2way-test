@@ -224,22 +224,10 @@
             <div class="container">
               <div class="col-md-12">
 
-                <div class="card card-primary card-outline card-outline-tabs">
-                <div class="card-header p-0 border-bottom-0">
-                  <ul class="nav nav-tabs" id="custom-tabs-four-tab" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link active" id="custom-tabs-four-home-tab" data-toggle="pill" href="#custom-tabs-four-home" role="tab" aria-controls="custom-tabs-four-home" aria-selected="true">Informations</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="custom-tabs-four-profile-tab" data-toggle="pill" href="#custom-tabs-four-profile" role="tab" aria-controls="custom-tabs-four-profile" aria-selected="false">Permission</a>
-                    </li>
-                   
-                                         
-                  </ul>
-                </div>
+              
+                
                 <div class="card-body">
-                  <div class="tab-content" id="custom-tabs-four-tabContent">
-
+                 
                     <div class="tab-pane fade show active" id="custom-tabs-four-home" role="tabpanel" aria-labelledby="custom-tabs-four-home-tab">
                       <table id="example" class="table table-bordered table-hover">
                         <thead>
@@ -249,14 +237,13 @@
                                     <input class="form-check-input" type="checkbox">
                               </div>
                             </th>
-                            <th>SKU #</th>
-                            <th>Seller Name</th>
-                            <th>Order</th>
-                            <th>Store</th>
-                            <th>Recipient</th>
-                            <th>Qty</th>
-                            <th>Price/Unit</th>
-                            <th>Request Service</th>
+                            
+                            <th>User Name</th>
+                            <th>Customer Account</th>
+                            <th>Telephone Number</th>
+                            <th>Country</th>
+                            <th>Provience</th>
+                            
                           </tr>
                         </thead>
                         <tbody>
@@ -266,14 +253,13 @@
                                     <input class="form-check-input" type="checkbox">
                               </div>
                             </td>
-                            <td>0098</td>
+                         
                             <td>Jack</td>
                             <td>101</td>
-                            <td>Amazon</td>
-                            <td data-toggle="modal" data-id="1" data-target="#customer_data">Ship2way support</td>
-                            <td> 4</td>
-                            <td>$3.78</td>
-                            <td>Free Shipping</td>
+                            <td>9909876567</td>
+                            <td>India</td>
+                            <td>Maharashtra</td>
+                            
                           </tr>
                           <tr>
                             <td>
@@ -281,102 +267,21 @@
                                     <input class="form-check-input" type="checkbox">
                               </div>
                             </td>
-                            <td>4566</td>
-                            <td>Mack</td>
-                            <td>102</td>
-                            <td>Amazon</td>
-                            <td data-toggle="modal" data-id="1" data-target="#customer_data">Ship2way support</td>
-                            <td> 4</td>
-                            <td>$3.78</td>
-                            <td>Free Shipping</td>
+                            <td>Smith</td>
+                            <td>101</td>
+                            <td>9909876567</td>
+                            <td>India</td>
+                            <td>Maharashtra</td>
                           </tr>
                         </tbody>
-                        <tfoot>
-                          <tr>
-                            <th>
-                              <div class="form-check">
-                                    <input class="form-check-input" type="checkbox">
-                              </div>
-                            </th>
-                            <th>SKU #</th>
-                            <th>Seller Name</th>
-                            <th>Order</th>
-                            <th>Store</th>
-                            <th>Recipient</th>
-                            <th>Qty</th>
-                            <th>Price/Unit</th>
-                            <th>Request Service</th>
-                          </tr>
-                        </tfoot>
+                        
                       </table> 
                     </div>
 
-                    <div class="tab-pane fade" id="custom-tabs-four-profile" role="tabpanel" aria-labelledby="custom-tabs-four-profile-tab">
-                      <h4>Follow these steps to get connected:</h4> 
-              
-                      <ul>
-                       <li>Visit the Shipstation Extension page for Acumatica here https://help.shipstation.com/hc/en-us/articles/360026140871-Acumatica</li>
-                       <li>Install the cartridge to your Acumatica Instance (if you need assistance please contact your consultant / VAR)</li>
-                       <li>Configure your connection.</li>
-                       <li>Map the ShipStation Order Statuses to your Acumatica Order Statuses below. Separate multiple statuses with a comma.</li>
-        
-                      </ul>
-                      <form>
-                        <div class="form-group">
-                          <label for="inputAddress">Base Url</label>
-                          <input type="text" class="form-control" id="inputAddress">
-                        </div>
-        
-                        <div class="form-group">
-                          <label for="inputAddress">Username</label>
-                          <input type="text" class="form-control" id="inputAddress">
-                        </div>
-        
-                        <div class="form-group">
-                          <label for="inputAddress">Password</label>
-                          <input type="password" class="form-control" id="inputAddress">
-                        </div>
-        
-                        <div class="form-group">
-                          <label for="inputAddress">Company Name</label>
-                          <input type="text" class="form-control" id="inputAddress">
-                        </div>
-        
-                        <div class="form-group">
-                          <label for="inputAddress">Company ID</label>
-                          <input type="text" class="form-control" id="inputAddress">
-                        </div>
-        
-                        <div class="form-group">
-                          <label for="inputAddress">Unpaid Status</label>
-                          <input type="text" class="form-control" id="inputAddress">
-                        </div>
-        
-                        <div class="form-group">
-                          <label for="inputAddress">Paid Status</label>
-                          <input type="text" class="form-control" id="inputAddress">
-                        </div>
-        
-                        <div class="form-group">
-                          <label for="inputAddress">Shipped Status</label>
-                          <input type="text" class="form-control" id="inputAddress">
-                        </div>
-        
-                        <div class="form-group">
-                          <label for="inputAddress">Cancel Status</label>
-                          <input type="text" class="form-control" id="inputAddress">
-                        </div>
-        
-                        <div class="form-group">
-                          <label for="inputAddress">Onhold Status</label>
-                          <input type="text" class="form-control" id="inputAddress">
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="float:right">Connect</button>
-                      </form> 
-                    </div>
+                   
 
                    
-                  </div>
+                
                 </div>
                 <!-- /.card -->
                  </div>

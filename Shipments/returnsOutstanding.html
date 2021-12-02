@@ -76,7 +76,11 @@
       </div>
       </div><!-- /.container-fluid -->
     </section>
-
+    <div class="container">
+      <div class="alert alert-danger" role="alert" id="alert" style="display: none;">
+        Amount Will Refund To Credit Card
+      </div>
+    </div>
     <!-- Main content ---------------------------------------------------------------------->
     <section class="content">
       <div class="container-fluid">
@@ -96,6 +100,7 @@
               </ul>
 
           </div>
+         
           <!-- /.card-header -->
           <div class="card-body">
         <div class="table-responsive">
@@ -114,6 +119,8 @@
                   <th>Received Date</th>
                   <th>Customer Name</th>
                   <th>Return Seller</th>
+                  <th>Return Date</th>
+                  <th>Refund Issued</th>
                   <th>Werehouse/Bin</th>
                   <th>Online Store</th>
                   
@@ -137,8 +144,10 @@
                   <td>10/15/2021</td>
                   <td>Tom Williams</td>
                   <td>Jacob</td>
+                  <td>10/11/2021</td>
+                  <td><button type="button" class="btn btn-success" onclick="myFunction()">Yes</button></td>
                   <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#new_user">Click to See Werehouse Detail</button></td>
-                  <td>Y</td>
+                  <td>Shopify</td>
                  
                   <td>4789237492749</td>
                   <td>FedEx Group</td>
@@ -158,8 +167,10 @@
                   <td>10/15/2021</td>
                   <td>Tom Williams</td>
                   <td>Jacob</td>
+                  <td>4/11/2021</td>
+                  <td><button type="button" class="btn btn-success" onclick="myFunction()">Yes</button></td>
                   <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#new_user">Click to See Werehouse Detail</button></td>
-                  <td>Y</td>
+                  <td>Shopify</td>
                   
                   <td>4789237492749</td>
                   <td>FedEx Group</td>
@@ -179,8 +190,10 @@
                   <td>10/15/2022</td>
                   <td>Roger Federer</td>
                   <td>Jacob</td>
+                  <td>5/11/2021</td>
+                  <td><button type="button" class="btn btn-danger" onclick="myFunction()">No</button></td>
                   <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#new_user">Click to See Werehouse Detail</button></td>
-                  <td>Y</td>
+                  <td>Shopify</td>
                 
                   <td>4789237492749</td>
                   <td>FedEx Group</td>
@@ -304,6 +317,10 @@
 <link rel="stylesheet" href="/css/bstreeview.css">
 <script src="/js/bstreeview.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
-
+<script>
+function myFunction() {
+  $("#alert").show();
+}
+</script>
 </body>
 </html>

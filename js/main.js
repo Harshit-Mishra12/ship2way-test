@@ -31,22 +31,28 @@ var NavigationMenu = [
         id:"nav3_2",
       },
       {
+        text: "Customer Payment",
+        icon: "fa fa-folder",
+        href: "/Insights/customerpayment.html",
+        id:"nav3_3",
+      },
+      {
         text: "Sales Trend",
         icon: "fa fa-folder",
         href: "/Insights/sales.html",
-        id:"nav3_3",
+        id:"nav3_4",
       },
       {
         text: "Customer Overview",
         icon: "fa fa-folder",
         href: "/Insights/customers.html",
-        id:"nav3_4",
+        id:"nav3_5",
       },
       {
         text: "Products Highlight",
         icon: "fa fa-folder",
         href: "/Insights/productsold.html",
-        id:"nav3_5",
+        id:"nav3_6",
       }
     ]
   },
@@ -209,7 +215,7 @@ var NavigationMenu = [
       {
         text: "Operations",
         icon: "fa fa-folder",
-        href: "/Insights/operations.html",
+        href: "/Shipments/operations.html",
         id:"nav1_6",
       },
     ]
@@ -289,160 +295,168 @@ var NavigationMenu = [
     id:'nav8',
     nodes:[
       {
-        text: "Account",
+        text: "Services",
         icon: "fa fa-folder",
         id:'nav8_1',
+        href: "/Settings/Services/services.html",
+        
+      },
+        {
+        text: "Account",
+        icon: "fa fa-folder",
+        id:'nav8_2',
         nodes:[
           {
             text: "My Profile",
             icon: "fa fa-folder",
             href: "/Settings/Accounts/myprofile.html",
-            id:'nav8_1_1'
+            id:'nav8_2_1'
           },
           {
             text: "Display Options",
             icon: "fa fa-folder",
             href: "/Settings/Accounts/display_options.html",
-            id:'nav8_1_2'
+            id:'nav8_2_2'
           },
           {
             text: "Subscription",
             icon: "fa fa-folder",
             href: "/Settings/Accounts/subscription.html",
-            id:'nav8_1_3'
+            id:'nav8_2_3'
           },
           {
             text: "User Management",
             icon: "fa fa-folder",
             href: "/Settings/Accounts/user_management.html",
-            id:'nav8_1_4'
+            id:'nav8_2_4'
           },
           {
             text: "API Settings",
             icon: "fa fa-folder",
             href: "/Settings/Accounts/api_settings.html",
-            id:'nav8_1_5'
+            id:'nav8_2_5'
           },
           
          
         ]
       },
+      
       {
         text: "Selling Channel",
         icon: "fa fa-folder",
-        id:'nav8_2',
+        id:'nav8_3',
         nodes:[
           {
             text: "Store Setup",
             icon: "fa fa-folder",
             href: "/Settings/Selling_Channels/store_setup.html",
-            id:'nav8_2_1'
+            id:'nav8_3_1'
           },
         ]
       },
       {
         text: "Branded Customer Pages",
         icon: "fa fa-folder",
-        id:'nav8_3',
+        id:'nav8_4',
         nodes:[
           {
             text: "Branding Defaults",
             icon: "fa fa-folder",
             href: "/Settings/Branded_Customer/branding_defaults.html",
-            id:'nav8_3_1'
+            id:'nav8_4_1'
           },
         ]
       },
       {
         text: "Templates",
         icon: "fa fa-folder",
-        id:'nav8_4',
+        id:'nav8_5',
         nodes:[
           {
             text: "Email Filters",
             icon: "fa fa-folder",
             href: "/Settings/Templates/email_templates.html",
-            id:'nav8_4_1'
+            id:'nav8_5_1'
           },
           {
             text: "Packing Slips",
             icon: "fa fa-folder",
             href: "/Settings/Templates/packing_slips.html",
-            id:'nav8_4_2'
+            id:'nav8_5_2'
           },
         ]
       },
       {
         text: "Automation",
         icon: "fa fa-folder",
-        id:'nav8_5',
+        id:'nav8_6',
         nodes:[
           {
             text: "Order Filters",
             icon: "fa fa-folder",
             href: "/Settings/Automation/order_filters.html",
-            id:'nav8_5_1'
+            id:'nav8_6_1'
           },
           {
             text: "Automation Rules",
             icon: "fa fa-folder",
             href: "/Settings/Automation/automation_rules.html",
-            id:'nav8_5_2'
+            id:'nav8_6_2'
           },
         ]
       },
       {
         text: "Shipping",
         icon: "fa fa-folder",
-        id:'nav8_6',
+        id:'nav8_7',
         nodes:[
           {
             text: "Workflow Settings",
             icon: "fa fa-folder",
             href: "/Settings/Shipping/workflow_settings.html",
-            id:'nav8_7_1'
+            id:'nav8_7_3'
           },
           {
             text: "Ship From Locations",
             icon: "fa fa-folder",
             href: "/Settings/Shipping/ship_location.html",
-            id:'nav8_7_2'
+            id:'nav8_7_4'
           },
           {
             text: "Carriers",
             icon: "fa fa-folder",
             href: "/Settings/Shipping/carriers.html",
-            id:'nav8_7_2'
+            id:'nav8_7_5'
           },
           {
             text: "Fullfillment Providers",
             icon: "fa fa-folder",
             href: "/Settings/Shipping/full_provider.html",
-            id:'nav8_7_2'
+            id:'nav8_7_6'
           },
           {
             text: "Insurance",
             icon: "fa fa-folder",
             href: "/Settings/Shipping/insurance.html",
-            id:'nav8_7_2'
+            id:'nav8_7_7'
           },
           {
             text: "Packages",
             icon: "fa fa-folder",
             href: "/Settings/Shipping/packages.html",
-            id:'nav8_7_2'
+            id:'nav8_7_8'
           },
           {
             text: "Return",
             icon: "fa fa-folder",
             href: "/Settings/Shipping/return.html",
-            id:'nav8_7_2'
+            id:'nav8_7_9'
           },
           {
             text: "International Settings",
             icon: "fa fa-folder",
             href: "/Settings/Shipping/international_setting.html",
-            id:'nav8_7_2'
+            id:'nav8_7_10'
           },
           
           
@@ -451,19 +465,19 @@ var NavigationMenu = [
       {
         text: "Printing",
         icon: "fa fa-folder",
-        id:'nav8_7',
+        id:'nav8_8',
         nodes:[
           {
             text: "Printing Setup",
             icon: "fa fa-folder",
             href: "/Settings/Printing/printing_setup.html",
-            id:'nav8_7_1'
+            id:'nav8_8_1'
           },
           {
             text: "Shipstation Connect",
             icon: "fa fa-folder",
             href: "/Settings/Printing/shipstation_connect.html",
-            id:'nav8_7_2'
+            id:'nav8_8_2'
           }
           
         ]
@@ -471,38 +485,38 @@ var NavigationMenu = [
       {
         text: "Inventory Management",
         icon: "fa fa-folder",
-        id:'nav8_8',
+        id:'nav8_9',
         nodes:[
           {
             text: "Inventory Settings",
             icon: "fa fa-folder",
             href: "/Settings/Inventory_Management/inventory_settings.html",
-            id:'nav8_8_1'
+            id:'nav8_9_1'
           },
           {
             text: "Allocation Strategy",
             icon: "fa fa-folder",
             href: "/Settings/Inventory_Management/allocation_strategy.html",
-            id:'nav8_8_2'
+            id:'nav8_9_2'
           },
           {
             text: "Inventory Werehouses",
             icon: "fa fa-folder",
             href: "/Settings/Inventory_Management/inventory_warehouse.html",
-            id:'nav8_8_3'
+            id:'nav8_9_3'
           },
         ]
       },
       {
         text: "Integrations",
         icon: "fa fa-folder",
-        id:'nav8_9',
+        id:'nav8_10',
         nodes:[
           {
             text: "Integrations",
             icon: "fa fa-folder",
             href: "/Settings/Integrations/integrations.html",
-            id:'nav8_9_1'
+            id:'nav8_10_1'
           },
         ]
       },

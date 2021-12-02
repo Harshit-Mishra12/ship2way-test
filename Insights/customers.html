@@ -137,9 +137,9 @@
                               </div>
                             </div>
                             <div class="col-sm-12">
-                              <button type="button" class="btn btn-info">Order Unit</button>
-                              <button type="button" class="btn btn-info">Pending Order</button>
-                              <button type="button" class="btn btn-info">Backorder</button>
+                              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#order_unit">Order Unit</button>
+                              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#pending_order">Pending Order</button>
+                              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#back_order">Backorder</button>
                             </div>
                             <div id="shipments_charts"></div>
                         </div>
@@ -227,6 +227,253 @@
           </div>
         </div>
         
+        <div class="modal fade" id="order_unit">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content" id="modal-fourth">
+              <div class="modal-header">
+                <h4 class="modal-title">Order Unit</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              
+              <div class="col-md-12">
+                <div class="container">
+                  <div class="col-md-12">
+    
+                    <div class="card card-primary card-outline card-outline-tabs">
+                   
+                    <div class="card-body">
+                      <table id="tbUser" class="table table-bordered table-hover tab1">
+                        <thead>
+                          <tr>
+                            <th>
+                              <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox">
+                              </div>
+                            </th>
+                            <th class="alias_column">Username</th>
+                            <th class="sku_column">Email</th>
+                            <th class="preset_column">Mobile</th>
+                            <th class="UPC_column">Address</th>
+                            <th class="varient_column">City</th>
+                            <th class="category_column">Country</th>
+                          
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                              </div>
+                            </td>
+                            <td class="alias_column">Jack</td>
+                            <td class="sku_column">jack@gmail.com</td>
+                            <td>9089786756</td>
+                            <td>Lajpat Nagar</td>
+                            <td>Mumbai</td>
+                            <td>India</td>
+                           
+                           
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                              </div>
+                            </td>
+                            <td class="alias_column">Mack</td>
+                            <td class="sku_column">Mack@gmail.com</td>
+                            <td>9089786756</td>
+                            <td>Sankar Nagar</td>
+                            <td>Delhi</td>
+                            <td>India</td>
+                            
+                          </tr>
+                        </tbody>
+                        
+                      </table> 
+                    </div>
+                   
+                     
+                   </div>
+                   
+    
+                </div>
+              <br><br>
+              </div>
+             
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="pending_order">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content" id="modal-fourth">
+              <div class="modal-header">
+                <h4 class="modal-title">Pending Order</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              
+              <div class="col-md-12">
+                <div class="container">
+                  <div class="col-md-12">
+    
+                    <div class="card card-primary card-outline card-outline-tabs">
+                   
+                    <div class="card-body">
+                      <table id="tbUser" class="table table-bordered table-hover tab1">
+                        <thead>
+                          <tr>
+                            <th>
+                              <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox">
+                              </div>
+                            </th>
+                            <th class="alias_column">Username</th>
+                            <th class="sku_column">Email</th>
+                            <th class="preset_column">Mobile</th>
+                            <th class="UPC_column">Address</th>
+                            <th class="varient_column">City</th>
+                            <th class="category_column">Country</th>
+                          
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                              </div>
+                            </td>
+                            <td class="alias_column">Jack</td>
+                            <td class="sku_column">jack@gmail.com</td>
+                            <td>9089786756</td>
+                            <td>Lajpat Nagar</td>
+                            <td>Mumbai</td>
+                            <td>India</td>
+                           
+                           
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                              </div>
+                            </td>
+                            <td class="alias_column">Mack</td>
+                            <td class="sku_column">Mack@gmail.com</td>
+                            <td>9089786756</td>
+                            <td>Sankar Nagar</td>
+                            <td>Delhi</td>
+                            <td>India</td>
+                            
+                          </tr>
+                        </tbody>
+                        
+                      </table> 
+                    </div>
+                   
+                     
+                   </div>
+                   
+    
+                </div>
+              <br><br>
+              </div>
+             
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="back_order">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content" id="modal-fourth">
+              <div class="modal-header">
+                <h4 class="modal-title">Back Order</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              
+              <div class="col-md-12">
+                <div class="container">
+                  <div class="col-md-12">
+    
+                    <div class="card card-primary card-outline card-outline-tabs">
+                   
+                    <div class="card-body">
+                      <table id="tbUser" class="table table-bordered table-hover tab1">
+                        <thead>
+                          <tr>
+                            <th>
+                              <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox">
+                              </div>
+                            </th>
+                            <th class="alias_column">Username</th>
+                            <th class="sku_column">Email</th>
+                            <th class="preset_column">Mobile</th>
+                            <th class="UPC_column">Address</th>
+                            <th class="varient_column">City</th>
+                            <th class="category_column">Country</th>
+                          
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                              </div>
+                            </td>
+                            <td class="alias_column">Jack</td>
+                            <td class="sku_column">jack@gmail.com</td>
+                            <td>9089786756</td>
+                            <td>Lajpat Nagar</td>
+                            <td>Mumbai</td>
+                            <td>India</td>
+                           
+                           
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                              </div>
+                            </td>
+                            <td class="alias_column">Mack</td>
+                            <td class="sku_column">Mack@gmail.com</td>
+                            <td>9089786756</td>
+                            <td>Sankar Nagar</td>
+                            <td>Delhi</td>
+                            <td>India</td>
+                            
+                          </tr>
+                        </tbody>
+                        
+                      </table> 
+                    </div>
+                   
+                     
+                   </div>
+                   
+    
+                </div>
+              <br><br>
+              </div>
+             
+            </div>
+          </div>
+          </div>
+        </div>
+
+       
     </section>
   </div>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
