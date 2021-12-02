@@ -696,117 +696,173 @@
 
                         <div class="tab-pane fade show active" id="custom-tabs-four-home" role="tabpanel" aria-labelledby="custom-tabs-four-home-tab">
                           <form>
-                            <div class="form-group">
-                              <label for="inputAddress">Product Name</label>
-                              <input type="text" class="form-control" id="pro_name">
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputCity">Product Name</label>
+                                <input type="text" class="form-control" id="pro_name">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputAddress">Product Type</label>
+                                <select id="pro_type" class="form-control">
+                                  <option selected>Choose...</option>
+                                  <option>Clothing</option>
+                                  <option>Men’s Fashion</option>
+                                  <option>Women’s fashion</option>
+                                  <option>Fashion Accessories</option>
+                                  <option>Furniture</option>
+                                  <option>Babies & Toys</option>
+                                  <option>Sport & Travel</option>
+  
+                                  <option>Home décor</option>
+                                  <option>Computer & consumer electronic</option>
+                                  <option>Electronic Devices</option>
+                                  <option>Supplement & Herb</option>
+                                  <option>Furniture</option>
+                                  <option>Groceries</option>
+                                  <option>Sport & Travel</option>
+                                </select>
+                              </div>
                             </div>
+
+                            
                             <div class="form-group">
                               <label for="inputAddress">Product Description</label>
                               <input type="text" class="form-control" id="pro_desc">
                             </div>
-                            <div class="form-group">
-                              <label for="inputAddress">Product Type</label>
-                              <select id="pro_type" class="form-control">
-                                <option selected>Choose...</option>
-                                <option>Clothing</option>
-                                <option>Men’s Fashion</option>
-                                <option>Women’s fashion</option>
-                                <option>Fashion Accessories</option>
-                                <option>Furniture</option>
-                                <option>Babies & Toys</option>
-                                <option>Sport & Travel</option>
-
-                                <option>Home décor</option>
-                                <option>Computer & consumer electronic</option>
-                                <option>Electronic Devices</option>
-                                <option>Supplement & Herb</option>
-                                <option>Furniture</option>
-                                <option>Groceries</option>
-                                <option>Sport & Travel</option>
-                              </select>
-                            </div>
-                            <div class="form-row">
-                              <div class="form-group col-md-6">
-                                <label for="inputCity">Original Price</label>
-                                <input type="text" class="form-control" id="original_price">
-                              </div>
-                              <div class="form-group col-md-6">
-                                <label for="inputState">Sales Price</label>
-                                <input type="text" class="form-control" id="sales_price">
-                              </div>
-                            </div>
-                            <div class="form-row">
-                              <div class="form-group col-md-6">
-                                <label for="inputCity">Color</label>
-                                <input type="text" class="form-control" id="inputCity">
-                              </div>
-                              <div class="form-group col-md-6">
-                                <label for="inputState">Model</label>
-                                <input type="text" class="form-control" id="inputCity">
-                              </div>
-                            </div>
                             
                             <div class="form-row">
                               <div class="form-group col-md-6">
-                                <label for="inputCity">Pro</label>
-                                <input type="text" class="form-control" id="inputCity">
+                                <label for="inputCity">Manufacture Name</label>
+                                <input type="text" class="form-control" id="man_name">
                               </div>
                               <div class="form-group col-md-6">
-                                <label for="inputCity">Weight</label>
-                                <input type="text" class="form-control" id="inputCity">
+                                <label for="inputState">Phone No</label>
+                                <input type="text" class="form-control" id="phone_no">
                               </div>
                             </div>
-
-                            <div class="form-row">
-                              <div class="form-group col-md-6">
-                                <label for="inputState">Brand</label>
-                                <input type="text" class="form-control" id="inputCity">
-                              </div>
-                              <div class="form-group col-md-6">
-                                <label for="inputState">Vision</label>
-                                <input type="text" class="form-control" id="inputCity">
-                              </div>
+                            <div class="form-group">
+                              <label for="inputAddress">Address</label>
+                              <input type="text" class="form-control" id="address">
+                            </div>
+                            <div class="form-group">
+                              <label for="inputAddress">File Upload</label>
+                              <input type="file" class="form-control" id="filetype">
                             </div>
                             <div class="form-row">
                               <div class="form-group col-md-6">
-                                <label for="inputState">Country Of Origin</label>
-                                <input type="text" class="form-control" id="inputCity">
+                                <label for="inputCity">Sku</label>
+                                <input type="text" class="form-control" id="sku">
                               </div>
                               <div class="form-group col-md-6">
-                                <label for="inputState">Ship From</label>
-                                <input type="text" class="form-control" id="inputCity">
+                                <label for="inputState">Sku Store</label>
+                                <input type="text" class="form-control" id="sku_store">
                               </div>
+                              
                             </div>
                             <div class="form-row">
-                              <div class="form-group col-md-6">
-                                <label for="inputState">Delivery Time</label>
-                                <input type="text" class="form-control" id="inputCity">
+                              <div class="form-group col-md-4">
+                                <label for="inputState">Model</label>
+                                <input type="text" class="form-control" id="model">
                               </div>
-                              <div class="form-group col-md-6">
-                                <label for="inputState">Original Price</label>
-                                <input type="text" class="form-control" id="inputCity">
+                              <div class="form-group col-md-4">
+                                <label for="inputCity">Years</label>
+                                <input type="text" class="form-control" id="years">
                               </div>
+                              <div class="form-group col-md-4">
+                                <label for="inputState">Nutrition Facts</label>
+                                <input type="text" class="form-control" id="nutri">
+                              </div>
+                    
                             </div>
                             <div class="form-row">
                               <div class="form-group col-md-6">
                                 <label for="inputState">Payment Terms</label>
-                                <input type="text" class="form-control" id="inputCity">
+                                <select id="pro_type" class="form-control">
+                                  <option selected>Choose...</option>
+                                  <option>L/C</option>
+                                  <option>T/T</option>
+                                  <option>Bank Transfer</option>
+                                  <option>COD</option>
+                                  <option>Paypal</option>
+                                </select>
                               </div>
                               <div class="form-group col-md-6">
                                 <label for="inputState">Return Refund </label>
                                 <input type="text" class="form-control" id="inputCity">
                               </div>
+                             
                             </div>
+                          
                             <div class="form-row">
-                              <div class="form-group col-md-6">
-                                <label for="inputState">SKU</label>
+                              <div class="form-group col-md-3">
+                                <label for="inputCity">Original Price</label>
+                                <input type="text" class="form-control" id="original_price">
+                              </div>
+                              <div class="form-group col-md-3">
+                                <label for="inputState">Sales Price</label>
+                                <input type="text" class="form-control" id="sales_price">
+                              </div>
+                              <div class="form-group col-md-3">
+                                <label for="inputCity">Color</label>
                                 <input type="text" class="form-control" id="inputCity">
                               </div>
-                              <div class="form-group col-md-6">
-                                <label for="inputState">Nutrition Fact</label>
+                              <div class="form-group col-md-3">
+                                <label for="inputCity">Pro</label>
                                 <input type="text" class="form-control" id="inputCity">
                               </div>
                             </div>
+                            
+                            <div class="form-row">
+                             
+                              <div class="form-group col-md-3">
+                                <label for="inputCity">Weight</label>
+                                <select id="pro_type" class="form-control">
+                                  <option selected>Choose...</option>
+                                  <option>Kg</option>
+                                  <option>Lbs</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-md-3">
+                                <label for="inputState">Brand</label>
+                                <input type="text" class="form-control" id="inputCity">
+                              </div>
+                              <div class="form-group col-md-3">
+                                <label for="inputState">Vision</label>
+                                <input type="text" class="form-control" id="inputCity">
+                              </div>
+                              <div class="form-group col-md-3">
+                                <label for="inputState">Country Of Origin</label>
+                                <input type="text" class="form-control" id="inputCity">
+                              </div>
+                            </div>
+
+                         
+                            <div class="form-row">
+                             
+                              <div class="form-group col-md-3">
+                                <label for="inputState">Ship From</label>
+                                <input type="text" class="form-control" id="inputCity">
+                              </div>
+                              <div class="form-group col-md-3">
+                                <label for="inputState">Delivery Time</label>
+                                <input type="text" class="form-control" id="inputCity">
+                              </div>
+                              <div class="form-group col-md-3">
+                                <label for="inputState">Original Price</label>
+                                <input type="text" class="form-control" id="inputCity">
+                              </div>
+                              <div class="form-group col-md-3">
+                                <label for="inputState">Dropship</label>
+                                <select id="pro_type" class="form-control">
+                                  <option selected>Choose...</option>
+                                  <option>Yes</option>
+                                  <option>No</option>
+                                </select>
+                              </div>
+                            </div>
+                            
+                            
+                           
                             <h4>Dimensions</h4>
                             <div class="form-row">
                               <div class="form-group col-md-3">
@@ -839,7 +895,17 @@
                                 <input type="text" class="form-control" id="company_name">
                               </div>
                               <div class="form-group col-md-6">
-                                <label for="inputState">Country</label>
+                                <label for="inputState">Customer Name</label>
+                                <input type="text" class="form-control" id="inputCity">
+                              </div>
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputCity">User ID</label>
+                                <input type="text" class="form-control" id="inputCity">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputState">Tax Id</label>
                                 <input type="text" class="form-control" id="inputCity">
                               </div>
                             </div>
@@ -848,15 +914,20 @@
                               <input type="text" class="form-control" id="inputAddress">
                             </div>
                             <div class="form-row">
-                              <div class="form-group col-md-6">
-                                <label for="inputCity">Telephone</label>
+                              <div class="form-group col-md-4">
+                                <label for="inputCity">City</label>
                                 <input type="text" class="form-control" id="inputCity">
                               </div>
-                              <div class="form-group col-md-6">
-                                <label for="inputState">Contact No</label>
+                              <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <input type="text" class="form-control" id="inputCity">
+                              </div>
+                              <div class="form-group col-md-4">
+                                <label for="inputCity">Pincode</label>
                                 <input type="text" class="form-control" id="inputCity">
                               </div>
                             </div>
+                           
                             <div class="form-row">
                               <div class="form-group col-md-6">
                                 <label for="inputCity">Email</label>
@@ -871,13 +942,41 @@
                             <div class="form-row">
                               <div class="form-group col-md-6">
                                 <label for="inputCity">WhatsApp Id</label>
-                                <input type="text" class="form-control" id="inputAddress" placeholder="Enter Your Name">
+                                <input type="text" class="form-control" id="inputAddress" placeholder="">
                               </div>
                               <div class="form-group col-md-6">
                                 <label for="inputState">Line Id</label>
-                                <input type="text" class="form-control" id="inputAddress" placeholder="Enter Your Name">
+                                <input type="text" class="form-control" id="inputAddress" placeholder="">
                               </div>
                             </div>
+
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputCity">Freight Company</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputCity">Contact Name</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="inputAddress">Address</label>
+                              <input type="text" class="form-control" id="inputAddress">
+                            </div>
+
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputState">Telephone No</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputState">App ID</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="">
+                              </div>
+                            </div>
+
+                           
                            
                           </form>  
                      
