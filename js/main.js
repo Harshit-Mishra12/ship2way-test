@@ -474,7 +474,7 @@ var NavigationMenu = [
             id:'nav8_8_1'
           },
           {
-            text: "Shipstation Connect",
+            text: "Ship2Way Connect",
             icon: "fa fa-folder",
             href: "/Settings/Printing/shipstation_connect.html",
             id:'nav8_8_2'

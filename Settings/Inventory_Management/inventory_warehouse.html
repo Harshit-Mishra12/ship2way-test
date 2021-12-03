@@ -2,9 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="vie
-  <th>Quantity</th>
-  <th>Price</th>wport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ship2way</title>
 
   <!-- Google Font: Source Sans Pro -->
@@ -98,7 +96,11 @@
                               <input class="form-check-input" type="checkbox">
                         </div>
                       </th>
-                      <th class="alias_column">Name</th>
+                      <th class="alias_column">Warehouse Name</th>
+                      <th class="alias_column">Province/State</th>
+                      <th class="alias_column">Country</th>
+                      <th class="alias_column">Contact Name</th>
+                      <th class="alias_column">Email ID</th>
                       <th class="category_column">Action</th>
                     </tr>
                   </thead>
@@ -109,7 +111,11 @@
                               <input class="form-check-input" type="checkbox">
                         </div>
                       </td>
+                      <td class="alias_column">Shipedge</td>
+                      <td class="alias_column">Maharashtra</td>
+                      <td class="alias_column">IndiA</td>
                       <td class="alias_column">Jack</td>
+                      <td class="alias_column">jack@gmail.com</td>
                       <td><button class="btn btn-success">Edit</button>
                           <button class="btn btn-danger btnDelete">Delete</button>
                       </td>
@@ -121,7 +127,11 @@
                               <input class="form-check-input" type="checkbox">
                         </div>
                       </td>
-                      <td class="alias_column">Mack</td>
+                      <td class="alias_column">Shipedge</td>
+                      <td class="alias_column">Maharashtra</td>
+                      <td class="alias_column">IndiA</td>
+                      <td class="alias_column">mack</td>
+                      <td class="alias_column">mack@gmail.com</td>
                       <td><button class="btn btn-success">Edit</button>
                           <button class="btn btn-danger btnDelete">Delete</button>
                       </td>
@@ -147,7 +157,7 @@
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">Add Inventory Werehouse</h4>
+              <h4 class="modal-title">Add Inventory Warehouse</h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -160,11 +170,116 @@
                     <br>
                     <form>
                       <div class="form-row">
-                        <div class="form-group col-md-12">
-                          <label for="inputCity">Username</label>
+                        <div class="form-group col-md-6">
+                          <label for="inputCity">Warehouse Name</label>
+                          <input type="text" class="form-control" id="name">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                          <label for="inputCity">Address</label>
                           <input type="text" class="form-control" id="name">
                         </div>
                       </div>
+
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputCity">Province/State</label>
+                          <input type="text" class="form-control" id="name">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                          <label for="inputCity">Zipcode</label>
+                          <input type="text" class="form-control" id="name">
+                        </div>
+                      </div>
+
+                      <div class="form-row">
+                        <div class="form-group col-md-12">
+                          <label for="inputCity">Country</label>
+                          <Select  class="form-control" id="name">
+                            <option>India</option>
+                            <option>USA</option>
+                          </Select>
+                        </div>
+                      </div>
+
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputCity">Contact Name</label>
+                          <input type="text" class="form-control" id="name">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                          <label for="inputCity">Telephone No</label>
+                          <input type="text" class="form-control" id="name">
+                        </div>
+                      </div>
+
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputCity">App ID</label>
+                          <input type="text" class="form-control" id="name">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                          <label for="inputCity">Email</label>
+                          <input type="text" class="form-control" id="name">
+                        </div>
+                      </div>
+
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputCity">Fullfillment Center</label>
+                          <Select  class="form-control" id="name">
+                            <option>Yes</option>
+                            <option>No</option>
+                          </Select>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                          <label for="inputCity">Distribution Center</label>
+                          <Select  class="form-control" id="name">
+                            <option>Yes</option>
+                            <option>No</option>
+                          </Select>
+                        </div>
+                      </div>
+
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputCity">Loading Dock</label>
+                          <Select  class="form-control" id="name">
+                            <option>Yes</option>
+                            <option>No</option>
+                          </Select>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                          <label for="inputCity">Size Of Warehouse</label>
+                          <input type="text" class="form-control" id="name">
+                        </div>
+                      </div>
+
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputCity">Accept Return Shipments</label>
+                          <input type="text" class="form-control" id="name">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                          <label for="inputCity">Own Trucking</label>
+                          <input type="text" class="form-control" id="name">
+                        </div>
+                      </div>
+
+                      <div class="form-row">
+                        <div class="form-group col-md-12">
+                          <label for="inputCity">Shipping Carrier Name</label>
+                          <input type="text" class="form-control" id="name">
+                        </div>
+                      </div>
+
+
                      
                       <br>
                      <button type="button" class="btn btn-primary add-user">Save</button>

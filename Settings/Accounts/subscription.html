@@ -74,7 +74,7 @@
               </div>
               <div class="col-md-12">
                 <div class="alert alert-danger" role="alert">
-                  <h5>Your trial has expired.</h5>
+                  <h5>Your Package has been expired.</h5>
                   <p>Your progress has been saved and is still available. By clicking the Change Your Subscription button below you can select the plan that’s right for you and pick up right where you left off.</p>
                 </div>
               </div>
@@ -122,8 +122,10 @@
                       </div>
                     </th>
                     <th>Expire Date</th>
-                    <th>Active</th>
+                    <th>Status</th>
                     <th>Expire Renewal</th>
+                    <th>Unit Used</th>
+                    <th>Action</th>
                    
                    
                   </tr>
@@ -136,9 +138,10 @@
                       </div>
                     </td>
                     <td>23-10-2021</td>
-                    <td>Yes</td>
+                    <td>Active</td>
                     <td>23-12-2021</td>
-                    
+                    <td>10</td>
+                    <td><button class="btn btn-success" data-toggle="modal" data-target="#data_archive">Edit</button></td>
                    
                     
                   </tr>
@@ -150,9 +153,10 @@
                       </div>
                     </td>
                     <td>27-10-2021</td>
-                    <td>Yes</td>
+                    <td>Deactive</td>
                     <td>23-12-2021</td>
-                   
+                    <td>25</td>
+                    <td><button class="btn btn-success" data-toggle="modal" data-target="#data_archive">Edit</button></td>
                   </tr>
                 </tbody>
               </table>
@@ -267,6 +271,11 @@
                     </div>
                     <div class="card card-secondary card-tabs">  
                       <div class="card-body">
+
+                        <div class="alert alert-danger" role="alert">
+                         You Need To Add Unit Amount...
+                        </div>
+
                         <p><b>Note: </b></p>
                         <ul>
                           <li>No long term contracts.</li>
@@ -293,13 +302,13 @@
                               <th>
                                 Price per Month
                               </th>			
-                              <td>$9</td>
-                              <td>$29</td>
-                              <td>$49</td>
-                              <td>$69	</td>
-                              <td>$99</td>
-                              <td>$159</td>
-                              <td>$299</td>
+                              <td>$9.00</td>
+                              <td>$15.00</td>
+                              <td>$25.00</td>
+                              <td>$35.00	</td>
+                              <td>$45.00</td>
+                              <td>$55.00</td>
+                              <td>$65.00</td>
                             
                             </tr>
                             <tr>
@@ -307,11 +316,11 @@
                                 Shipments per Month
                               </th>						
                               <td>50</td>
+                              <td>200</td>
                               <td>500</td>
-                              <td>1500</td>
-                              <td>3000</td>
-                              <td>6000</td>
-                              <td>10000</td>
+                              <td>1000</td>
+                              <td>2000</td>
+                              <td>Unlimited</td>
                               <td>10000 included, then 1.4¢ per shipment</td>
                              
                             </tr>
@@ -423,105 +432,6 @@
           <!-- /.modal-dialog -->
         </div>
 
-        <div class="modal fade" id="">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h4 class="modal-title">ShipStation Subscription Plan</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="container-fluid">
-                  <div class="col-md-12">
-                    <div class="container">
-                      <h3>Ready to start your subscription now?</h3>
-                      <ul>
-                        <li>No long term contracts.</li>
-                        <li>Change your plan whenever. Upgrade or downgrade anytime, you’re not locked in.</li>
-                        <li>Change your mind? Cancel within your first 90 days and get a full refund</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <br><br>
-                <div class="col-md-12">
-                  <table id="example2" class="table table-bordered table-hover">
-                    <thead>
-                      <tr>
-                        <th>
-                          <div class="form-check mb-3">
-                                <input class="form-check-input" type="checkbox">
-                          </div>
-                        </th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Phone no.</th>
-                        <th>City</th>
-                        <th>State</th>
-                        <th>Country</th>
-                        <th>Company</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <div class="form-check">
-                                <input class="form-check-input" type="checkbox">
-                          </div>
-                        </td>
-                        <td>John</td>
-                        <td>John@gmail.com</td>
-                        <td>866663322</td>
-                        <td>Moradabad</td>
-                        <td>Uttar pradesh</td>
-                        <td>India</td>
-                        <td>XYZ Pvt. Ltd.</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="form-check">
-                                <input class="form-check-input" type="checkbox">
-                          </div>
-                        </td>
-                        <td>John</td>
-                        <td>John@gmail.com</td>
-                        <td>866663322</td>
-                        <td>Moradabad</td>
-                        <td>Uttar pradesh</td>
-                        <td>India</td>
-                        <td>XYZ Pvt. Ltd.</td>
-                      </tr>
-                    </tbody>
-                    <tfoot>
-                      <tr>
-                        <th>
-                          <div class="form-check mb-3">
-                                <input class="form-check-input" type="checkbox">
-                          </div>
-                        </th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Phone no.</th>
-                        <th>City</th>
-                        <th>State</th>
-                        <th>Country</th>
-                        <th>Company</th>
-                      </tr>
-                    </thead>
-                    </tfoot>
-                  </table>
-                   
-                </div>
-               
-              </div>
-            </div>
-            
-          </div>
-          <!-- /.modal-content -->
-        </div>
-
         <div class="modal fade" id="change_bill">
           <div class="modal-dialog modal-lg">
               <div class="modal-content">
@@ -539,14 +449,14 @@
                          
                           <div class="col-8">
                                   <div class="form-check">
-                                    <input class="form-check-input" type="radio">
+                                    <input type="radio" name="sex" value="male" checked onclick="paypal()">
                                     <label class="form-check-label">Change Billing Information With Paypal</label>
                                   </div>
                           </div>
                                 
                           <div class="col-8">
                                   <div class="form-check">
-                                    <input class="form-check-input" type="radio">
+                                    <input type="radio" name="sex" value="female" onclick="credit()">
                                     <label class="form-check-label">
                                       Change Billing Information With Credit Card
                                     </label>
@@ -557,16 +467,16 @@
                     </div>
                   </div>
                   <br><br>
-                  <div class="col-md-12">
-  
+                  <div class="col-md-12" id="credit_modal">
+                    <p>Credit Card Information</p>
                       <div class="card card-primary card-outline card-outline-tabs">
                       <div class="card-header p-0 border-bottom-0">
                         <ul class="nav nav-tabs" id="custom-tabs-four-tab" role="tablist">
                           <li class="nav-item">
-                            <a class="nav-link active" id="custom-tabs-four-home-tab" data-toggle="pill" href="#custom-tabs-four-home" role="tab" aria-controls="custom-tabs-four-home" aria-selected="true">Billing Address</a>
+                            <a class="nav-link active" id="custom-tabs-four-home-tab" data-toggle="pill" href="#custom-tabs-four-home" role="tab" aria-controls="custom-tabs-four-home" aria-selected="true">Credit Card Information</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" id="custom-tabs-four-profile-tab" data-toggle="pill" href="#custom-tabs-four-profile" role="tab" aria-controls="custom-tabs-four-profile" aria-selected="false">Credit Card Information</a>
+                            <a class="nav-link" id="custom-tabs-four-profile-tab" data-toggle="pill" href="#custom-tabs-four-profile" role="tab" aria-controls="custom-tabs-four-profile" aria-selected="false">Billing Address</a>
                           </li>
                                               
                         </ul>
@@ -575,28 +485,30 @@
                         <div class="tab-content" id="custom-tabs-four-tabContent">
   
                           <div class="tab-pane fade show active" id="custom-tabs-four-home" role="tabpanel" aria-labelledby="custom-tabs-four-home-tab">
-                              
+                            
                               <br>
                               <form>
                                 <div class="form-row">
                                   <div class="form-group col-md-6">
+                                    <label for="inputState">Name On Card</label>
+                                    <input type="email" class="form-control" id="inputCity">
+                                  </div>
+                                  <div class="form-group col-md-6">
                                     <label for="inputState">Cedit Card Number</label>
                                     <input type="email" class="form-control" id="inputCity">
                                   </div>
+                               
+                                </div>
+                                <div class="form-row">
                                   <div class="form-group col-md-6">
                                     <label for="inputState">Card Expiration</label>
                                     <input type="email" class="form-control" id="inputCity">
                                   </div>
-                                </div>
-                                <div class="form-row">
                                   <div class="form-group col-md-6">
                                     <label for="inputCity">CVV</label>
                                     <input type="email" class="form-control" id="inputCity">
                                   </div>
-                                  <div class="form-group col-md-6">
-                                    <label for="inputState">Name On Card</label>
-                                    <input type="email" class="form-control" id="inputCity">
-                                  </div>
+                                 
                                 </div>
                                 
   
@@ -606,14 +518,11 @@
                           <div class="tab-pane fade" id="custom-tabs-four-profile" role="tabpanel" aria-labelledby="custom-tabs-four-profile-tab">
                           
                             <form>
+                             
                               <div class="form-row">
                                 <div class="form-group col-md-6">
-                                  <label for="inputCity">Country</label>
-                                  <select id="inputState" class="form-control">
-                                    <option selected>Select Country</option>
-                                    <option>India</option>
-                                    <option>Canada</option>
-                                  </select>
+                                  <label for="inputState">Address</label>
+                                  <input type="email" class="form-control" id="inputCity">
                                 </div>
                                 <div class="form-group col-md-6">
                                   <label for="inputState">Contact No.</label>
@@ -636,14 +545,18 @@
                                   <input type="email" class="form-control" id="inputCity">
                                 </div>
                                 <div class="form-group col-md-6">
-                                  <label for="inputState">Pinc Code</label>
+                                  <label for="inputState">Zip Code</label>
                                   <input type="email" class="form-control" id="inputCity">
                                 </div>
                               </div>
                               <div class="form-row">
                                 <div class="form-group col-md-12">
-                                  <label for="inputCity">Address</label>
-                                  <input type="text-area" class="form-control" id="inputCity">
+                                  <label for="inputCity">Country</label>
+                                  <select id="inputState" class="form-control">
+                                    <option selected>Select Country</option>
+                                    <option>India</option>
+                                    <option>Canada</option>
+                                  </select>
                                 </div>
                               </div>
 
@@ -657,6 +570,110 @@
                       <!-- /.card -->
                        </div>
                   </div>
+                  <div class="col-md-12" style="display: none;" id="paypal_modal">
+                    <p>Paypal Information</p>
+                    <div class="card card-primary card-outline card-outline-tabs">
+                    <div class="card-header p-0 border-bottom-0">
+                      <ul class="nav nav-tabs" id="custom-tabs-four-tab" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="custom-tabs-four-home-tab" data-toggle="pill" href="#custom-tabs-four-home" role="tab" aria-controls="custom-tabs-four-home" aria-selected="true">Credit Card Information</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="custom-tabs-four-profile-tab" data-toggle="pill" href="#custom-tabs-four-profile" role="tab" aria-controls="custom-tabs-four-profile" aria-selected="false">Billing Address</a>
+                        </li>
+                                            
+                      </ul>
+                    </div>
+                    <div class="card-body">
+                      <div class="tab-content" id="custom-tabs-four-tabContent">
+
+                        <div class="tab-pane fade show active" id="custom-tabs-four-home" role="tabpanel" aria-labelledby="custom-tabs-four-home-tab">
+                           
+                            <br>
+                            <form>
+                              <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label for="inputState">Name On Card</label>
+                                  <input type="email" class="form-control" id="inputCity">
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label for="inputState">Cedit Card Number</label>
+                                  <input type="email" class="form-control" id="inputCity">
+                                </div>
+                             
+                              </div>
+                              <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label for="inputState">Card Expiration</label>
+                                  <input type="email" class="form-control" id="inputCity">
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label for="inputCity">CVV</label>
+                                  <input type="email" class="form-control" id="inputCity">
+                                </div>
+                               
+                              </div>
+                              
+
+                            </form>    
+                        </div>
+
+                        <div class="tab-pane fade" id="custom-tabs-four-profile" role="tabpanel" aria-labelledby="custom-tabs-four-profile-tab">
+                        
+                          <form>
+                           
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputState">Address</label>
+                                <input type="email" class="form-control" id="inputCity">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputState">Contact No.</label>
+                                <input type="email" class="form-control" id="inputCity">
+                              </div>
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="email" class="form-control" id="inputCity">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputState">State</label>
+                                <input type="email" class="form-control" id="inputCity">
+                              </div>
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputCity">Country</label>
+                                <input type="email" class="form-control" id="inputCity">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputState">Zip Code</label>
+                                <input type="email" class="form-control" id="inputCity">
+                              </div>
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-md-12">
+                                <label for="inputCity">Country</label>
+                                <select id="inputState" class="form-control">
+                                  <option selected>Select Country</option>
+                                  <option>India</option>
+                                  <option>Canada</option>
+                                </select>
+                              </div>
+                            </div>
+
+                          
+                          </form>   
+                        </div>
+
+                       
+                      </div>
+                    </div>
+                    <!-- /.card -->
+                     </div>
+                  </div>
+
                   <div class="modal-footer justify-content-right">
                         <div class="col-4">
                             <div class="form-check">
@@ -673,7 +690,53 @@
             </div>
             <!-- /.modal-content -->
         </div>
+        
+        <div class="modal fade" id="data_archive">
+          <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Data Archive</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputState">Expire Date</label>
+                        <input type="date" class="form-control" id="inputCity">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputState">Status</label>
+                        <select id="inputState" class="form-control">
+                          <option>Active</option>
+                          <option>Deactive</option>
+                        </select>
+                      </div>
+                   
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputState">Expire Renewal</label>
+                        <input type="email" class="form-control" id="inputCity">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputCity">Unit Used</label>
+                        <input type="email" class="form-control" id="inputCity">
+                      </div>
+                     
+                    </div>
+                    
 
+                  </form> 
+                 
+                </div>
+              </div>
+              
+            </div>
+            <!-- /.modal-content -->
+          </div>
 
       
 
@@ -734,6 +797,18 @@
 <link rel="stylesheet" href="/css/bstreeview.css">
 <script src="/js/bstreeview.js"></script>
 <script src="/js/main.js"></script>
+<script>
+function paypal()
+{
+  $('#paypal_modal').show();
+  $('#credit_modal').hide();
+}
+function credit()
+{
+  $('#paypal_modal').hide();
+  $('#credit_modal').show();
+}
+</script>
 
 </body>
 </html>

@@ -1,3 +1,6 @@
+$(document).ready( function () {
+  $('#tbl_orderfilter').DataTable();
+} );
 
 // Reporting Category Form Submit and Append Row Forms
     $(document).ready(function(){
