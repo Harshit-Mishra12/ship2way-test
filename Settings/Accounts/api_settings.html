@@ -108,8 +108,11 @@
                   <h3>API Keys</h3>
                   <p>You haven't yet generated any API keys.</p>
               </div>
-              <div class=" justify-content-right">
-                    <button type="button" class="btn btn-primary">Generate API Keys</button>
+              <div class="col-12">
+                <div class="justify-content-right">
+                      <button type="button" class="btn btn-primary">Generate API Keys</button>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add_api" style="float:right">Add API</button>
+                </div>
               </div>
               </div>
               <br><br>
@@ -124,6 +127,7 @@
                     <th>Online Portal</th>
                     <th>Banking</th>
                     <th>Credit Card</th>
+                    <th>Action</th>
                    
                    
                   </tr>
@@ -138,9 +142,7 @@
                     <td>Amazon</td>
                     <td>Online</td>
                     <td>PNB</td>
-                    
-                   
-                    
+                    <td><button class="btn btn-success" data-toggle="modal" data-target="#edit_api">Edit</button></td>  
                   </tr>
                   
                   <tr>
@@ -152,19 +154,119 @@
                     <td>Shopify</td>
                     <td>Online</td>
                     <td>Kotak</td>
-                   
+                    <td><button class="btn btn-success" data-toggle="modal" data-target="#edit_api">Edit</button></td>
                   </tr>
                 </tbody>
               </table>
+            </div>
+
+            <div class="modal fade" id="add_api">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Add API</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                      <form>
+                      <div class="col-md-12">
+                          <div class="container">
+                            <div class="form-group col-md-12">
+                              <label for="inputCity">Online Portal</label>
+                              <input type="email" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-12">
+                              <label for="inputCity">Banking</label>
+                              <input type="email" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-12">
+                              <label for="inputCity">Credit Card</label>
+                              <input type="email" class="form-control" id="inputCity">
+                            </div>
+                          </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary add-preset">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+      
+                  <!-- <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                  </div> -->
+             
+                <!-- /.modal-content -->
+              </div>
+              <!-- /.modal-dialog -->
+            </div>
+
+            <div class="modal fade" id="edit_api">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Edit API</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                      <form>
+                      <div class="col-md-12">
+                          <div class="container">
+                             
+                                <div class="form-group col-md-12">
+                                  <label for="inputCity">Online Portal</label>
+                                  <input type="email" class="form-control" id="inputCity">
+                                </div>
+                                <div class="form-group col-md-12">
+                                  <label for="inputCity">Banking</label>
+                                  <input type="email" class="form-control" id="inputCity">
+                                </div>
+                                <div class="form-group col-md-12">
+                                  <label for="inputCity">Credit Card</label>
+                                  <input type="email" class="form-control" id="inputCity">
+                                </div>
+                            
+                              
+                             
+                          </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary add-preset">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+      
+                  <!-- <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                  </div> -->
+             
+                <!-- /.modal-content -->
+              </div>
+              <!-- /.modal-dialog -->
             </div>
 
            
         </div>
       </div>
 
-    </div><!-- /.container-fluid -->
+    </div>
   </section>
-  <!-- /.content ------------------------------------------------------------------------->
+
 
 </div>
 

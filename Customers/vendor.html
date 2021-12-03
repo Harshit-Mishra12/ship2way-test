@@ -157,6 +157,9 @@
         <div class="btn-group mr-1">
           <button type="button" class="btn btn-info" data-toggle="modal" data-target="#vendor">Add Vendor</button>
         </div>
+        <div class="btn-group mr-1">
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#fullfillments">Fullfilments Werehouse</button>
+        </div>
         <!-------------------dropdown--------------------->
       </div>
       </div><!-- /.container-fluid -->
@@ -352,7 +355,7 @@
   </section>
   <!-- /.content ------------------------------------------------------------------------->
 
-        <div class="modal fade" id="vendor">
+        <!-- <div class="modal fade" id="vendor1">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
@@ -369,7 +372,7 @@
                     <form>
                     <div class="row">
                       <div class="col-sm-6">
-                        <!-- text input -->
+                     
                         <div class="form-group">
                           <label>Name</label>
                           <input type="text" class="form-control" placeholder="Enter Name" id="vendor_name">
@@ -404,7 +407,7 @@
                     </div>
                     <div class="row">
                       <div class="col-sm-6">
-                        <!-- text input -->
+                       
                         <div class="form-group">
                           <label>Address 1</label>
                           <input type="text" class="form-control" placeholder="Enter Address1">
@@ -419,7 +422,7 @@
                     </div>
                     <div class="row">
                       <div class="col-sm-6">
-                        <!-- text input -->
+                      
                         <div class="form-group">
                           <label>Address 3</label>
                           <input type="text" class="form-control" placeholder="Enter Address3">
@@ -452,28 +455,14 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <!-- text input -->
-                        <div class="form-group">
-                          <label>Phone</label>
-                          <input type="text" class="form-control" placeholder="Enter Phone">
-                        </div>
-                      </div>
-                      <div class="col-sm-6">
-                        <div class="form-group">
-                          <label>Email</label>
-                          <input type="text" class="form-control" placeholder="Enter Email">
-                        </div>
-                      </div>
-                    </div>
+                  
                     </form>
                   </div>
                   <div class="col-md-6">
                     <p>Order Summary Information</p>
                     <div class="row">
                       <div class="col-sm-6">
-                        <!-- text input -->
+                        
                         <div class="form-group">
                           <label>Order #</label>
                           <input type="text" class="form-control" placeholder="Enter Order id" id="order_id">
@@ -512,7 +501,7 @@
                     </div>
                     <div class="row">
                       <div class="col-sm-6">
-                        <!-- text input -->
+                      
                         <div class="form-group">
                           <label>Tax Paid</label>
                           <input type="text" class="form-control" placeholder="$">
@@ -525,52 +514,341 @@
                         </div>
                       </div>
                     </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                     
+                        <div class="form-group">
+                          <label>Phone</label>
+                          <input type="text" class="form-control" placeholder="Enter Phone">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label>Email</label>
+                          <input type="text" class="form-control" placeholder="Enter Email">
+                        </div>
+                      </div>
+                    </div>
                     
                   </div>
                 </div>
-                  <!-- <button type="button" onclick='add()' class="btn btn-outline-primary btn-block"><i class="fa fa-plus"></i>Add Line Item</button>
-                  <div class="row">
-                    <table id="Addline" class="table table-bordered">
-                      <tr>
-                        <th>SKU</th>
-                        <th>Name</th>
-                        <th>Quantity</th>
-                        <th>Price</th>
-                        <th>remove</th>
-                      </tr>
-                      <tbody>
-                        <tr>
-                          
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div> -->
+                
                 </div>
               </div>
               <div class="modal-footer justify-content-right">
-                <!-- <div class="col-4">
-                    <div class="form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">Apply changes to open orders</label>
-                  </div>
-                </div> -->
+             
               <button type="submit" class="btn btn-primary add-vendor">Save</button>
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
               </div>
             </div>
-            <!-- <div class="modal-footer justify-content-between">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save</button>
-            </div> -->
+          
           </div>
-          <!-- /.modal-content -->
+        
+        </div> -->
+
+        <div class="modal fade" id="vendor">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Add New Vendor</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p>Recipient Information</p>
+                      <form>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <!-- text input -->
+                          <div class="form-group">
+                            <label>Company Name</label>
+                            <input type="text" class="form-control" placeholder="Enter Name" id="vendor_name">
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label>Text ID</label>
+                            <input type="text" class="form-control" placeholder="Enter Company Name" id="vendor_company">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>Address</label>
+                        <input type="text" class="form-control" placeholder="Enter Address" id="vendor_company">
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label>Tumbol/City</label>
+                            <select class="form-control">
+                              <option>California</option>
+                              <option>Delhi</option>
+                              <option>Kabul</option>
+                              <option>Shanghai</option>
+                              <option>Capetown</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label>Amphor/Country</label>
+                            <select class="form-control">
+                              <option>United States</option>
+                              <option>India</option>
+                              <option>Afganistan</option>
+                              <option>China</option>
+                              <option>South Africa</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <div class="form-group">
+                            <label>Provience/State</label>
+                            <input type="text" class="form-control" >
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="form-group">
+                            <label>Zipcode</label>
+                            <input type="text" class="form-control" >
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="form-group">
+                            <label>Country</label>
+                            <input type="text" class="form-control" >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>Contact Name</label>
+                        <input type="text" class="form-control"  id="vendor_company">
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label>Telephone</label>
+                            <input type="text" class="form-control" >
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label>Email</label>
+                            <input type="text" class="form-control" >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <div class="form-group">
+                            <label>Wechat</label>
+                            <input type="text" class="form-control" placeholder="Enter Zipcode">
+                          </div>
+                        </div>
+                        
+                        <div class="col-sm-3">
+                          <div class="form-group">
+                            <label>Whatsapp</label>
+                            <input type="text" class="form-control" placeholder="Enter Zipcode">
+                          </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                          <div class="form-group">
+                            <label>Lines</label>
+                            <input type="text" class="form-control" placeholder="Enter Zipcode">
+                          </div>
+                        </div>
+                        
+                        <div class="col-sm-3">
+                          <div class="form-group">
+                            <label>Telegram</label>
+                            <input type="text" class="form-control" placeholder="Enter Zipcode">
+                          </div>
+                        </div>
+                      </div>
+
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <div class="form-group">
+                              <label>Product Type</label>
+                              <input type="text" class="form-control" placeholder="Enter Zipcode">
+                            </div>
+                          </div>
+                          
+                          <div class="col-sm-4">
+                            <div class="form-group">
+                              <label>Product Name</label>
+                              <input type="text" class="form-control" placeholder="Enter Zipcode">
+                            </div>
+                          </div>
+
+                          <div class="col-sm-4">
+                            <div class="form-group">
+                              <label>MAnufacturer SKU</label>
+                              <input type="text" class="form-control" placeholder="Enter Zipcode">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                              <label>Country Of Manufacturer</label>
+                              <select class="form-control">
+                                <option>China</option>
+                                <option>Taiwan</option>
+                                <option>Vietnam</option>
+                                <option>Thailand</option>
+                                <option>USA</option>
+                                <option>India</option>
+                                <option>Cambodia</option>
+                                <option>Laos</option>
+                              </select>
+                            </div>
+                          </div>
+                          
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                              <label>Post Name</label>
+                              <input type="text" class="form-control" placeholder="Enter Zipcode">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <!-- text input -->
+                            <div class="form-group">
+                              <label>Ship By</label>
+                              <select class="form-control">
+                                <option>See</option>
+                                <option>Air</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                              <label>Shipping Company</label>
+                              <input type="text" class="form-control" placeholder="Enter Company Name" id="vendor_company">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <!-- text input -->
+                            <div class="form-group">
+                              <label>Harmonize Code</label>
+                              <input type="text" class="form-control" placeholder="Enter Name" id="vendor_name">
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                              <label>Terms Of Payment</label>
+                              <input type="text" class="form-control" placeholder="Enter Company Name" id="vendor_company">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <!-- text input -->
+                            <div class="form-group">
+                              <label>Dropship</label>
+                              <select class="form-control">
+                                <option>Yes</option>
+                                <option>No</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                              <label>Carrier</label>
+                              <select class="form-control">
+                                <option>Own trucking</option>
+                                <option>UPS</option>
+                                <option>Trucking company</option>
+                                <option>Fedex</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <!-- text input -->
+                            <div class="form-group">
+                              <label>Vendor Pay For Shipping</label>
+                              <select class="form-control">
+                                <option>Yes</option>
+                                <option>No</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                              <label>Terms Of Freight</label>
+                              <select class="form-control">
+                                <option>FOB</option>
+                                <option>CIF</option>
+                                <option>Pickup</option>
+                                <option>Deliver</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <!-- text input -->
+                            <div class="form-group">
+                              <label>Accept Return</label>
+                              <select class="form-control">
+                                <option>Yes</option>
+                                <option>No</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="form-group">
+                              <label>Return Condition</label>
+                              <input type="text" class="form-control" placeholder="Enter Company Name" id="vendor_company">
+                            </div>
+                          </div>
+                        </div>
+
+                       
+                    
+                      </form>
+                    </div>
+                    
+                  </div>
+                   
+                  </div>
+                </div>
+                <div class="modal-footer justify-content-right">
+                 
+                <button type="submit" class="btn btn-primary add-vendor">Save</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+              
+            </div>
+           
         </div>
+
 
         <div class="modal fade" id="edit_vendor">
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
               <div class="modal-header">
-                <h4 class="modal-title">Add New Vendor</h4>
+                <h4 class="modal-title">Edit Vendor</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -776,9 +1054,180 @@
               </div> -->
             </div>
             <!-- /.modal-content -->
-          </div>
-        <!-- /.modal-dialog -->
+        </div>
+       
+        <div class="modal fade" id="fullfillments">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Add New Vendor</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <form>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <!-- text input -->
+                          <div class="form-group">
+                            <label>Company Name</label>
+                            <input type="text" class="form-control" placeholder="Enter Name" id="vendor_name">
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label>Text ID</label>
+                            <input type="text" class="form-control" placeholder="Enter Company Name" id="vendor_company">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>Address</label>
+                        <input type="text" class="form-control" placeholder="Enter Address" id="vendor_company">
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label>Tumbol/City</label>
+                            <select class="form-control">
+                              <option>California</option>
+                              <option>Delhi</option>
+                              <option>Kabul</option>
+                              <option>Shanghai</option>
+                              <option>Capetown</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label>Amphor/Country</label>
+                            <select class="form-control">
+                              <option>United States</option>
+                              <option>India</option>
+                              <option>Afganistan</option>
+                              <option>China</option>
+                              <option>South Africa</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <div class="form-group">
+                            <label>Provience/State</label>
+                            <input type="text" class="form-control" >
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="form-group">
+                            <label>Zipcode</label>
+                            <input type="text" class="form-control" >
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="form-group">
+                            <label>Country</label>
+                            <input type="text" class="form-control" >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>Contact Name</label>
+                        <input type="text" class="form-control"  id="vendor_company">
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label>Telephone</label>
+                            <input type="text" class="form-control" >
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label>Email</label>
+                            <input type="text" class="form-control" >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <div class="form-group">
+                            <label>Wechat</label>
+                            <input type="text" class="form-control" placeholder="Enter Zipcode">
+                          </div>
+                        </div>
+                        
+                        <div class="col-sm-3">
+                          <div class="form-group">
+                            <label>Whatsapp</label>
+                            <input type="text" class="form-control" placeholder="Enter Zipcode">
+                          </div>
+                        </div>
 
+                        <div class="col-sm-3">
+                          <div class="form-group">
+                            <label>Lines</label>
+                            <input type="text" class="form-control" placeholder="Enter Zipcode">
+                          </div>
+                        </div>
+                        
+                        <div class="col-sm-3">
+                          <div class="form-group">
+                            <label>Telegram</label>
+                            <input type="text" class="form-control" placeholder="Enter Zipcode">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <div class="form-group">
+                            <label>Werehouse Name</label>
+                            <input type="text" class="form-control" >
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="form-group">
+                            <label>Bin Number</label>
+                            <input type="text" class="form-control" >
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="form-group">
+                            <label>Rack Number</label>
+                            <input type="text" class="form-control" >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>Loading Dock</label>
+                        <select class="form-control">
+                          <option>Yes</option>
+                          <option>No</option>
+                        </select>
+                      </div>
+                       
+                      
+                      </form>
+                    </div>
+                    
+                  </div>
+                   
+                  </div>
+                </div>
+                <div class="modal-footer justify-content-right">
+                 
+                <button type="submit" class="btn btn-primary add-vendor">Save</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+              
+            </div>
+           
+        </div>
   
 
   </div>
