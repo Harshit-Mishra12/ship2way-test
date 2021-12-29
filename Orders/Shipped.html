@@ -52,13 +52,13 @@
 
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+  <div class="content-wrapper" style="margin-top: 0;">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <div class="container-fluid">
+      <div class="container-fluid pl-3">
         <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Shipped</h1>
+          <h1 class="font-weight-bold" style="color: #f89b1f;">Shipped</h1>
         </div>
           <!-- <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -70,10 +70,10 @@
         <div class="row">
           <!-------------dropdown---------------------->
           <div class="btn-group mr-1">
-            <button type="button" class="btn btn-info">Print</button>
-            <button type="button" class="btn btn-info dropdown-toggle dropdown-icon" data-toggle="dropdown">
+            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Print</button>
+            <!-- <button type="button" class="btn btn-info dropdown-toggle dropdown-icon" data-toggle="dropdown">
               <span class="sr-only">Toggle Dropdown</span>
-            </button>
+            </button> -->
             <div class="dropdown-menu" role="menu">
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
@@ -85,10 +85,7 @@
           <!-------------------dropdown--------------------->
           <!-------------dropdown---------------------->
           <div class="btn-group mr-1">
-            <button type="button" class="btn btn-info">AssignTo</button>
-            <button type="button" class="btn btn-info dropdown-toggle dropdown-icon" data-toggle="dropdown">
-              <span class="sr-only">Toggle Dropdown</span>
-            </button>
+            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">AssignTo</button>  
             <div class="dropdown-menu" role="menu">
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
@@ -100,10 +97,7 @@
           <!-------------------dropdown--------------------->
           <!-------------dropdown---------------------->
           <div class="btn-group mr-1">
-            <button type="button" class="btn btn-info">Tag</button>
-            <button type="button" class="btn btn-info dropdown-toggle dropdown-icon" data-toggle="dropdown">
-              <span class="sr-only">Toggle Dropdown</span>
-            </button>
+            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Tag</button>
             <div class="dropdown-menu" role="menu">
               <a class="dropdown-item" href="#">ManageTags</a>
             </div>
@@ -111,7 +105,7 @@
           <!-------------------dropdown--------------------->
           <!-------------dropdown---------------------->
           <div class="btn-group mr-1">
-            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#New_Orders">New Order</button>
+            <button type="button" class="btn" data-toggle="modal" data-target="#New_Orders">New Order</button>
           </div>
           <!-------------------dropdown--------------------->
           <!-------------dropdown---------------------->
@@ -127,10 +121,7 @@
         <!-------------dropdown---------------------->
         <div class="btn-group mr-1">
           <div class="btn-group">
-            <button type="button" class="btn btn-info">Bulk Update</button>
-            <button type="button" class="btn btn-info dropdown-toggle dropdown-icon" data-toggle="dropdown">
-              <span class="sr-only">Toggle Dropdown</span>
-            </button>
+            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Bulk Update</button>
             <!-- <div class="dropdown-menu" role="menu">
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
@@ -144,10 +135,7 @@
         <!-------------dropdown---------------------->
         <div class="btn-group">
           <div class="btn-group">
-            <button type="button" class="btn btn-info">Other Actions</button>
-            <button type="button" class="btn btn-info dropdown-toggle dropdown-icon" data-toggle="dropdown">
-              <span class="sr-only">Toggle Dropdown</span>
-            </button>
+            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Other Actions</button>
             <div class="dropdown-menu" role="menu">
               <a class="dropdown-item" href="#">Cancel</a>
               <a class="dropdown-item" href="#">Mark as shipped</a>
@@ -171,15 +159,12 @@
           <div class="card">
             <div class="card-header">
               <div class="row">
-                <h3 class="card-title">Filters :</h3>
+                <h3 class="font-weight-bold">Filters :</h3>
               </div>
               <div class="row">
                 <!-------------dropdown---------------------->
                 <div class="btn-group mr-1">
-                  <button type="button" class="btn btn-info">Store</button>
-                  <button type="button" class="btn btn-info dropdown-toggle dropdown-icon" data-toggle="dropdown">
-                    <span class="sr-only">Toggle Dropdown</span>
-                  </button>
+                  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Store</button>
                   <div class="dropdown-menu" role="menu">
                     <a class="dropdown-item" href="#">Manual Orders</a>
                   </div>
@@ -187,10 +172,7 @@
                 <!-------------------dropdown--------------------->
                 <!-------------dropdown---------------------->
                 <div class="btn-group mr-1">
-                  <button type="button" class="btn btn-info">Destination</button>
-                  <button type="button" class="btn btn-info dropdown-toggle dropdown-icon" data-toggle="dropdown">
-                    <span class="sr-only">Toggle Dropdown</span>
-                  </button>
+                  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Destination</button>
                   <div class="dropdown-menu" role="menu">
                     <a class="dropdown-item" href="#">Domestic</a>
                     <a class="dropdown-item" href="#">International</a>
@@ -199,10 +181,7 @@
                 <!-------------------dropdown--------------------->
                 <!-------------dropdown---------------------->
                 <div class="btn-group mr-1">
-                  <button type="button" class="btn btn-info">Order Number</button>
-                  <button type="button" class="btn btn-info dropdown-toggle dropdown-icon" data-toggle="dropdown">
-                    <span class="sr-only">Toggle Dropdown</span>
-                  </button>
+                  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Order Number</button>
                   <div class="dropdown-menu" role="menu">
                     <a class="dropdown-item" href="#"></a>
                     <a class="dropdown-item" href="#">Sid</a>
@@ -211,10 +190,7 @@
                 <!-------------------dropdown--------------------->
                 <!-------------dropdown---------------------->
                 <div class="btn-group mr-1">
-                  <button type="button" class="btn btn-info">Style Number</button>
-                  <button type="button" class="btn btn-info dropdown-toggle dropdown-icon" data-toggle="dropdown">
-                    <span class="sr-only">Toggle Dropdown</span>
-                  </button>
+                  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Style Number</button>
                   <div class="dropdown-menu" role="menu">
                     <a class="dropdown-item" href="#">1</a>
                     <a class="dropdown-item" href="#">2</a>
@@ -223,10 +199,7 @@
                 <!-------------------dropdown--------------------->
                 <!-------------dropdown---------------------->
                 <div class="btn-group mr-1">
-                 <button type="button" class="btn btn-info">Shipping Status</button>
-                 <button type="button" class="btn btn-info dropdown-toggle dropdown-icon" data-toggle="dropdown">
-                  <span class="sr-only">Toggle Dropdown</span>
-                </button>
+                 <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Shipping Status</button>
                 <div class="dropdown-menu" role="menu">
                   <a class="dropdown-item" href="#">On Hold</a>
                   <a class="dropdown-item" href="#">In progress</a>
@@ -236,19 +209,13 @@
               <!-------------------dropdown--------------------->
               <!-------------dropdown---------------------->
               <div class="btn-group mr-1">
-                <button type="button" id="daterange-btn" class="btn btn-info">Order Date</button>
-                <button type="button" class="btn btn-info dropdown-toggle dropdown-icon" data-toggle="dropdown">
-                  <span class="sr-only">Toggle Dropdown</span>
-                </button>
+                <button type="button" id="daterange-btn" class="btn dropdown-toggle" data-toggle="dropdown">Order Date</button>
               </div>
               <!-------------------dropdown--------------------->
               <!-------------dropdown---------------------->
               <div class="btn-group mr-1">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-info">Other</button>
-                  <button type="button" class="btn btn-info dropdown-toggle dropdown-icon" data-toggle="dropdown">
-                    <span class="sr-only">Toggle Dropdown</span>
-                  </button>
+                  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Other</button>
                   <div class="dropdown-menu" role="menu">
                     <a class="dropdown-item" href="#">Country</a>
                     <a class="dropdown-item" href="#">Province</a>
@@ -338,30 +305,30 @@
   <!-- /.content ------------------------------------------------------------------------->
 
         <div class="modal fade" id="New_Orders">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content" style="max-height: calc(100vh - 100px); overflow-y: auto;">
             <div class="modal-header">
-              <h4 class="modal-title">Create New Order</h4>
+              <h4 class="modal-title font-weight-bold">Create New Order</h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
               <div class="container-fluid">
-                <div class="row">
+                <div class="row p-2">
                   <div class="col-md-6">
-                    <p>Recipient Information</p>
+                    <label>Recipient Information</label>
                     <div class="row">
                       <div class="col-sm-6">
                         <!-- text input -->
                         <div class="form-group">
-                          <label>Name</label>
+                          <p>Name</p>
                           <input type="text" class="form-control" placeholder="Enter Name">
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="form-group">
-                          <label>Company</label>
+                          <p>Company</p>
                           <input type="text" class="form-control" placeholder="Enter Company Name">
                         </div>
                       </div>
@@ -369,7 +336,7 @@
                     <div class="row">
                       <div class="col-sm-6">
                         <div class="form-group">
-                          <label>Country</label>
+                          <p>Country</p>
                           <select class="form-control">
                             <option>United States</option>
                             <option>India</option>
@@ -381,7 +348,7 @@
                       </div>
                       <div class="col-sm-6">
                         <div class="form-group">
-                          <label>Paste US Address</label>
+                          <p>Paste US Address</p>
                           <input type="text" class="form-control" placeholder="Enter Address">
                         </div>
                       </div>
@@ -390,13 +357,13 @@
                       <div class="col-sm-6">
                         <!-- text input -->
                         <div class="form-group">
-                          <label>Address 1</label>
+                          <p>Address 1</p>
                           <input type="text" class="form-control" placeholder="Enter Address1">
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="form-group">
-                          <label>Address 2</label>
+                          <p>Address 2</p>
                           <input type="text" class="form-control" placeholder="Enter Address2">
                         </div>
                       </div>
@@ -405,13 +372,13 @@
                       <div class="col-sm-6">
                         <!-- text input -->
                         <div class="form-group">
-                          <label>Address 3</label>
+                          <p>Address 3</p>
                           <input type="text" class="form-control" placeholder="Enter Address3">
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="form-group">
-                          <label>City</label>
+                          <p>City</p>
                           <input type="text" class="form-control" placeholder="Enter City">
                         </div>
                       </div>
@@ -419,7 +386,7 @@
                     <div class="row">
                       <div class="col-sm-6">
                         <div class="form-group">
-                        <label>State</label>
+                        <p>State</p>
                         <select class="form-control">
                           <option>AA</option>
                           <option>AL</option>
@@ -431,7 +398,7 @@
                       </div>
                       <div class="col-sm-6">
                         <div class="form-group">
-                          <label>Zipcode</label>
+                          <p>Zipcode</p>
                           <input type="text" class="form-control" placeholder="Enter Zipcode">
                         </div>
                       </div>
@@ -440,31 +407,31 @@
                       <div class="col-sm-6">
                         <!-- text input -->
                         <div class="form-group">
-                          <label>Phone</label>
+                          <p>Phone</p>
                           <input type="text" class="form-control" placeholder="Enter Phone">
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="form-group">
-                          <label>Email</label>
+                          <p>Email</p>
                           <input type="text" class="form-control" placeholder="Enter Email">
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <p>Order Summary Information</p>
+                  <div class="col-md-6" style="background-color: #f2f2f2; border-radius: 4px;">
+                    <label>Order Summary Information</label>
                     <div class="row">
                       <div class="col-sm-6">
                         <!-- text input -->
                         <div class="form-group">
-                          <label>Order #</label>
+                          <p>Order #</p>
                           <input type="text" class="form-control" placeholder="Enter Order id">
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="form-group">
-                          <label>Shipping paid</label>
+                          <p>Shipping paid</p>
                           <input type="text" class="form-control" placeholder="$">
                         </div>
                       </div>
@@ -472,7 +439,7 @@
                     <div class="row">
                       <div class="col-sm-6">
                         <div class="form-group">
-                          <label>Order Date:</label>
+                          <p>Order Date:</p>
                           <div class="input-group date" id="reservationdate" data-target-input="nearest">
                             <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate"/>
                             <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
@@ -483,7 +450,7 @@
                       </div>
                       <div class="col-sm-6">
                         <div class="form-group">
-                          <label>Paid Date:</label>
+                          <p>Paid Date:</p>
                           <div class="input-group date" id="reservationdate" data-target-input="nearest">
                             <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate"/>
                             <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
@@ -497,13 +464,13 @@
                       <div class="col-sm-6">
                         <!-- text input -->
                         <div class="form-group">
-                          <label>Tax Paid</label>
+                          <p>Tax Paid</p>
                           <input type="text" class="form-control" placeholder="$">
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="form-group">
-                          <label>Total Paid</label>
+                          <p>Total Paid</p>
                           <input type="text" class="form-control" placeholder="$">
                         </div>
                       </div>
@@ -511,7 +478,7 @@
                     
                   </div>
                 </div>
-                  <button type="button" onclick='add()' class="btn btn-outline-primary btn-block"><i class="fa fa-plus"></i>Add Line Item</button>
+                  <button type="button" onclick='add()' class="btn btn-outline-primary btn-block mb-1"><i class="fa fa-plus"></i>Add Line Item</button>
                   <div class="row">
                     <table id="Addline" class="table table-bordered">
                       <tr>
