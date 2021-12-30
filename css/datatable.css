@@ -290,12 +290,7 @@ h3,
     }
 }
 
-.row {
-    display: flex;
-    margin-right: -15px;
-    margin-left: -15px;
-    flex-wrap: wrap;
-}
+
 
 .col,
 .col-xl-6 {
