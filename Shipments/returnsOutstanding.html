@@ -1,40 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ship2way</title>
-
-  <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
-  <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
-<!----------------------------Adding css for testing------------------>
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
-
-  <!-- daterange picker -->
-  <link rel="stylesheet" href="../plugins/daterangepicker/daterangepicker.css">
-  <!-- iCheck for checkboxes and radio inputs -->
-  <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-  <!-- Bootstrap Color Picker -->
-  <link rel="stylesheet" href="../plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
-  <!-- Tempusdominus Bootstrap 4 -->
-  <link rel="stylesheet" href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-  <!-- Select2 -->
-  <link rel="stylesheet" href="../plugins/select2/css/select2.min.css">
-  <link rel="stylesheet" href="../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
-  <!-- Bootstrap4 Duallistbox -->
-  <link rel="stylesheet" href="../plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
-  <!-- BS Stepper -->
-  <link rel="stylesheet" href="../plugins/bs-stepper/css/bs-stepper.min.css">
-  <!-- dropzonejs -->
-  <link rel="stylesheet" href="../plugins/dropzone/min/dropzone.min.css">
-<!----------------------------Adding css for testing------------------>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ship2way</title>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="/css/datatable.css">
+  </head>
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
   <div class="wrapper">
 
@@ -67,12 +46,14 @@
           </div> -->
         </div>
         <div class="row">
-          <button type="button" class="btn mr-1 border border-dark" >Print Label</button>
-          <button type="button" class="btn mr-1 border border-dark" >Void Label(s)</button>
-          <button type="button" class="btn mr-1 border border-dark" >Update Tracking</button>
-          <button type="button" class="btn mr-1 border border-dark" >Marked Recieved</button>
-          <button type="button" class="btn mr-1 border border-dark" >Resend Return Label</button>
-       
+           
+          <div class="btn-group mr-1">
+            <button type="button" class="btn border" id="print">Print Label</button>
+            <button class="btn border mr-1">Void Shipment(s)</button>
+            <button class="btn border mr-1">Update Shipment(s)</button>
+            <button class="btn border mr-1">Marked Recieved</button>
+            <button type="button" class="btn border">Resend Return Label</button>
+          </div>
       </div>
       </div><!-- /.container-fluid -->
     </section>
@@ -98,14 +79,13 @@
                   <a class="nav-link" href="returnsVoided.html">Voided</a>
                 </li>
               </ul>
-
           </div>
          
           <!-- /.card-header -->
-          <div class="card-body">
+      <div class="card-body">
         <div class="table-responsive">
             <div class="col-md-12" style="overflow: auto;">
-            <table id="recent_shipments" class="table table-bordered table-hover">
+            <table id="recent_shipments" class="table align-items-center table-flush order-column">
               <thead>
                 <tr>
                   <th>
@@ -123,7 +103,6 @@
                   <th>Refund Issued</th>
                   <th>Werehouse/Bin</th>
                   <th>Online Store</th>
-                  
                   <th>Tracking #</th>
                   <th>Carrier</th>
                   <th>Shipping Fee</th>
@@ -138,15 +117,16 @@
                           <input class="form-check-input" type="checkbox">
                     </div>
                   </td>
-                  <td>10076</td>
-                  <td>897979</td>
+                  <td><span class="badge-primary badge">12123</span></td>
+                  <td><span class="badge badge-dark">1126</td>
+      
                   <td>Tshirts</td>
                   <td>10/15/2021</td>
                   <td>Tom Williams</td>
                   <td>Jacob</td>
                   <td>10/11/2021</td>
-                  <td><button type="button" class="btn btn-success" onclick="myFunction()">Yes</button></td>
-                  <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#new_user">Click to See Werehouse Detail</button></td>
+                  <td><div class="badge badge-success" onclick="myFunction()">Yes</div></td>
+                  <td><div class="badge badge-info" data-toggle="modal" data-target="#new_user">Click to See Werehouse Detail</div></td>
                   <td>Shopify</td>
                  
                   <td>4789237492749</td>
@@ -161,15 +141,15 @@
                           <input class="form-check-input" type="checkbox">
                     </div>
                   </td>
-                  <td>10076</td>
-                  <td>897979</td>
+                  <td><span class="badge-primary badge">12123</span></td>
+                  <td><span class="badge badge-dark">12436</td>
                   <td>Couch Bag</td>
                   <td>10/15/2021</td>
                   <td>Tom Williams</td>
                   <td>Jacob</td>
                   <td>4/11/2021</td>
-                  <td><button type="button" class="btn btn-success" onclick="myFunction()">Yes</button></td>
-                  <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#new_user">Click to See Werehouse Detail</button></td>
+                  <td><div  class="badge-success badge" onclick="myFunction()">Yes</div></td>
+                  <td><div  class="badge badge-info" data-toggle="modal" data-target="#new_user">Click to See Werehouse Detail</div></td>
                   <td>Shopify</td>
                   
                   <td>4789237492749</td>
@@ -184,15 +164,16 @@
                           <input class="form-check-input" type="checkbox">
                     </div>
                   </td>
-                  <td>10076</td>
-                  <td>897979</td>
+                  <td><span class="badge-primary badge">12123</span></td>
+                  <td><span class="badge badge-dark">4353432</td>
+               
                   <td>Laptop</td>
                   <td>10/15/2022</td>
                   <td>Roger Federer</td>
                   <td>Jacob</td>
                   <td>5/11/2021</td>
-                  <td><button type="button" class="btn btn-danger" onclick="myFunction()">No</button></td>
-                  <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#new_user">Click to See Werehouse Detail</button></td>
+                  <td><div  class="badge badge-danger" onclick="myFunction()">No</div></td>
+                  <td><div  class="badge badge-info" data-toggle="modal" data-target="#new_user">Click to See Werehouse Detail</div></td>
                   <td>Shopify</td>
                 
                   <td>4789237492749</td>
@@ -317,6 +298,8 @@
 <link rel="stylesheet" href="/css/bstreeview.css">
 <script src="/js/bstreeview.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
+<script src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<script type="text/javascript" src="/js/datatable.js"></script>
 <script>
 function myFunction() {
   $("#alert").show();
