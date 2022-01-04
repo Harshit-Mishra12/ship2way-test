@@ -352,7 +352,9 @@ h3,
     border-color: #1f3a68;
     background-color: #172b4d;
 }
-
+table.dataTable tbody td {
+    padding: 1.5rem 1.5rem !important;
+}
 .table .thead-light th {
     color: #8898aa;
     border-color: #e9ecef;
@@ -380,8 +382,10 @@ h3,
 
 .btn {
     font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.5;
+    /* font-weight: 600; f4f6f9 */
+    color:#4d5053;
+    background-color: #e8e8e8; 
+    line-height: 1.1;
     display: inline-block;
     padding: .625rem 1.25rem;
     -webkit-user-select: none;
@@ -393,7 +397,7 @@ h3,
     vertical-align: middle;
     white-space: nowrap;
     border: 1px solid transparent;
-    border-radius: .375rem;
+    /* border-radius: .575rem; */
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -410,6 +414,8 @@ h3,
 .btn:focus {
     outline: 0;
     box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+    background-color: #49484b;
+    color: #fff;
 }
 
 .btn.disabled,
@@ -1493,8 +1499,12 @@ p {
         margin-bottom: 10px;
     }
 }
-#cancelledTable_filter label input {
+.dataTables_filter input {
     border-radius: 5px;
     font-size: 12px;
     width: 200px;
 }
+  .badge {
+      cursor: pointer;
+      padding: 12px !important;
+  }

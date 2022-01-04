@@ -1,40 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ship2way</title>
-
-  <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
-  <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
-<!----------------------------Adding css for testing------------------>
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
-
-  <!-- daterange picker -->
-  <link rel="stylesheet" href="../plugins/daterangepicker/daterangepicker.css">
-  <!-- iCheck for checkboxes and radio inputs -->
-  <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-  <!-- Bootstrap Color Picker -->
-  <link rel="stylesheet" href="../plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
-  <!-- Tempusdominus Bootstrap 4 -->
-  <link rel="stylesheet" href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-  <!-- Select2 -->
-  <link rel="stylesheet" href="../plugins/select2/css/select2.min.css">
-  <link rel="stylesheet" href="../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
-  <!-- Bootstrap4 Duallistbox -->
-  <link rel="stylesheet" href="../plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
-  <!-- BS Stepper -->
-  <link rel="stylesheet" href="../plugins/bs-stepper/css/bs-stepper.min.css">
-  <!-- dropzonejs -->
-  <link rel="stylesheet" href="../plugins/dropzone/min/dropzone.min.css">
-<!----------------------------Adding css for testing------------------>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ship2way</title>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="/css/datatable.css">
+  </head>
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
   <div class="wrapper">
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
@@ -67,48 +48,16 @@
         </div>
         <div class="row">
           <!-------------dropdown---------------------->
-          <div class="btn-group mr-1 border border-dark">
-         
-            <button type="button" class="btn">Print</button>
-            <button type="button" class="dropdown-toggle dropdown-icon btn" data-toggle="dropdown">
-              <span class="sr-only">Toggle Dropdown</span>
-            </button>
-            <div class="dropdown-menu" role="menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
-            </div>
-         
+          <div class="btn-group mr-1">
+      
+          <button type="button" class="btn border">Print</button>
+          <button class="btn border mr-1">Void Shipment(s)</button>
+          <button class="btn border mr-1">Track Shipment(s)</button>
+          <button class="btn border mr-1">Create Return</button>
+          <button class="btn border mr-1">Resend Confirmation</button>
+          <button type="button" class="btn border">Export</button>
+          <button class="btn border mr-1" disabled>Notify Marketplaces</button>
         </div>
-          <!-------------------dropdown--------------------->
-          <button class="btn border border-dark mr-1">Void Shipment(s)</button>
-
-          <button class="btn border border-dark mr-1">Track Shipment(s)</button>
-
-          <button class="btn border border-dark mr-1">Create Return</button>
-
-          <button class="btn border border-dark mr-1">Resend Confirmation</button>
-
-        <!-------------dropdown---------------------->
-        <div class="btn-group mr-1 border border-dark">
-         
-            <button type="button" class="btn">Export</button>
-            <button type="button" class="dropdown-toggle dropdown-icon btn" data-toggle="dropdown">
-              <span class="sr-only">Toggle Dropdown</span>
-            </button>
-            <div class="dropdown-menu" role="menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
-            </div>
-         
-        </div>
-        <!-------------------dropdown--------------------->
-        <button class="btn border border-dark mr-1" disabled>Notify Marketplaces</button>
       </div>
       </div><!-- /.container-fluid -->
     </section>
@@ -122,170 +71,55 @@
               <div class="row mb-2">
                 <h3 class="card-title">Filters :</h3>
               </div>
-              <div class="row">
-                <!-------------dropdown---------------------->
-                <div class="btn-group mr-1 border border-muted">
-         
-                    <button type="button" class="btn">Store</button>
-                    <button type="button" class="dropdown-toggle dropdown-icon btn" data-toggle="dropdown">
-                      <span class="sr-only">Toggle Dropdown</span>
-                    </button>
-                    <div class="dropdown-menu" role="menu">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Separated link</a>
-                    </div>
-                 
+
+          <div class="row ">
+            <div class="col-12">
+              <div class="btn-group" data-toggle="button" role="group">
+                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Store</button>
+                <div class="dropdown-menu" role="menu">
+                  <a class="dropdown-item" href="#">USPC</a>
+                  <a class="dropdown-item" href="#">Amazon</a>
                 </div>
-                <!-------------------dropdown--------------------->
-                <!-------------dropdown---------------------->
-                <div class="btn-group mr-1 border border-muted">
-         
-                    <button type="button" class="btn">Product Name</button>
-                    <button type="button" class="dropdown-toggle dropdown-icon btn" data-toggle="dropdown">
-                      <span class="sr-only">Toggle Dropdown</span>
-                    </button>
-                    <div class="dropdown-menu" role="menu">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Separated link</a>
-                    </div>
-                 
+                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Marketplace</button>
+                <div class="dropdown-menu" role="menu">
+                  <a class="dropdown-item" href="#">Flipkart</a>
+                  <a class="dropdown-item" href="#">Amazon</a>
                 </div>
-                <!-------------------dropdown--------------------->
-                <!-------------dropdown---------------------->
-                <div class="btn-group mr-1 border border-muted">
-         
-                    <button type="button" class="btn">Carrier</button>
-                    <button type="button" class="dropdown-toggle dropdown-icon btn" data-toggle="dropdown">
-                      <span class="sr-only">Toggle Dropdown</span>
-                    </button>
-                    <div class="dropdown-menu" role="menu">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Separated link</a>
-                    </div>
-                 
+                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Carrier</button>
+                <div class="dropdown-menu" role="menu">
+                  <a class="dropdown-item" href="#">USPC</a>
+                  <a class="dropdown-item" href="#">TedEx</a>
                 </div>
-                <!-------------------dropdown--------------------->
-                <!-------------dropdown---------------------->
-                <div class="btn-group mr-1 border border-muted">
-         
-                    <button type="button" class="btn">Ship From</button>
-                    <button type="button" class="dropdown-toggle dropdown-icon btn" data-toggle="dropdown">
-                      <span class="sr-only">Toggle Dropdown</span>
-                    </button>
-                    <div class="dropdown-menu" role="menu">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Separated link</a>
-                    </div>
-                 
+                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Ship From</button>
+                <div class="dropdown-menu" role="menu">
+                  <a class="dropdown-item" href="#">Warehouse</a>
+                  <a class="dropdown-item" href="#">Selling Station</a>
                 </div>
-                <!-------------------dropdown--------------------->
-                <!-------------dropdown---------------------->
-                <div class="btn-group mr-1 border border-muted">
-         
-                    <button type="button" class="btn">Country</button>
-                    <button type="button" class="dropdown-toggle dropdown-icon btn" data-toggle="dropdown">
-                      <span class="sr-only">Toggle Dropdown</span>
-                    </button>
-                    <div class="dropdown-menu" role="menu">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Separated link</a>
-                    </div>
-                 
+                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Country</button>
+                <div class="dropdown-menu" role="menu">
+                  <a class="dropdown-item" href="#">India</a>
+                  <a class="dropdown-item" href="#">America</a>
                 </div>
-              <!-------------------dropdown--------------------->
-              <!-------------dropdown---------------------->
-              <div class="btn-group mr-1 border border-muted">
-         
                 <button type="button" class="btn">Ship Date</button>
-                <button type="button" class="dropdown-toggle dropdown-icon btn" data-toggle="dropdown">
-                  <span class="sr-only">Toggle Dropdown</span>
-                </button>
+                <button type="button" class="btn">Other</button>
+                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Shipping Account</button>
                 <div class="dropdown-menu" role="menu">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Separated link</a>
+                  <a class="dropdown-item" href="#">Hermes</a>
+                  <a class="dropdown-item" href="#">Parcel Force</a>
                 </div>
-             
-            </div>
-              <!-------------------dropdown--------------------->
-              <!-------------dropdown---------------------->
-              <div class="btn-group mr-1 border border-muted">
-         
-                <button type="button" class="btn">Warnings</button>
-                <button type="button" class="dropdown-toggle dropdown-icon btn" data-toggle="dropdown">
-                  <span class="sr-only">Toggle Dropdown</span>
-                </button>
-                <div class="dropdown-menu" role="menu">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Separated link</a>
-                </div>
-             
-            </div>
-
-            <div class="btn-group mr-1 border border-muted">
-         
-                <button type="button" class="btn">Seller</button>
-                <button type="button" class="dropdown-toggle dropdown-icon btn" data-toggle="dropdown">
-                  <span class="sr-only">Toggle Dropdown</span>
-                </button>
-                <div class="dropdown-menu" role="menu">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Separated link</a>
-                </div>
-             
-            </div>
-            <div class="btn-group mr-1 border border-muted">
-         
-              <button type="button" class="btn">Customer</button>
-              <button type="button" class="dropdown-toggle dropdown-icon btn" data-toggle="dropdown">
-                <span class="sr-only">Toggle Dropdown</span>
-              </button>
-              <div class="dropdown-menu" role="menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
+                <div class="badge">                
+                  <i class="fa fa-times text-danger ml-2 mt-1" aria-hidden="true"></i>
+                  <span class="text-danger ml-1">Clear</span></div>
               </div>
-           
-          </div>
-
-            <div class="btn-group">
-                <i class="fa fa-times text-danger ml-2 mt-1" aria-hidden="true"></i>
-                <span class="text-danger ml-1">Clear</span>
             </div>
-              <!-------------------dropdown--------------------->
             </div>
-          </div>
+        </div>
           <!-- /.card-header -->
           <div class="card-body">
         <div class="table-responsive">
             <div class="col-md-12" style="overflow: auto;">
-            <table id="recent_shipments" class="table table-bordered table-hover">
-              <thead>
+            <table id="recent_shipments" class="table align-items-center table-flush order-column">
+              <thead class="thead-light">
                 <tr>
                   <th>
                     <div class="form-check mb-3">
@@ -318,14 +152,25 @@
                 </td>
                   <td>Shoes</td>
                   <td>001812</td>
-                  <td>CSV 1232</td>
-                  <td>Stamps.com</td>
+                  <td><span class="badge badge-dark">CSV 126</td>
+                    <th scope="row">
+                      <div class="media align-items-center">
+                        <a href="#" class="avatar rounded-circle mr-3">
+                          <img alt="Image placeholder"
+                            src="https://raw.githack.com/creativetimofficial/argon-dashboard/master/assets/img/theme/bootstrap.jpg">
+                        </a>
+                        <div class="media-body">
+                          <span class="mb-0 text-sm">Amazon</span>
+                        </div>
+                      </div>
+                    </th>
                   <td>Ship2way Support</td>
                   <td>USPC First</td>
                   <td>04/04/2021</td>
                   <td>97896868689</td>
                   <td>ShipSage</td>
-                  <td>Delivered</td>
+                  <td><span class="badge badge-success">Delivered</span></td>
+                
                 </tr>
                 <tr>
                     <td>
@@ -339,15 +184,27 @@
                   </td>
                     <td>Shoes</td>
                     <td>001812</td>
-                    <td>CSV 1232</td>
-                    <td>Stamps.com</td>
+                    <td><span class="badge badge-dark">CSV 126</td>
+                      <th scope="row">
+                        <div class="media align-items-center">
+                          <a href="#" class="avatar rounded-circle mr-3">
+                            <img alt="Image placeholder"
+                              src="https://raw.githack.com/creativetimofficial/argon-dashboard/master/assets/img/theme/bootstrap.jpg">
+                          </a>
+                          <div class="media-body">
+                            <span class="mb-0 text-sm">Stamps</span>
+                          </div>
+                        </div>
+                      </th>
                     <td>Ship2way Support</td>
                     <td>USPC First</td>
                     <td>04/04/2021</td>
                     <td>97896868689</td>
                     <td>ShipSage</td>
-                    <td>Cancelled</td>
-                  </tr>                <tr>
+                    <td><span class="badge badge-success">Delivered</span></td>
+                
+                  </tr>                
+                  <tr>
                     <td>
                       <div class="form-check">
                             <input class="form-check-input" type="checkbox">
@@ -359,14 +216,25 @@
                   </td>
                     <td>Shoes</td>
                     <td>783478</td>
-                    <td>CSV 1232</td>
-                    <td>facebook.com</td>
+                    <td><span class="badge badge-dark">CSV 126</td>
+                      <th scope="row">
+                        <div class="media align-items-center">
+                          <a href="#" class="avatar rounded-circle mr-3">
+                            <img alt="Image placeholder"
+                              src="https://raw.githack.com/creativetimofficial/argon-dashboard/master/assets/img/theme/bootstrap.jpg">
+                          </a>
+                          <div class="media-body">
+                            <span class="mb-0 text-sm">Facebook</span>
+                          </div>
+                        </div>
+                      </th>
                     <td>Ship2way Support</td>
                     <td>USPC First</td>
                     <td>04/04/2021</td>
                     <td>97896868689</td>
                     <td>ShipSage</td>
-                    <td>Delivered</td>
+                    <td><span class="badge badge-success">Delivered</span></td>
+                
                   </tr>                <tr>
                     <td>
                       <div class="form-check">
@@ -379,14 +247,25 @@
                   </td>
                     <td>Shoes</td>
                     <td>032323</td>
-                    <td>CSV 1232</td>
-                    <td>amazon.com</td>
+                    <td><span class="badge badge-dark">CSV 126</td>
+                      <th scope="row">
+                        <div class="media align-items-center">
+                          <a href="#" class="avatar rounded-circle mr-3">
+                            <img alt="Image placeholder"
+                              src="https://raw.githack.com/creativetimofficial/argon-dashboard/master/assets/img/theme/bootstrap.jpg">
+                          </a>
+                          <div class="media-body">
+                            <span class="mb-0 text-sm">Amazon</span>
+                          </div>
+                        </div>
+                      </th>
                     <td>Ship2way Support</td>
                     <td>USPC First</td>
                     <td>04/04/2021</td>
                     <td>97896868689</td>
                     <td>Flexport</td>
-                    <td>Delivered</td>
+                    <td><span class="badge badge-success">Delivered</span></td>
+                
                   </tr>
               </tbody>
             </table>
@@ -410,7 +289,9 @@
 <link rel="stylesheet" href="/css/bstreeview.css">
 <script src="/js/bstreeview.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
- 
+<script src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<script type="text/javascript" src="/js/datatable.js"></script>
+
 
 </body>
 </html>
